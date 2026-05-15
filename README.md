@@ -14,6 +14,8 @@ pip install -r requirements.txt
 Tạo file `.env`:
 ```env
 GOOGLE_API_KEY=your-gemini-api-key-here
+REDIS_URL=rediss://xxxxx (link lấy từ Upstash)
+WEB_SEARCH_ENABLED=True
 ```
 
 ### 2. Tạo Vector Database

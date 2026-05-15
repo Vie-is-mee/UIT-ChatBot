@@ -43,7 +43,7 @@ _DIRECT_PAGES = [
     ),
     (
         ["lịch sử", "thành lập", "giới thiệu", "tổng quan", "history",
-         "overview", "20 năm", "kỷ niệm", "hình thành"],
+         "overview", "20 năm", "kỷ niệm", "hình thành", "thành tựu", "thành tích", "đạt được"],
         "https://www.uit.edu.vn/gioi-thieu",
     ),
     (
@@ -70,13 +70,13 @@ _DIRECT_PAGES = [
         "https://www.uit.edu.vn/gioi-thieu/co-so-vat-chat",
     ),
     (
-        ["nghiên cứu", "research", "giải thưởng", "award", "công trình khoa học"],
+        ["nghiên cứu", "research", "giải thưởng", "award", "công trình khoa học", "huân chương", "huy chương"],
         "https://www.uit.edu.vn/nghien-cuu",
     ),
     (
         ["cnpm", "công nghệ phần mềm", "khoa phần mềm", "software engineering",
          "selab", "se "],
-        "https://se.uit.edu.vn/gioi-thieu",
+         "https://se.uit.edu.vn/gioi-thieu",
     ),
     (
         ["liên kết quốc tế", "hợp tác quốc tế", "international", "đối tác"],

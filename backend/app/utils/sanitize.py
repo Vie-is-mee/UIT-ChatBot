@@ -67,6 +67,18 @@ def is_error_response(answer: str) -> bool:
         "system error",
         "rate limit",
         "qua nhieu yeu cau",
+        # Các mẫu phản hồi khi không tìm thấy dữ liệu/thông tin
+        "chua cap nhat thong tin",
+        "khong co thong tin",
+        "khong tim thay thong tin",
+        "du lieu chua co",
+        "nam ngoai pham vi du lieu",
+        "khong du du lieu",
+        "khong co trong tai lieu",
+        "tai lieu khong de cap",
+        "hien tai minh khong co",
+        "khong tim thay du lieu",
+        "minh khong tim thay",
     ]
 
     return any(pattern in answer_clean for pattern in error_patterns)
