@@ -70,26 +70,25 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
       }}
     >
       <div
+        className="w-full sm:w-[min(880px,100%)] relative m-auto"
         style={{
-          width: 'min(880px, 100%)', background: cardBg,
-          borderRadius: 24, border: `1px solid ${pal.accent}30`,
+          background: cardBg,
+          borderRadius: 'clamp(16px, 4vw, 24px)', border: `1px solid ${pal.accent}30`,
           boxShadow: pal.isDark
             ? `0 50px 120px -30px ${pal.accent}90, 0 0 0 1px ${pal.accent}20 inset`
             : '0 50px 120px -30px rgba(29,78,216,0.5)',
           overflow: 'hidden',
           animation: 'popIn .4s cubic-bezier(.22,1.2,.4,1)',
-          position: 'relative', margin: 'auto',
         }}
       >
         {/* Header banner */}
         <div
+          className="px-5 py-6 sm:px-9 sm:py-7 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5 relative"
           style={{
-            padding: '26px 36px 22px',
             background: pal.isDark
               ? `linear-gradient(135deg, ${pal.soft} 0%, ${pal.panel} 100%)`
               : `linear-gradient(135deg, ${pal.soft} 0%, #ffffff 100%)`,
             borderBottom: `1px solid ${pal.accent}25`,
-            display: 'flex', alignItems: 'center', gap: 20, position: 'relative',
           }}
         >
           <div style={{
@@ -104,7 +103,7 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
             src="/uit.jpg"
             alt=""
             style={{
-              width: 64, height: 64, objectFit: 'contain', position: 'relative',
+              width: 56, height: 56, objectFit: 'contain', position: 'relative',
               filter: 'drop-shadow(0 8px 20px rgba(79,140,255,0.45))',
             }}
           />
@@ -113,7 +112,7 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
               CHÀO MỪNG ĐẾN VỚI UIT'20
             </div>
             <div style={{
-              fontFamily: "'Fraunces', serif", fontSize: 26, color: pal.ink,
+              fontFamily: "'Fraunces', serif", fontSize: 'clamp(22px, 5vw, 26px)', color: pal.ink,
               marginTop: 4, letterSpacing: '-0.01em', fontWeight: 500, lineHeight: 1.2,
             }}>
               Thiết lập Google AI API key
@@ -125,8 +124,8 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
         </div>
 
         {/* All steps visible at once */}
-        <div style={{ padding: '24px 36px 8px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 14 }}>
+        <div className="px-5 sm:px-9 pt-5 sm:pt-6 pb-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
             {steps.map((s, i) => (
               <div
                 key={i}
@@ -168,7 +167,7 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
         </div>
 
         {/* Key input */}
-        <div style={{ padding: '18px 36px 4px' }}>
+        <div className="px-5 sm:px-9 py-2">
           <label style={{
             fontSize: 11, color: pal.mute, letterSpacing: '0.16em',
             fontWeight: 600, textTransform: 'uppercase',
@@ -191,11 +190,12 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
               style={{
                 flex: 1, background: 'transparent', border: 'none', outline: 'none',
                 color: pal.ink, fontSize: 14, padding: '12px 0',
-                fontFamily: "'JetBrains Mono', monospace",
+                fontFamily: "'JetBrains Mono', monospace", minWidth: 0
               }}
             />
             <button
               onClick={() => setShowKey((s) => !s)}
+              className="flex-shrink-0"
               style={{
                 padding: '9px 14px', borderRadius: 10, border: `1px solid ${pal.accent}30`,
                 background: 'transparent', color: pal.mute, fontSize: 12, cursor: 'pointer',
@@ -208,7 +208,7 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
         </div>
 
         {/* Session-only privacy notice */}
-        <div style={{ padding: '14px 36px 0' }}>
+        <div className="px-5 sm:px-9 pt-3">
           <div style={{
             padding: '12px 16px', borderRadius: 12,
             background: `${pal.warm}12`,
@@ -221,22 +221,22 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
         </div>
 
         {/* Footer action */}
-        <div style={{
-          padding: '20px 36px 26px', display: 'flex', alignItems: 'center', justifyContent: 'flex-end',
-          gap: 12, marginTop: 14,
-          borderTop: `1px solid ${pal.accent}20`,
-          background: pal.isDark ? 'transparent' : `${pal.soft}40`,
-        }}>
+        <div 
+          className="px-5 sm:px-9 py-5 sm:py-6 flex justify-end mt-3 sm:mt-4"
+          style={{
+            borderTop: `1px solid ${pal.accent}20`,
+            background: pal.isDark ? 'transparent' : `${pal.soft}40`,
+          }}>
           <button
             onClick={submit}
+            className="w-full sm:w-auto flex justify-center items-center"
             style={{
               padding: '12px 28px', borderRadius: 12, border: 'none',
               background: `linear-gradient(135deg, ${pal.accent}, ${pal.accent2})`,
               color: '#fff', fontSize: 14, fontWeight: 600,
-              cursor: 'pointer',
+              cursor: 'pointer', gap: 8,
               boxShadow: `0 10px 28px -10px ${pal.accent}`,
               fontFamily: 'inherit', letterSpacing: '0.01em',
-              display: 'flex', alignItems: 'center', gap: 8,
             }}
           >
             Lưu &amp; Bắt đầu hành trình <span style={{ fontSize: 15 }}>→</span>

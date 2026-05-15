@@ -174,15 +174,14 @@ export default function Home() {
         </header>
 
         {/* ── Hero ── */}
-        <section style={{
-          display: 'grid', gridTemplateColumns: '1fr auto', gap: 32, alignItems: 'center',
-          padding: '24px 32px', borderRadius: 20, marginBottom: 20,
+        <section 
+          className="flex flex-col-reverse md:grid md:grid-cols-[1fr_auto] gap-6 md:gap-8 items-center p-6 md:px-8 md:py-6 rounded-2xl mb-5 relative overflow-hidden"
+          style={{
           background: pal.isDark
             ? `linear-gradient(120deg, ${pal.panel} 0%, ${pal.soft} 100%)`
             : 'linear-gradient(120deg, #ffffff 0%, ' + pal.soft + ' 100%)',
           border: `1px solid ${pal.accent}${pal.isDark ? '30' : '25'}`,
           boxShadow: pal.isDark ? 'none' : '0 20px 60px -30px rgba(29,78,216,0.25)',
-          position: 'relative', overflow: 'hidden',
         }}>
           <div style={{
             position: 'absolute', right: -60, top: -60, width: 320, height: 320, borderRadius: '50%',
@@ -191,7 +190,7 @@ export default function Home() {
           }} />
           <div style={{ position: 'relative' }}>
             <div style={{ fontSize: 11, color: pal.warm, letterSpacing: '0.28em', fontWeight: 700 }}>{brand.eyebrow}</div>
-            <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: 40, lineHeight: 1.05, margin: '10px 0 8px', letterSpacing: '-0.02em', fontWeight: 500, color: pal.ink, maxWidth: 620 }}>
+            <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: 'clamp(32px, 6vw, 40px)', lineHeight: 1.1, margin: '10px 0 12px', letterSpacing: '-0.02em', fontWeight: 500, color: pal.ink, maxWidth: 620 }}>
               {brand.heroTitle[0]}{' '}
               <em style={{ color: pal.warm, fontStyle: 'italic' }}>{brand.heroTitle[1]}</em>
               {brand.heroTitle[2]}
@@ -201,14 +200,14 @@ export default function Home() {
             </p>
           </div>
           <img src="/uit.jpg" alt="UIT 20 năm"
+            className="w-24 h-24 md:w-[150px] md:h-[150px] object-contain rounded-2xl flex-shrink-0"
             style={{
-              width: 150, height: 150, objectFit: 'contain', borderRadius: 16, flexShrink: 0,
               filter: 'drop-shadow(0 12px 30px rgba(79,140,255,0.45)) drop-shadow(0 4px 12px rgba(255,122,61,0.25))',
             }} />
         </section>
 
         {/* ── Main grid ── */}
-        <main style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: 20, alignItems: 'start' }}>
+        <main className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-5 items-start flex-col flex lg:grid">
           <ChatBox pal={pal} brand={brand} suggested={suggested} apiKey={apiKey} />
           <Timeline pal={pal} brand={brand} timeline={timeline} />
         </main>
