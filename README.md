@@ -54,7 +54,7 @@ Upstash cung cấp Serverless Redis miễn phí, rất phù hợp cho dự án n
 
 1. Truy cập [Upstash](https://upstash.com/) và tạo tài khoản.
 2. Bấm **Create Database**, đặt tên (vd: `uit-chatbot-redis`), chọn Region gần bạn (vd: Singapore), bật **TLS (SSL)** và chọn tạo.
-3. Tìm chuỗi kết nối **UPSTASH_REDIS_REST_URL** và **UPSTASH_REDIS_REST_TOKEN** (hoặc chuỗi kết nối Redis URI như `rediss://...`) trong phần Node/Python.
+3. Tìm chuỗi kết nối **REST_URL** như `rediss://...`.
 4. Lưu lại thông tin này để cấu hình biến môi trường cho Backend.
 
 ### 2. Triển khai Backend FastAPI với Render
@@ -69,6 +69,7 @@ Render.com cung cấp dịch vụ hosting để chạy Python Backend.
    - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
 3. Trong phần **Environment Variables**, thêm các biến sau:
    - `GOOGLE_API_KEY`: API Key của Gemini.
+   - `FRONTEND_URL`: Địa chỉ URL của Vervel(frontend).
    - `REDIS_URL`: Chuỗi kết nối của Upstash Redis ở bước 1.
 4. Bấm **Create Web Service**. Lấy địa chỉ URL của backend sau khi hoàn tất (vd: `https://uit-chatbot-backend.onrender.com`).
 
@@ -84,12 +85,10 @@ Vercel là nền tảng tối ưu nhất để deploy các ứng dụng React.
    - **Root Directory**: `frontend`
    - **Build Command**: `npm run build`
 4. Mở phần **Environment Variables**, cấu hình URL của Backend Render vừa tạo:
-   - `VITE_API_URL` (hoặc `REACT_APP_API_URL`): `https://uit-chatbot-backend.onrender.com`
+   - `VITE_API_URL`: `https://xxx.onrender.com/api/v1` (thêm đuôi /api/v1)
 5. Bấm **Deploy**. Bạn sẽ nhận được đường link live (vd: `https://uit-chatbot.vercel.app`).
 
 ### 4. Chuẩn bị cho Production (Real Project)
 Để dự án thực sự hoàn chỉnh và an toàn, bạn nên thiết lập các cấu hình sau:
 - **Bảo mật CORS**: Tại Backend (`main.py`), cập nhật `allow_origins` trong `CORSMiddleware` thành danh sách các domain cụ thể (chỉ cho phép tên miền của Vercel frontend được gọi API).
 - **Tên miền tùy chỉnh (Custom Domain)**: Trỏ tên miền riêng (như `chatbot.uit.edu.vn`) thay vì dùng subdomain mặc định của Vercel/Render.
-- **Giám sát hệ thống (Monitoring & Logging)**: Sử dụng các dịch vụ như Sentry để tự động bắt lỗi và thông báo thay vì phải đọc log thủ công.
-- **Giới hạn tốc độ (Rate Limiting)**: Thêm Rate Limiting ở API FastAPI để tránh bị DDOS và tốn hạn mức API Gemini, Redis.
