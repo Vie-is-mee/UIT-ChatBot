@@ -54,7 +54,7 @@ settings = Settings()
 if not settings.GOOGLE_API_KEY or settings.GOOGLE_API_KEY.strip() in ("", "your-key-here"):
     import warnings
     warnings.warn(
-        "⚠️  GOOGLE_API_KEY chưa được cấu hình. "
+        "GOOGLE_API_KEY chưa được cấu hình. "
         "Thêm GOOGLE_API_KEY=<key> vào file .env để bật tính năng AI.",
         stacklevel=2,
     )
