@@ -202,9 +202,11 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <div style={{ width: 8, height: 8, borderRadius: '50%', background: pal.warm, boxShadow: `0 0 12px ${pal.warm}` }} />
           <div style={{ fontSize: 13, fontWeight: 600, color: pal.ink }}>{brand.botName}</div>
-          <div style={{ fontSize: 11, color: pal.mute, padding: '2px 8px', borderRadius: 99, background: `${pal.accent}15`, border: `1px solid ${pal.accent}30` }}>
-            {brand.botBadge}
-          </div>
+          {brand.botBadge && (
+            <div style={{ fontSize: 11, color: pal.mute, padding: '2px 8px', borderRadius: 99, background: `${pal.accent}15`, border: `1px solid ${pal.accent}30` }}>
+              {brand.botBadge}
+            </div>
+          )}
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>

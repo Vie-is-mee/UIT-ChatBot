@@ -186,7 +186,6 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
               onChange={(e) => setKey(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && submit()}
               placeholder="Dán API key vào đây"
-              autoFocus
               style={{
                 flex: 1, background: 'transparent', border: 'none', outline: 'none',
                 color: pal.ink, fontSize: 14, padding: '12px 0',
