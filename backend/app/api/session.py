@@ -23,7 +23,7 @@ async def clear_chat_session(session_id: str):
         session_svc.clear_session(session_id)
         return {"status": "success", "message": "Đã xoá lịch sử phiên chat."}
     except Exception as e:
-        app_logger.error(f"❌ Lỗi xoá session: {e}")
+        app_logger.error(f"Lỗi xoá session: {e}")
         raise HTTPException(status_code=500, detail="Lỗi hệ thống.")
 
 
