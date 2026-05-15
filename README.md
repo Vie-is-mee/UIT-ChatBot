@@ -1,4 +1,4 @@
-# UIT Chatbot v2.3
+# Chatbot UIT' 20 Người kể chuyện
 
 Chatbot RAG kỷ niệm 20 năm UIT và lịch sử Khoa Công nghệ Phần mềm
 
