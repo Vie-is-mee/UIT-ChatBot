@@ -27,7 +27,7 @@ Chatbot RAG kỷ niệm 20 năm UIT — hỗ trợ session đa lượt & Web RAG
 
 ---
 
-## Cài đặt
+## Cài đặt (Môi trường Local)
 
 ### 1. Backend
 
@@ -67,6 +67,58 @@ cd frontend
 npm install
 npm run dev
 ```
+
+---
+
+## 🚀 Triển khai Hệ thống thực tế (Deployment)
+
+Để biến project thành một sản phẩm thực tế chạy trên Internet, bạn cần triển khai các thành phần lên các dịch vụ đám mây (Cloud). Dưới đây là hướng dẫn sử dụng Upstash (Redis), Render (Backend) và Vercel (Frontend).
+
+### 1. Triển khai Redis với Upstash (Quản lý Cache & Session)
+Upstash cung cấp Serverless Redis miễn phí, rất phù hợp cho dự án này.
+
+1. Truy cập [Upstash](https://upstash.com/) và tạo tài khoản.
+2. Bấm **Create Database**, đặt tên (vd: `uit-chatbot-redis`), chọn Region gần bạn (vd: Singapore), bật **TLS (SSL)** và chọn tạo.
+3. Tìm chuỗi kết nối **Redis Connect URL** (chuỗi URI có dạng `rediss://default:yourpassword@your-endpoint.upstash.io:port`) trong mục **Connection Details** (chọn tab **rediss://** hoặc xem cấu hình Node/Python để lấy chuỗi URI này). Không sử dụng REST URL và REST Token vì thư viện `redis` của Python kết nối trực tiếp qua TCP.
+4. Lưu lại chuỗi URI này làm giá trị cho biến `REDIS_URL` của Backend.
+
+### 2. Triển khai Backend FastAPI với Render
+Render.com cung cấp dịch vụ hosting để chạy Python Backend.
+
+1. Truy cập [Render](https://render.com/) và tạo tài khoản, sau đó tạo một **Web Service** mới, kết nối với kho lưu trữ GitHub của bạn.
+2. Cấu hình Web Service:
+   - **Name**: `uit-chatbot-backend`
+   - **Root Directory**: `backend`
+   - **Environment**: `Python 3`
+   - **Build Command**: `pip install -r requirements.txt && python scripts/init_data.py` *(Lưu ý: Để FAISS index được tạo ra khi deploy, bạn cần đảm bảo các file raw data đã được commit lên GitHub).*
+   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+3. Trong phần **Environment Variables**, thêm các biến sau:
+   - `GOOGLE_API_KEY`: API Key của Gemini.
+   - `REDIS_URL`: Chuỗi kết nối của Upstash Redis ở bước 1.
+   - `FRONTEND_URL`: URL của ứng dụng Frontend sau khi deploy ở Vercel (vd: `https://uit-chatbot.vercel.app`), giúp bảo mật CORS chỉ cho phép frontend gọi tới backend.
+4. Bấm **Create Web Service**. Lấy địa chỉ URL của backend sau khi hoàn tất (vd: `https://uit-chatbot-backend.onrender.com`).
+
+*Lưu ý: Ở môi trường Render (Free tier), ổ cứng sẽ bị reset sau mỗi lần deploy. Nếu bạn muốn Vector DB persistent và scale tốt hơn cho Production thực tế, hãy cân nhắc sử dụng dịch vụ Cloud Vector Database như [Pinecone](https://www.pinecone.io/) hoặc [Qdrant](https://qdrant.tech/) thay cho FAISS nội bộ.*
+
+### 3. Triển khai Frontend với Vercel
+Vercel là nền tảng tối ưu nhất để deploy các ứng dụng React.
+
+1. Truy cập [Vercel](https://vercel.com/) và kết nối GitHub của bạn.
+2. Bấm **Add New... > Project**, chọn repo của dự án.
+3. Cấu hình Project:
+   - **Framework Preset**: Vite (hoặc Create React App tùy cấu hình hiện tại của dự án).
+   - **Root Directory**: `frontend`
+   - **Build Command**: `npm run build`
+4. Mở phần **Environment Variables**, cấu hình URL của Backend Render vừa tạo:
+   - `VITE_API_URL`: `https://uit-chatbot-backend.onrender.com/api/v1` *(Lưu ý: Bắt buộc phải có hậu tố `/api/v1` ở cuối để khớp với API router của backend).*
+5. Bấm **Deploy**. Bạn sẽ nhận được đường link live (vd: `https://uit-chatbot.vercel.app`).
+
+### 4. Chuẩn bị cho Production (Real Project)
+Để dự án thực sự hoàn chỉnh và an toàn, bạn nên thiết lập các cấu hình sau:
+- **Bảo mật CORS**: Tại Backend (`main.py`), cập nhật `allow_origins` trong `CORSMiddleware` thành danh sách các domain cụ thể (chỉ cho phép tên miền của Vercel frontend được gọi API).
+- **Tên miền tùy chỉnh (Custom Domain)**: Trỏ tên miền riêng (như `chatbot.uit.edu.vn`) thay vì dùng subdomain mặc định của Vercel/Render.
+- **Giám sát hệ thống (Monitoring & Logging)**: Sử dụng các dịch vụ như Sentry để tự động bắt lỗi và thông báo thay vì phải đọc log thủ công.
+- **Giới hạn tốc độ (Rate Limiting)**: Thêm Rate Limiting ở API FastAPI để tránh bị DDOS và tốn hạn mức API Gemini, Redis.
 
 ---
 
