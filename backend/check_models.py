@@ -27,8 +27,8 @@ try:
             print(f"ID: {m.name} | Tên: {m.display_name}")
 
     print("\n" + "="*50)
-    print("💡 LƯU Ý: Hãy copy chính xác phần 'ID' (ví dụ: models/...) dán vào config.py")
+    print("LƯU Ý: Hãy copy chính xác phần 'ID' (ví dụ: models/...) dán vào config.py")
     print("="*50)
 
 except Exception as e:
-    print(f"❌ Lỗi khi quét danh sách: {e}")
+    print(f"Lỗi khi quét danh sách: {e}")
