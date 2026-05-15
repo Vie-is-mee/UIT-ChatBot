@@ -68,7 +68,7 @@ Render.com cung cấp dịch vụ hosting để chạy Python Backend.
    - **Build Command**: `pip install -r requirements.txt && python scripts/init_data.py` *(Lưu ý: Để FAISS index được tạo ra khi deploy, bạn cần đảm bảo các file raw data đã được commit lên GitHub).*
    - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
 3. Trong phần **Environment Variables**, thêm các biến sau:
-   - `GOOGLE_API_KEY`: API Key của Gemini.
+   - `GOOGLE_API_KEY`: API Key lấy từ aistudio.google.com.
    - `FRONTEND_URL`: Địa chỉ URL của Vervel(frontend).
    - `REDIS_URL`: Chuỗi kết nối của Upstash Redis ở bước 1.
 4. Bấm **Create Web Service**. Lấy địa chỉ URL của backend sau khi hoàn tất (vd: `https://uit-chatbot-backend.onrender.com`).
