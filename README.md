@@ -17,6 +17,7 @@ GOOGLE_API_KEY=your-gemini-api-key-here
 REDIS_URL=rediss://xxxxx (link lấy từ Upstash)
 WEB_SEARCH_ENABLED=True
 ```
+*Lưu ý: Để tránh gián đoạn khi test, nên theo dõi quota của Google AI Studio tại aistudio.google.com.*
 
 ### 2. Tạo Vector Database
 
@@ -73,9 +74,12 @@ Render.com cung cấp dịch vụ hosting để chạy Python Backend.
    - `GOOGLE_API_KEY`: API Key lấy từ aistudio.google.com.
    - `FRONTEND_URL`: Địa chỉ URL của Vervel(frontend).
    - `REDIS_URL`: Chuỗi kết nối của Upstash Redis ở bước 1.
-4. Bấm **Create Web Service**. Lấy địa chỉ URL của backend sau khi hoàn tất (vd: `https://uit-chatbot-backend.onrender.com`).
 
-*Lưu ý: Nếu hệ thống sử dụng hosting miễn phí nên lần truy cập đầu tiên có thể phản hồi chậm do server cần thời gian khởi động lại.*
+   *Lưu ý: Để tránh gián đoạn khi test, nên theo dõi quota của Google AI Studio tại aistudio.google.com.*
+   
+5. Bấm **Create Web Service**. Lấy địa chỉ URL của backend sau khi hoàn tất (vd: `https://uit-chatbot-backend.onrender.com`).
+
+*Lưu ý: Nếu hệ thống sử dụng hosting miễn phí thì lần truy cập đầu tiên có thể phản hồi chậm do server cần thời gian khởi động lại.*
 
 ### 3. Triển khai Frontend với Vercel
 Vercel là nền tảng tối ưu nhất để deploy các ứng dụng React.
