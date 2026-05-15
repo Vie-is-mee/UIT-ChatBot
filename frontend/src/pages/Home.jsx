@@ -36,7 +36,7 @@ const BRAND = {
     heroBody: 'Trò chuyện với người kể chuyện AI của Trường — một hành trình hai thập kỷ qua giảng đường, phòng lab và những con người đã làm nên nơi này.',
     botName: "Người kể chuyện UIT'20",
     botBadge: 'phiên bản kỷ niệm',
-    placeholder: 'Hỏi tôi về 20 năm của Trường…',
+    placeholder: 'Hỏi về 20 năm UIT…',
     timelineTitle: '20 năm, 6 chương',
     version: 'v20.0 · uit.edu.vn',
     stats: [['20', 'ngành đào tạo'], ['40,000', 'cựu sinh viên'], ['120', 'phòng thí nghiệm']],
@@ -49,7 +49,7 @@ const BRAND = {
     heroBody: 'Trò chuyện với trợ lý của Khoa Công nghệ Phần mềm — câu chuyện riêng của một khoa đã đào tạo nên hàng nghìn kỹ sư phần mềm Việt Nam.',
     botName: 'Trợ lý Khoa CNPM',
     botBadge: 'phiên bản kỷ niệm',
-    placeholder: 'Hỏi tôi về Khoa Công nghệ Phần mềm…',
+    placeholder: 'Hỏi về khoa CNPM…',
     timelineTitle: '18 năm của một Khoa',
     version: 'v18.0 · se.uit.edu.vn',
     stats: [['12', 'môn chuyên ngành'], ['8,500', 'kỹ sư phần mềm'], ['35', 'doanh nghiệp đối tác']],
@@ -174,15 +174,15 @@ export default function Home() {
         </header>
 
         {/* ── Hero ── */}
-        <section 
+        <section
           className="flex flex-col-reverse md:grid md:grid-cols-[1fr_auto] gap-6 md:gap-8 items-center p-6 md:px-8 md:py-6 rounded-2xl mb-5 relative overflow-hidden"
           style={{
-          background: pal.isDark
-            ? `linear-gradient(120deg, ${pal.panel} 0%, ${pal.soft} 100%)`
-            : 'linear-gradient(120deg, #ffffff 0%, ' + pal.soft + ' 100%)',
-          border: `1px solid ${pal.accent}${pal.isDark ? '30' : '25'}`,
-          boxShadow: pal.isDark ? 'none' : '0 20px 60px -30px rgba(29,78,216,0.25)',
-        }}>
+            background: pal.isDark
+              ? `linear-gradient(120deg, ${pal.panel} 0%, ${pal.soft} 100%)`
+              : 'linear-gradient(120deg, #ffffff 0%, ' + pal.soft + ' 100%)',
+            border: `1px solid ${pal.accent}${pal.isDark ? '30' : '25'}`,
+            boxShadow: pal.isDark ? 'none' : '0 20px 60px -30px rgba(29,78,216,0.25)',
+          }}>
           <div style={{
             position: 'absolute', right: -60, top: -60, width: 320, height: 320, borderRadius: '50%',
             background: `radial-gradient(circle, ${pal.warm}${pal.isDark ? '22' : '12'}, transparent 60%)`,
