@@ -1,6 +1,6 @@
 # UIT Chatbot v2.3
 
-Chatbot RAG kỷ niệm 20 năm UIT — hỗ trợ session đa lượt & Web RAG fallback thông minh.
+Chatbot RAG kỷ niệm 20 năm UIT và lịch sử Khoa Công nghệ Phần mềm — hỗ trợ session đa lượt & Web RAG fallback thông minh.
 
 ## Changelog v2.3 (Fixes)
 
@@ -79,8 +79,8 @@ Upstash cung cấp Serverless Redis miễn phí, rất phù hợp cho dự án n
 
 1. Truy cập [Upstash](https://upstash.com/) và tạo tài khoản.
 2. Bấm **Create Database**, đặt tên (vd: `uit-chatbot-redis`), chọn Region gần bạn (vd: Singapore), bật **TLS (SSL)** và chọn tạo.
-3. Tìm chuỗi kết nối **Redis Connect URL** (chuỗi URI có dạng `rediss://default:yourpassword@your-endpoint.upstash.io:port`) trong mục **Connection Details** (chọn tab **rediss://** hoặc xem cấu hình Node/Python để lấy chuỗi URI này). Không sử dụng REST URL và REST Token vì thư viện `redis` của Python kết nối trực tiếp qua TCP.
-4. Lưu lại chuỗi URI này làm giá trị cho biến `REDIS_URL` của Backend.
+3. Tìm chuỗi kết nối **UPSTASH_REDIS_REST_URL** và **UPSTASH_REDIS_REST_TOKEN** (hoặc chuỗi kết nối Redis URI như `rediss://...`) trong phần Node/Python.
+4. Lưu lại thông tin này để cấu hình biến môi trường cho Backend.
 
 ### 2. Triển khai Backend FastAPI với Render
 Render.com cung cấp dịch vụ hosting để chạy Python Backend.
@@ -95,7 +95,6 @@ Render.com cung cấp dịch vụ hosting để chạy Python Backend.
 3. Trong phần **Environment Variables**, thêm các biến sau:
    - `GOOGLE_API_KEY`: API Key của Gemini.
    - `REDIS_URL`: Chuỗi kết nối của Upstash Redis ở bước 1.
-   - `FRONTEND_URL`: URL của ứng dụng Frontend sau khi deploy ở Vercel (vd: `https://uit-chatbot.vercel.app`), giúp bảo mật CORS chỉ cho phép frontend gọi tới backend.
 4. Bấm **Create Web Service**. Lấy địa chỉ URL của backend sau khi hoàn tất (vd: `https://uit-chatbot-backend.onrender.com`).
 
 *Lưu ý: Ở môi trường Render (Free tier), ổ cứng sẽ bị reset sau mỗi lần deploy. Nếu bạn muốn Vector DB persistent và scale tốt hơn cho Production thực tế, hãy cân nhắc sử dụng dịch vụ Cloud Vector Database như [Pinecone](https://www.pinecone.io/) hoặc [Qdrant](https://qdrant.tech/) thay cho FAISS nội bộ.*
@@ -110,7 +109,7 @@ Vercel là nền tảng tối ưu nhất để deploy các ứng dụng React.
    - **Root Directory**: `frontend`
    - **Build Command**: `npm run build`
 4. Mở phần **Environment Variables**, cấu hình URL của Backend Render vừa tạo:
-   - `VITE_API_URL`: `https://uit-chatbot-backend.onrender.com/api/v1` *(Lưu ý: Bắt buộc phải có hậu tố `/api/v1` ở cuối để khớp với API router của backend).*
+   - `VITE_API_URL` (hoặc `REACT_APP_API_URL`): `https://uit-chatbot-backend.onrender.com`
 5. Bấm **Deploy**. Bạn sẽ nhận được đường link live (vd: `https://uit-chatbot.vercel.app`).
 
 ### 4. Chuẩn bị cho Production (Real Project)
