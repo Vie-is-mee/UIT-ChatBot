@@ -4,7 +4,17 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
   const [key, setKey] = useState(savedKey);
   const [showKey, setShowKey] = useState(false);
 
-  useEffect(() => { if (open) setKey(savedKey || ''); }, [open, savedKey]);
+  useEffect(() => {
+    if (open) {
+      setKey(savedKey || '');
+      // Khoá cuộn trang nền (body scroll) để tránh tình trạng cuộn đúp (double scrollbar)
+      document.body.style.overflow = 'hidden';
+      return () => {
+        // Khôi phục cuộn trang nền khi đóng modal hoặc component bị gỡ bỏ
+        document.body.style.overflow = '';
+      };
+    }
+  }, [open, savedKey]);
 
   if (!open) return null;
 
