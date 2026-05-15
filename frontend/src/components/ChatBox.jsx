@@ -96,9 +96,9 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
       </div>
 
       {/* Input */}
-      <div style={{ padding: '14px 18px 18px', borderTop: `1px solid ${pal.accent}${pal.isDark ? '20' : '15'}`, flexShrink: 0 }}>
+      <div className="px-3 py-4 sm:p-[14px_18px_18px]" style={{ borderTop: `1px solid ${pal.accent}${pal.isDark ? '20' : '15'}`, flexShrink: 0 }}>
         <div style={{
-          display: 'flex', alignItems: 'center', gap: 10,
+          display: 'flex', alignItems: 'center', gap: 6,
           padding: '6px 6px 6px 16px', borderRadius: 14,
           background: pal.soft, border: `1px solid ${pal.accent}35`,
         }}>
@@ -110,21 +110,27 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
             style={{
               flex: 1, background: 'transparent', border: 'none', outline: 'none',
               color: pal.ink, fontSize: 14, padding: '10px 0', fontFamily: 'inherit',
+              minWidth: 0,
             }}
           />
-          <button onClick={() => handleSend(input)} style={{
-            padding: '10px 18px', borderRadius: 10, border: 'none',
+          <button 
+            onClick={() => handleSend(input)} 
+            className="shrink-0 flex items-center justify-center gap-1 sm:gap-1.5"
+            style={{
+            padding: '10px 14px', borderRadius: 10, border: 'none',
             background: `linear-gradient(135deg, ${pal.accent}, ${pal.accent2})`,
             color: '#fff', fontWeight: 600, fontSize: 13, cursor: 'pointer',
             boxShadow: `0 8px 24px -8px ${pal.accent}`,
-            display: 'flex', alignItems: 'center', gap: 6, fontFamily: 'inherit',
-            transition: 'opacity .15s',
+            fontFamily: 'inherit', transition: 'opacity .15s',
           }}>
-            Kể tiếp <span style={{ fontSize: 14 }}>→</span>
+            <span className="hidden sm:inline">Kế tiếp</span>
+            <span className="sm:hidden">Gửi</span> 
+            <span style={{ fontSize: 14 }}>→</span>
           </button>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8, fontSize: 11, color: pal.mute }}>
-          <div>↵ Enter để gửi</div>
+          <div className="hidden sm:block">↵ Enter để gửi</div>
+          <div className="sm:hidden"></div>
           <div>{mode === 'uit' ? 'UIT · 2006—2026' : 'Khoa CNPM · 2008—2026'}</div>
         </div>
       </div>
@@ -158,7 +164,7 @@ function NewChatButton({ pal, onClick, disabled }) {
 /* ── Empty state ──────────────────────────────────────────────────────────── */
 function EmptyState({ pal, mode, suggested, onAsk }) {
   return (
-    <div style={{ textAlign: 'center', padding: '32px 12px 16px' }}>
+    <div style={{ textAlign: 'center', padding: '16px 0', width: '100%' }}>
       <div style={{
         display: 'inline-block', padding: '6px 14px', borderRadius: 99,
         background: `${pal.warm}15`, border: `1px solid ${pal.warm}40`, color: pal.warm,
@@ -174,7 +180,7 @@ function EmptyState({ pal, mode, suggested, onAsk }) {
         Chọn một chủ đề bên dưới, hoặc tự gõ câu hỏi của bạn.
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10, maxWidth: 560, margin: '0 auto', textAlign: 'left' }}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-[560px] mx-auto text-left">
         {suggested.map((s, i) => (
           <PromptCard key={i} s={s} pal={pal} onClick={() => onAsk(s.q)} />
         ))}
