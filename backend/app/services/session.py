@@ -10,6 +10,7 @@ import uuid
 from app.services.cache import redis_client
 from app.utils.logger import app_logger
 from app.config import settings
+from app.utils.sanitize import is_error_response
 
 SESSION_TTL = 60 * 60 * 24 * 7  # 7 ngày (giây)
 
@@ -43,11 +44,11 @@ def get_history(session_id: str) -> list[dict]:
 
 def append_turn(session_id: str, question: str, answer: str, scope: str) -> None:
     """Thêm một lượt Q&A vào lịch sử phiên."""
-    # Tránh lưu vào lịch sử nếu câu trả lời bị lỗi kết nối hoặc trống
-    if not answer or "Dạ, mình đang gặp chút sự cố kết nối AI" in answer:
+    # Tránh lưu vào lịch sử nếu câu trả lời bị lỗi kết nối, hệ thống hoặc trống
+    if is_error_response(answer):
         app_logger.warning(
             f"⚠️ Bỏ qua lưu session history cho phiên {session_id[:8]}... "
-            f"vì câu trả lời lỗi hoặc trống."
+            f"vì câu trả lời lỗi/hệ thống hoặc trống: '{answer[:60]}...'"
         )
         return
 

@@ -3,6 +3,7 @@ import hashlib
 import json
 from app.config import settings
 from app.utils.logger import app_logger
+from app.utils.sanitize import is_error_response
 
 # ── Kết nối Redis ──────────────────────────────────────────────────────────────
 # Trong backend/app/services/cache.py
@@ -60,8 +61,8 @@ def set_cached_answer(query: str, scope: str, is_first_message: bool, result_dat
         return
 
     answer = result_data.get("answer", "")
-    if not answer or "Dạ, mình đang gặp chút sự cố kết nối AI" in answer:
-        app_logger.warning("⚠️ Phát hiện câu trả lời lỗi kết nối AI hoặc trống. Bỏ qua không lưu cache.")
+    if is_error_response(answer):
+        app_logger.warning(f"⚠️ Phát hiện câu trả lời lỗi/hệ thống hoặc trống: '{answer[:60]}...'. Bỏ qua không lưu cache.")
         return
 
     key = _generate_key(query, scope, is_first_message)

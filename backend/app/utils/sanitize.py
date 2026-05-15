@@ -26,3 +26,47 @@ def clean_and_validate_input(text: str) -> str:
         )
         
     return clean_text
+
+
+def is_error_response(answer: str) -> bool:
+    """
+    Kiểm tra câu trả lời có phải là lỗi hệ thống hoặc fallback hay không.
+    Nếu đúng, trả về True để tránh lưu vào Cache hoặc Session History.
+    """
+    if not answer or not answer.strip():
+        return True
+
+    # Chuẩn hóa về chữ thường và loại bỏ dấu tiếng Việt để so khớp dễ dàng
+    def clean_text(t: str) -> str:
+        t = t.lower()
+        import unicodedata
+        try:
+            t = unicodedata.normalize('NFD', t)
+            t = ''.join(c for c in t if unicodedata.category(c) != 'Mn')
+            t = t.replace('đ', 'd').replace('Đ', 'd')
+        except Exception:
+            pass
+        return t
+
+    answer_clean = clean_text(answer)
+
+    error_patterns = [
+        "su co ket noi",
+        "co loi xay ra",
+        "tam thoi khong kha dung",
+        "he thong dang ban",
+        "gap su co",
+        "rat tiec",
+        "thu lai sau",
+        "khong kha dung",
+        "thu lai nhe",
+        "vui long thu lai",
+        "he thong gap su co",
+        "dich vu ai tam thoi",
+        "connection error",
+        "system error",
+        "rate limit",
+        "qua nhieu yeu cau",
+    ]
+
+    return any(pattern in answer_clean for pattern in error_patterns)
