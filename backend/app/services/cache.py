@@ -14,9 +14,9 @@ try:
         socket_connect_timeout=5
     )
     redis_client.ping()
-    app_logger.info("✅ Đã kết nối Upstash Redis thành công!")
+    app_logger.info("Đã kết nối Upstash Redis thành công!")
 except Exception as e:
-    app_logger.error(f"⚠️ Kết nối Upstash thất bại: {e}")
+    app_logger.error(f"Kết nối Upstash thất bại: {e}")
     redis_client = None
 
 
@@ -43,7 +43,7 @@ def get_cached_answer(query: str, scope: str, is_first_message: bool = True):
         try:
             data = redis_client.get(key)
             if data:
-                app_logger.debug("⚡ Redis cache HIT")
+                app_logger.debug("Redis cache HIT")
                 return json.loads(data)
             return None
         except Exception as e:
