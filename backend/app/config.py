@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     SIMILARITY_THRESHOLD: float = 80.0
 
     # ── Hội thoại & Session ───────────────────────────────────────────────────
-    MAX_HISTORY_TURNS: int = 2      
+    MAX_HISTORY_TURNS: int = 3     
     # ── Rate Limiting ─────────────────────────────────────────────────────────
     RATE_LIMIT_MAX_REQUESTS: int = 20
     RATE_LIMIT_WINDOW_SECONDS: int = 60
