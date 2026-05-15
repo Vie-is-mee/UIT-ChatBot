@@ -38,7 +38,7 @@ def get_embedding(text: str, api_key: str = "") -> list:
     except Exception as e:
         # Nếu dùng User Key mà lỗi, thử lại lần 2 bằng Server Key (nếu khác nhau)
         if api_key and api_key != settings.GOOGLE_API_KEY:
-            app_logger.warning(f"⚠️ User API Key lỗi ({e}), đang thử lại bằng Server Key...")
+            app_logger.warning(f"User API Key lỗi ({e}), đang thử lại bằng Server Key...")
             try:
                 client = _get_client(settings.GOOGLE_API_KEY)
                 response = client.models.embed_content(
@@ -48,8 +48,8 @@ def get_embedding(text: str, api_key: str = "") -> list:
                 )
                 return response.embeddings[0].values
             except Exception as e2:
-                app_logger.error(f"❌ Cả 2 API Key đều lỗi: {e2}")
+                app_logger.error(f"Cả 2 API Key đều lỗi: {e2}")
                 raise RuntimeError("Hệ thống AI hiện đang tạm ngưng do lỗi API Key.")
         
-        app_logger.error(f"❌ Lỗi Embedding: {e}")
+        app_logger.error(f"Lỗi Embedding: {e}")
         raise RuntimeError(f"Không thể tạo embedding: {e}")
