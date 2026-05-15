@@ -55,6 +55,15 @@ def get_cached_answer(query: str, scope: str, is_first_message: bool = True):
 
 def set_cached_answer(query: str, scope: str, is_first_message: bool, result_data: dict):
     """Lưu câu trả lời vào cache (Redis ưu tiên, fallback in-process)."""
+    # Tránh cache câu trả lời trống hoặc câu trả lời lỗi kết nối AI
+    if not result_data:
+        return
+
+    answer = result_data.get("answer", "")
+    if not answer or "Dạ, mình đang gặp chút sự cố kết nối AI" in answer:
+        app_logger.warning("⚠️ Phát hiện câu trả lời lỗi kết nối AI hoặc trống. Bỏ qua không lưu cache.")
+        return
+
     key = _generate_key(query, scope, is_first_message)
 
     if redis_client:
@@ -70,3 +79,4 @@ def set_cached_answer(query: str, scope: str, is_first_message: bool, result_dat
         for k in list(_local_cache.keys())[:100]:
             del _local_cache[k]
     _local_cache[key] = result_data
+
