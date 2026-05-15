@@ -43,6 +43,14 @@ def get_history(session_id: str) -> list[dict]:
 
 def append_turn(session_id: str, question: str, answer: str, scope: str) -> None:
     """Thêm một lượt Q&A vào lịch sử phiên."""
+    # Tránh lưu vào lịch sử nếu câu trả lời bị lỗi kết nối hoặc trống
+    if not answer or "Dạ, mình đang gặp chút sự cố kết nối AI" in answer:
+        app_logger.warning(
+            f"⚠️ Bỏ qua lưu session history cho phiên {session_id[:8]}... "
+            f"vì câu trả lời lỗi hoặc trống."
+        )
+        return
+
     history = get_history(session_id)
     history.append({"question": question, "answer": answer, "scope": scope})
 
@@ -52,6 +60,7 @@ def append_turn(session_id: str, question: str, answer: str, scope: str) -> None
         history = history[-max_turns:]
 
     _save(session_id, history)
+
 
 
 def clear_session(session_id: str) -> None:
