@@ -72,11 +72,11 @@ async def submit_feedback(req: FeedbackRequest):
 
         _atomic_append_feedback(file_path, feedback_data)
 
-        app_logger.info(f"✅ Feedback '{req.feedback_type}' cho message {req.message_id}")
+        app_logger.info(f"Feedback '{req.feedback_type}' cho message {req.message_id}")
         return {"status": "success", "feedback_type": req.feedback_type}
 
     except Exception as e:
-        app_logger.error(f"❌ Lỗi lưu feedback: {e}", exc_info=True)
+        app_logger.error(f"Lỗi lưu feedback: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Lỗi hệ thống khi lưu feedback.")
 
 
@@ -117,5 +117,5 @@ async def get_feedback_stats():
         return stats
 
     except Exception as e:
-        app_logger.error(f"❌ Lỗi đọc feedback stats: {e}", exc_info=True)
+        app_logger.error(f"Lỗi đọc feedback stats: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Lỗi khi đọc thống kê feedback.")
