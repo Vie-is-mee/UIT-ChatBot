@@ -75,7 +75,7 @@ Render.com cung cấp dịch vụ hosting để chạy Python Backend.
    - `REDIS_URL`: Chuỗi kết nối của Upstash Redis ở bước 1.
 4. Bấm **Create Web Service**. Lấy địa chỉ URL của backend sau khi hoàn tất (vd: `https://uit-chatbot-backend.onrender.com`).
 
-*Lưu ý: Ở môi trường Render (Free tier), ổ cứng sẽ bị reset sau mỗi lần deploy. Nếu bạn muốn Vector DB persistent và scale tốt hơn cho Production thực tế, hãy cân nhắc sử dụng dịch vụ Cloud Vector Database như [Pinecone](https://www.pinecone.io/) hoặc [Qdrant](https://qdrant.tech/) thay cho FAISS nội bộ.*
+*Lưu ý: Nếu hệ thống sử dụng hosting miễn phí nên lần truy cập đầu tiên có thể phản hồi chậm do server cần thời gian khởi động lại.*
 
 ### 3. Triển khai Frontend với Vercel
 Vercel là nền tảng tối ưu nhất để deploy các ứng dụng React.
