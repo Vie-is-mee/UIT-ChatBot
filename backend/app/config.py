@@ -11,15 +11,14 @@ class Settings(BaseSettings):
     # ── LLM params ────────────────────────────────────────────────────────────
     MAX_TOKENS: int = 1500           # v2.4: giảm từ 2500 → 1500 (tiết kiệm output token)
     TEMPERATURE: float = 0.2
-    TOP_K_RETRIEVAL: int = 5
+    TOP_K_RETRIEVAL: int = 3
     MAX_INPUT_LENGTH: int = 1000
 
     # FAISS L2 distance threshold
     SIMILARITY_THRESHOLD: float = 80.0
 
     # ── Hội thoại & Session ───────────────────────────────────────────────────
-    MAX_HISTORY_TURNS: int = 3       # v2.4: giảm từ 5 → 3 (giảm input tokens mỗi request)
-
+    MAX_HISTORY_TURNS: int = 2      
     # ── Rate Limiting ─────────────────────────────────────────────────────────
     RATE_LIMIT_MAX_REQUESTS: int = 20
     RATE_LIMIT_WINDOW_SECONDS: int = 60
