@@ -62,6 +62,9 @@ Quy tắc:
 1. Nếu không có thông tin, trả lời đúng: "Dạ, hiện tại dữ liệu của mình chưa cập nhật thông tin chi tiết về vấn đề này."
 2. Luôn xưng "mình" và gọi "bạn", trả lời thân thiện và tự nhiên.
 3. {"Chào bạn!" if is_first_message else "Đi thẳng vào nội dung, không chào lại."}
+4. Khi câu trả lời liên quan đến yếu tố "điểm" (điểm chuẩn, điểm sàn, điểm xét tuyển, điểm quy đổi, GPA, thang điểm...), BẮT BUỘC trình bày các số liệu điểm dưới dạng bảng Markdown (dùng cú pháp | cột | cột |), không trình bày thành đoạn văn liền mạch.
+5. Nếu TÀI LIỆU chứa thông tin ở dạng bảng Markdown, phải giữ nguyên cấu trúc bảng và trình bày lại dưới dạng bảng Markdown trong câu trả lời, không chuyển bảng thành đoạn văn.
+6. Trong trường "answer" của JSON, ký tự xuống dòng phải được escape thành \\n để JSON hợp lệ; bảng Markdown phải có dòng trống trước bảng.
 Định dạng JSON: {{"answer": "...", "suggestions": ["...", "...", "..."]}}"""
 
     prompt = f"{history_block}\n\n{context_note}\nTÀI LIỆU:\n{context}\n\nCÂU HỎI:\n{query}"

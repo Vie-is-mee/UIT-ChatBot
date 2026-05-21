@@ -1,482 +1,788 @@
 [
-    {
-        "text": "Trường Đại học Công nghệ Thông tin (ĐH CNTT), Đại học Quốc gia Thành phố Hồ Chí Minh (ĐHQG-HCM) là trường đại học công lập đào tạo về công nghệ thông tin và truyền thông (CNTT&TT) được thành lập theo quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ. Là trường thành viên của ĐHQG-HCM, trường ĐH CNTT có nhiệm vụ đào tạo nguồn nhân lực công nghệ thông tin chất lượng cao, góp phần tích cực vào sự phát triển của nền công nghiệp công nghệ thông tin Việt Nam, đồng thời tiến hành nghiên cứu khoa học và chuyển giao công nghệ thông tin tiên tiến.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": " Trường Đại học Công nghệ Thông tin (ĐH CNTT), ĐHQG-HCM là trường Đại học công lập chuyên ngành CNTT được thành lập theo quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ trên cơ sở Trung tâm Phát triển Công nghệ Thông tin. Trường khai giảng năm học đầu tiên vào tháng 10/2006.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/gioi-thieu-chung"
-        }
-    },
-    {
-        "text": "Sau hơn 10 năm xây dựng và phát triển, hiện trường ĐH CNTT sở hữu cơ sở vật chất gồm khu học tập, nghiên cứu và làm việc được đầu tư xây dựng khang trang, hiện đại với tổng diện tích trên 14 hecta trong khuôn viên khu đô thị ĐHQG-HCM.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": "Trường ĐH CNTT có triết lý giáo dục là \"Toàn diện, sáng tạo, phụng sự\", đây cũng là giá trị cốt lõi trong vận hành và phát triển nhà trường, xác lập vị trí là trường ĐH hàng đầu trong lĩnh vực CNTT tại Việt Nam, là nơi đào tạo sinh viên phát triển toàn diện cả về kiến thức, kỹ năng chuyên môn lẫn thái độ sống tích cực phục vụ cộng đồng, năng động - bản lĩnh - tự tin hội nhập với cộng đồng quốc tế.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": "Đội ngũ giảng viên trường ĐH CNTT với đại đa số có trình độ sau đại học là nguồn nhân lực cốt lõi thúc đẩy quá trình sản sinh và chuyển giao tri thức. Tính đến nay, số lượng giảng viên trình độ sau đại học có 2 Giáo sư, 9 Phó Giáo sư, 77 Tiến sĩ và 158 Thạc sĩ. Đa số cán bộ giảng dạy của Trường tốt nghiệp từ các trường, viện uy tín trong nước và các nước phát triển trên thế giới.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": "Trường có 12 ngành đào tạo hệ chính quy: Công nghệ Thông tin, Hệ thống Thông tin, Khoa học Máy tính, Kỹ thuật Máy tính, Kỹ thuật Phần mềm, Mạng máy tính và Truyền thông dữ liệu, An toàn Thông tin, Thương mại Điện tử, Khoa học Dữ liệu, Trí tuệ Nhân tạo, Thiết kế Vi mạch, Truyền thông Đa phương tiện. Trường cũng đào tạo các chương trình đặc biệt như: tài năng, tiên tiến và chương trình Việt - Nhật.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": "Ở bậc đào tạo sau đại học, trường có 05 chương trình đào tạo thạc sĩ (ngành Khoa học Máy tính, ngành Công nghệ Thông tin, ngành Hệ thống Thông tin, ngành An toàn Thông tin và ngành Kỹ thuật Máy tính) và 02 chương trình đào tạo trình độ tiến sĩ (ngành Khoa học Máy tính và Công nghệ Thông tin).",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": "Các hướng nghiên cứu chủ lực của trường ĐH CNTT thuộc lĩnh vực An toàn thông tin, Internet vạn vật, Trí tuệ nhân tạo, Khoa học dữ liệu và Thiết kế vi mạch. Ngoài ra còn có các hướng nghiên cứu như Thương mại điện tử, Công nghệ tri thức, Xử lý đa phương tiện, Hệ thống thông tin, Kỹ thuật phần mềm.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": "Trường ĐH CNTT tự hào có 100% sinh viên tốt nghiệp có việc làm. Trong đó có trên 90% sinh viên tốt nghiệp có việc làm đúng với chuyên ngành được đào tạo nhờ vào sự tăng cường đầu tư cơ sở vật chất, sự tận tâm của giảng viên cùng sự hỗ trợ của các doanh nghiệp, tổ chức.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": "Thông tin quy hoạch trường ĐH CNTT - ĐHQG-HCM: Vị trí tại Khu phố 6, Phường Linh Trung, Quận Thủ Đức, TP.Hồ Chí Minh. Diện tích khu quy hoạch: 133,900 m2. Phía Đông giáp trường Đại học An ninh; Phía Nam giáp Xa lộ Hà Nội; Phía Tây giáp Khu CNPM giai đoạn 2; Phía Bắc giáp trường Đại học KH&XHNV.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/thong-tin-quy-hoach-truong-dh-cntt-dhqg-hcm"
-        }
-    },
-    {
-        "text": "Tầm nhìn: Trường Đại học Công nghệ Thông tin trở thành trường đại học tốp đầu về Công nghệ thông tin - Truyền thông ở khu vực châu Á. Sứ mạng: Đào tạo nguồn nhân lực chất lượng cao, tiên phong trong nghiên cứu khoa học, đổi mới sáng tạo và chuyển giao công nghệ.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tam-nhin-su-mang-va-gia-tri-cot-loi"
-        }
-    },
-    {
-        "text": "Giá trị cốt lõi của Trường ĐH CNTT bao gồm: 1. Toàn diện (Phát triển người học toàn diện). 2. Sáng tạo (Đề cao sự tìm tòi, đổi mới). 3. Tự do học thuật. 4. Chuyên nghiệp (Môi trường học tập và làm việc hiệu quả). 5. Phục vụ cộng đồng (Đóng góp vào sự phát triển chung của xã hội).",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tam-nhin-su-mang-va-gia-tri-cot-loi"
-        }
-    },
-    {
-        "text": "Nhận diện thương hiệu: Tên tiếng Việt là Trường Đại Học Công Nghệ Thông Tin. Tên tiếng Anh là University of Information Technology. Tên viết tắt là UIT.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/nhan-dien-thuong-hieu"
-        }
-    },
-    {
-        "text": "Thông tin liên hệ Trường Đại học Công nghệ Thông tin - ĐHQG-HCM: Địa chỉ tại Khu phố 34, Phường Linh Xuân, Thành phố Hồ Chí Minh. Điện thoại: (028) 372 52002. Fax: (028) 372 52148. Email: info@uit.edu.vn. Website: https://www.uit.edu.vn",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/lien-he"
-        }
-    },
-    {
-        "text": "Bảng vàng thành tích sinh viên trường Đại học Công nghệ Thông tin (UIT) năm 2026: Vào tháng 04/2026, UIT tỏa sáng tại kỳ thi Olympic Toán sinh viên toàn quốc. Trong tháng 03/2026, sinh viên UIT xuất sắc đạt Giải Nhất quốc tế tại cuộc thi Capture The Intruder 2026; đồng thời đội tuyển VNUHCM.UIT.JobSeekers cũng đã giành được Huy chương Đồng tại kỳ thi ICPC Asia Pacific Championship 2026.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
-        }
-    },
-    {
-        "text": "Bảng vàng thành tích sinh viên UIT năm 2025 (Từ tháng 04 đến tháng 06): Tháng 06/2025, UIT đạt giải Nhất cuộc thi Thiết kế, Sáng tạo sản phẩm, công nghệ dành cho người khuyết tật; sinh viên Âu Trường Giang giành giải Nhất vòng chung kết cuộc thi Sáng tạo trẻ 'Giao thông xanh' lần 8; sinh viên Phan Thanh Tuấn (KTMT 2021) đạt giải Nhì tại Hội thi Sáng tạo Kỹ thuật TP.HCM lần thứ 28. Trước đó, tháng 05/2025, sinh viên UIT đạt giải tại vòng Quốc gia Olympic Vi Điện Tử Quốc Tế (AMO 2025-UIT). Tháng 04/2025, đội Wanna.W1n giải Nhất Cuộc thi quốc tế M*CTF-International và UIT giành giải cao tại Olympic Toán học sinh viên và học sinh lần thứ 31.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
-        }
-    },
-    {
-        "text": "Bảng vàng thành tích sinh viên UIT đầu năm 2025: Tháng 03/2025, Sinh viên Tạ Quang Hưng xuất sắc giành Giải Ba Cuộc thi 'Tuổi trẻ học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh' do Bộ Giáo dục và Đào tạo tổ chức. Tháng 01/2025, Sinh viên UIT phối hợp cùng Viện Thông tin Quốc gia Nhật Bản đã giành giải Nhất tại cuộc thi VBS 2025.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
-        }
-    },
-    {
-        "text": "Bảng vàng thành tích sinh viên UIT cuối năm 2024: Tháng 12/2024, Đội tuyển UIT liên tiếp giành giải Nhất ở bảng Student cuộc thi ASEAN Cyber Shield; huy chương vàng tại ICPC Asia Regional Hanoi; sinh viên Đỗ Anh Khoa vô địch Chuyên tin OLP'24; ngoài ra Đội tuyển UIT còn xuất sắc đạt cả giải Nhất và giải Nhì tại Hội thi AI-Challenge TP. Hồ Chí Minh.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
-        }
-    },
-    {
-        "text": "Bảng vàng thành tích sinh viên UIT quý 4 năm 2024 về An toàn thông tin: Tháng 11/2024, Đội tuyển UIT giành giải Nhất ở bảng General cuộc thi ASEAN Cyber Shield; đặc biệt có 3 sinh viên góp mặt giúp Việt Nam dẫn đầu thử thách Flare-On 11. Tháng 10/2024, một sinh viên UIT trở thành người Việt Nam đầu tiên và thứ 8 thế giới hoàn thành tất cả các thử thách tại Flare-On 11; bên cạnh đó UIT cũng giành giải Nhất và giải Ba tại cuộc thi An toàn và Bảo mật Thông tin toàn quốc CIS 2024.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
-        }
-    },
-    {
-        "text": "Bảng vàng thành tích sinh viên UIT đầu và giữa năm 2024: Tháng 06/2024, trường tuyên dương sinh viên đạt thành tích tại kỳ thi Olympic Toán toàn quốc. Tháng 03/2024, các sinh viên Lê Khắc Trung Nam, Hồ Trung Kiên, Lê Xuân Hoàng và Võ Nguyên Chương đã đạt thành tích cao tại cuộc thi Olympic Mật mã học Quốc tế Nsucrypto 2023. Trước đó vào tháng 01/2024, sinh viên UIT đạt Giải 3 tại cuộc thi Data For Life 2023.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
-        }
-    },
-    {
-        "text": "Năm 2006 - Khởi nguyên của UIT: Trường Đại học Công nghệ Thông tin chính thức được thành lập theo Quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ. Khóa sinh viên đầu tiên khai giảng vào tháng 10/2006 với khoảng 500 sinh viên theo học 5 chuyên ngành: Khoa học Máy tính, Kỹ thuật Máy tính, Công nghệ Phần mềm, Mạng máy tính và Hệ thống Thông tin. Hiệu trưởng đầu tiên của Trường là GS. Hoàng Văn Kiếm - người đã đặt nền móng vững chắc cho sự phát triển của UIT.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Giai đoạn 2006-2011 - Xây dựng nền móng: Trong 5 năm đầu tiên, Trường ĐH CNTT đã xây dựng được 7 phòng chức năng, 5 khoa chuyên ngành, 2 bộ môn, 1 phòng thí nghiệm cấp trường và 6 trung tâm. Đội ngũ cán bộ giảng dạy tăng lên 129 người, trong đó 60% có trình độ trên đại học. Đây là giai đoạn đặt nền tảng vật chất và nhân lực quan trọng cho sự phát triển vượt bậc của Trường sau này.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Năm 2010 - Mở đường: Khóa kỹ sư đầu tiên của Trường ĐH CNTT chính thức tốt nghiệp và ra trường. Đây là thế hệ sinh viên tiên phong - những người đã theo học từ những ngày đầu tiên của Trường, vượt qua hành trình 4 năm đầy thử thách để mang về những tấm bằng kỹ sư đầu tiên mang tên UIT. Họ rời giảng đường mang theo niềm tin vào tương lai và những dòng code khởi đầu cho sự nghiệp xây dựng ngành CNTT Việt Nam.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Năm 2014-2016 - Bứt phá với hệ thống phòng lab chuyên sâu: Phòng Thí nghiệm An toàn Thông tin (UIT InSecLab) chính thức được thành lập theo Quyết định 19/QĐ-ĐHCNTT-TCHC ngày 19/01/2016, với sự hỗ trợ từ Project-99 của Chính phủ Việt Nam. InSecLab được trang bị hệ thống mạng an toàn chuyên biệt cho thực nghiệm An toàn Thông tin, đặc biệt phục vụ luyện tập CTF (Capture The Flag). Cùng thời gian này, phòng lab Trí tuệ Nhân tạo và các lab chuyên ngành khác lần lượt hình thành, tạo môi trường nghiên cứu đẳng cấp cho sinh viên và giảng viên.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Năm 2018 - Vươn xa, đặt dấu chân trên bản đồ thế giới: Sinh viên UIT lần đầu tiên giành được huy chương tại kỳ thi lập trình ICPC (International Collegiate Programming Contest) cấp khu vực châu Á - một trong những cuộc thi lập trình danh giá nhất thế giới. Bên cạnh đó, các đội tuyển An toàn Thông tin của UIT liên tiếp đạt thành tích cao tại các cuộc thi CTF (Capture The Flag) quốc tế, khẳng định vị thế của UIT trên bản đồ an ninh mạng thế giới.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Năm 2022 - Đổi mới toàn diện theo định hướng đại học số: Trường ĐH CNTT chính thức chuyển mình mạnh mẽ theo định hướng đại học số, tăng cường ứng dụng công nghệ trong mọi hoạt động giảng dạy và quản lý. Các phần mềm quản lý học tập, tài liệu số, lớp học trực tuyến được triển khai đồng bộ. Đồng thời, Trường tăng cường kết nối với doanh nghiệp công nghệ hàng đầu, mở rộng cơ hội thực tập và việc làm cho sinh viên. Định hướng đổi mới này đặt UIT vào vị thế tiên phong trong chuyển đổi số giáo dục đại học tại Việt Nam.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Năm 2026 - Hai mươi năm, một hành trình: Năm 2026 đánh dấu tròn 20 năm kể từ ngày UIT được thành lập (2006-2026). Hai thập kỷ không chỉ là khoảng thời gian - đó là hành trình của hàng chục nghìn sinh viên đã học tập, trưởng thành và tỏa sáng trong ngành CNTT. Từ 500 sinh viên khóa đầu tiên đến hơn 40.000 cựu sinh viên đang làm việc tại Việt Nam và quốc tế, UIT đã thực sự trở thành cái nôi đào tạo nhân tài CNTT hàng đầu miền Nam. Năm 2026, Trường kỷ niệm dấu mốc lịch sử này với loạt sự kiện lớn, trong đó có lễ kỷ niệm 20 năm thành lập đầy tự hào.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành An toàn Thông tin tại UIT: Là một trong những thế mạnh nổi bật nhất của Trường, ngành An toàn Thông tin đào tạo chuyên gia bảo mật có khả năng phòng thủ và phân tích các mối đe dọa mạng. Sinh viên được học về mật mã học, bảo mật hệ thống, phân tích mã độc, kiểm thử xâm nhập (penetration testing), và ứng cứu sự cố. Với phòng lab InSecLab hiện đại và đội ngũ giảng viên giàu kinh nghiệm, sinh viên An toàn Thông tin UIT liên tục giành giải cao tại các cuộc thi CTF trong nước và quốc tế.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành Trí tuệ Nhân tạo (AI) tại UIT: Được mở từ năm 2023-2024, ngành Trí tuệ Nhân tạo đào tạo kỹ sư có khả năng thiết kế và triển khai các hệ thống AI thông minh. Chương trình gồm 128 tín chỉ trong 3.5 năm, bao gồm: kiến thức giáo dục chung (45 TC), kiến thức cơ sở ngành (57 TC), kiến thức chuyên ngành tự chọn (8 TC), kiến thức liên ngành tự chọn (8 TC) và tốt nghiệp (10 TC). UIT cũng là trường đầu tiên và duy nhất cung cấp chương trình học Trí tuệ Nhân tạo qua hệ thống đào tạo từ xa tại Việt Nam.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành Thiết kế Vi mạch tại UIT: Được mở từ năm 2024, ngành Thiết kế Vi mạch (hay còn gọi là thiết kế chip/IC Design) đào tạo kỹ sư có khả năng thiết kế vi điều khiển, System-on-Chip (SoC), xử lý tín hiệu vi điện tử và ứng dụng AI trong chip. Sinh viên được làm quen với các công cụ thiết kế chuyên nghiệp như Synopsys, Cadence, Siemens (Mentor Graphics) và Xilinx. Hai năm đầu, sinh viên học kiến thức nền về toán, khoa học, lập trình và linh kiện bán dẫn trước khi chuyên sâu vào thiết kế vi mạch.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành Khoa học Dữ liệu tại UIT: Được mở từ năm 2024, ngành Khoa học Dữ liệu (Data Science) trang bị cho sinh viên kỹ năng thu thập, xử lý, phân tích và trực quan hóa dữ liệu lớn để đưa ra quyết định thông minh. Sinh viên học về Machine Learning, Deep Learning, Big Data Analytics, Data Engineering và Business Intelligence. Với sự bùng nổ của dữ liệu trong kỷ nguyên số, kỹ sư Khoa học Dữ liệu của UIT được các doanh nghiệp hàng đầu săn đón ngay từ khi còn trên ghế nhà trường.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Chương trình Việt - Nhật tại UIT: Đây là chương trình đào tạo đặc biệt kết hợp học chuyên ngành CNTT bằng tiếng Việt với việc học tiếng Nhật như ngoại ngữ thứ hai. Mục tiêu đào tạo kỹ sư CNTT đạt chuẩn ngôn ngữ JLPT N3 (tiếng Nhật), tạo cơ hội thực tập tại Nhật Bản hoặc làm việc tại các công ty Nhật Bản ở Việt Nam. Lớp học có quy mô nhỏ (20-40 sinh viên), giảng viên trình độ Thạc sĩ/Tiến sĩ, tạo môi trường học tập thân thiện và chuyên nghiệp. Đây là cầu nối giữa sinh viên Việt Nam với thị trường công nghệ Nhật Bản đang có nhu cầu tuyển dụng kỹ sư CNTT rất cao.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Chương trình Tài năng và Tiên tiến tại UIT: Bên cạnh các ngành học thông thường, UIT còn có chương trình Tài năng dành cho sinh viên xuất sắc với nội dung đào tạo chuyên sâu, cường độ cao và cơ hội tham gia nghiên cứu khoa học từ sớm. Chương trình Tiên tiến được xây dựng theo chuẩn của các đại học quốc tế, toàn bộ tài liệu bằng tiếng Anh, giúp sinh viên có nền tảng vững chắc để học tập và làm việc trong môi trường quốc tế.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Phòng Thí nghiệm An toàn Thông tin UIT (InSecLab): Được thành lập ngày 19/01/2016, InSecLab là trung tâm nghiên cứu và thực hành An toàn Thông tin hàng đầu tại UIT. Phòng lab được trang bị hệ thống mạng an toàn chuyên biệt, phục vụ nghiên cứu khoa học, đào tạo đại học và sau đại học, hợp tác quốc tế và chuyển giao công nghệ. Đặc biệt, InSecLab là nơi các đội tuyển CTF của UIT luyện tập, từ đó giành nhiều giải thưởng quốc tế danh giá. Phòng lab được hỗ trợ từ Project-99 của Chính phủ Việt Nam.",
-        "metadata": {
-            "url": "https://inseclab.uit.edu.vn"
-        }
-    },
-    {
-        "text": "Hệ thống phòng thí nghiệm và cơ sở vật chất của UIT: Ngoài InSecLab, Trường còn có nhiều phòng thí nghiệm hiện đại phục vụ nghiên cứu và thực hành: Phòng TN Truyền thông Đa phương tiện, Phòng TN Hệ thống Thông tin, Phòng TN Mạng máy tính, Phòng TN Cơ sở dữ liệu, và các phòng máy tính cấu hình cao phục vụ thực hành. Tổng diện tích khuôn viên trên 14 hecta với tổng diện tích xây dựng 93,750 m², vốn đầu tư 412 tỷ đồng. Hệ thống WiFi tốc độ cao phủ sóng toàn campus, phòng học trực tuyến và phòng học điện tử trang bị đầy đủ.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Đời sống sinh viên tại UIT - Câu lạc bộ và hoạt động ngoại khóa: UIT có hơn 70 câu lạc bộ, đội và nhóm học thuật, xã hội và thể thao. Các CLB học thuật nổi bật gồm: CLB Lập trình, CLB An toàn Thông tin, WebDev Studios, Open English Club, Câu lạc bộ Tiếng Nhật UIT (Wakame), Books and Action Club. CLB xã hội có UIT Social Work Team chuyên làm từ thiện và cộng đồng. Thể thao có UIT Futsal Club (thành lập 2018). Tham gia CLB giúp sinh viên phát triển kỹ năng mềm như teamwork, giao tiếp, thuyết trình, lãnh đạo, tổ chức sự kiện - những kỹ năng thiết yếu cho nghề kỹ sư CNTT.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Đời sống sinh viên tại UIT - Một ngày ở giảng đường: Khuôn viên UIT nằm trong khu đô thị ĐHQG-HCM, tạo thành một cộng đồng học thuật sôi động. Sinh viên có thể sống tại ký túc xá của ĐHQG-HCM ngay trong khuôn viên khu đô thị đại học với đầy đủ tiện nghi. Môi trường học tập hiện đại với wifi tốc độ cao, thư viện điện tử, phòng máy tính 24/7. Nhiều không gian học nhóm, café học thuật, sân thể thao đa năng. Sinh viên UIT được biết đến với tinh thần năng động, sáng tạo và đam mê công nghệ.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Đời sống sinh viên UIT - Các cuộc thi và sự kiện lớn: Hàng năm, UIT tổ chức nhiều sự kiện lớn thu hút sinh viên: Đấu trường IT (cuộc thi lập trình toàn trường), UIT Hackathon, ngày hội CNTT, lễ khai giảng và tốt nghiệp hoành tráng. Sinh viên cũng tham gia tích cực các cuộc thi ngoài trường như ICPC, các cuộc thi CTF (Capture The Flag), Olympic Toán, Tin học toàn quốc. Ngoài ra còn có chương trình kết nối doanh nghiệp, ngày hội việc làm (career fair) giúp sinh viên tiếp cận nhà tuyển dụng ngay từ năm 3-4.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Cựu sinh viên UIT - Những gương mặt tiêu biểu: UIT tự hào có hơn 40.000 cựu sinh viên đang làm việc trong ngành CNTT tại Việt Nam và nhiều quốc gia trên thế giới. Nhiều cựu sinh viên đã trở thành lãnh đạo cấp cao tại các tập đoàn công nghệ lớn như VNG, FPT, VNPT, Viettel Digital. Một số cựu sinh viên xuất sắc đã bảo vệ thành công luận án tiến sĩ tại các đại học danh tiếng như Đại học Chung-Ang (Hàn Quốc), Đại học Công nghệ Quốc gia Seoul. Tỉ lệ 100% sinh viên có việc làm ngay sau tốt nghiệp là minh chứng rõ nhất cho chất lượng đào tạo của UIT.",
-        "metadata": {
-            "url": "https://alumni.uit.edu.vn"
-        }
-    },
-    {
-        "text": "Cựu sinh viên UIT tiêu biểu - Câu chuyện thành công: Lê Mạnh Hùng (Khoa học Máy tính) sau khi tốt nghiệp UIT đã phát triển sự nghiệp qua FPT Telecom, VNG Corporation, HIIP và hiện là Senior Data Engineer tại ELSA Speak - startup EdTech nổi tiếng toàn cầu với 7 năm kinh nghiệm và chứng chỉ AWS. Nguyễn Trí Hải (Khoa học Máy tính) đã bảo vệ thành công luận án Tiến sĩ tại Đại học Chung-Ang (Hàn Quốc) và hiện công tác nghiên cứu tại Seoul National University of Science and Technology. Chế Quang Huy là sinh viên song ngành đầu tiên của UIT (Kỹ thuật Máy tính & Khoa học Máy tính), tốt nghiệp loại giỏi với điểm GPA 8.36.",
-        "metadata": {
-            "url": "https://alumni.uit.edu.vn"
-        }
-    },
-    {
-        "text": "Hợp tác quốc tế của UIT: Trường ĐH CNTT có quan hệ hợp tác rộng rãi với các trường đại học và tổ chức quốc tế từ Nhật Bản, Hàn Quốc, Mỹ, Vương quốc Anh, Đức và Úc. Hình thức hợp tác đa dạng: trao đổi giảng viên và sinh viên, phát triển chương trình đào tạo liên kết, tổ chức hội thảo/seminar khoa học quốc tế, phối hợp nghiên cứu và xuất bản bài báo khoa học. Chương trình Việt - Nhật là minh chứng tiêu biểu cho sự hợp tác thực chất, tạo cơ hội thực tập tại Nhật Bản cho sinh viên. Trường cũng tham chiếu chuẩn ABET 2021-2022 của Mỹ trong xây dựng chương trình đào tạo.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Nghiên cứu khoa học tại UIT - Thành tựu và công bố: Trường ĐH CNTT có thành tích nghiên cứu khoa học ngày càng ấn tượng với số lượng bài báo quốc tế tăng đều hàng năm trên các tạp chí ISI/Scopus uy tín. Các hướng nghiên cứu mũi nhọn gồm: Xử lý ngôn ngữ tự nhiên (NLP), Thị giác máy tính (Computer Vision), An toàn mạng, IoT và Thiết kế vi mạch. Nhiều nhóm nghiên cứu của UIT được tài trợ từ Quỹ Khoa học Công nghệ Quốc gia (NAFOSTED) và các nguồn quốc tế. Giảng viên UIT thường xuyên được mời tham dự và báo cáo tại các hội nghị khoa học quốc tế hàng đầu.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Giảng viên tiêu biểu của UIT: PGS.TS Cao Thanh Tình được trao danh hiệu 'Outstanding Educator' ghi nhận đóng góp xuất sắc trong giảng dạy và nghiên cứu. TS. Lê Kim Hùng nhận Giải thưởng Golden Earth Award for Science and Technology và danh hiệu 'Outstanding Young Face'. Các giảng viên Phạm Văn Hậu và Nguyễn Tấn Cầm nhận danh hiệu 'Lecturer of the Year'. Đội ngũ giảng viên UIT được đào tạo bài bản từ các đại học uy tín trong nước và quốc tế, nhiều người có kinh nghiệm thực tế tại doanh nghiệp trước khi trở thành giảng viên, giúp chương trình đào tạo luôn gắn với thực tiễn.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "UIT và tầm nhìn 10 năm tới (2026-2036): Trong giai đoạn tiếp theo, UIT hướng đến mục tiêu trở thành trường đại học CNTT tốp đầu khu vực châu Á, được xếp hạng trong các bảng xếp hạng đại học quốc tế danh tiếng. Chiến lược phát triển tập trung vào: (1) Mở rộng và cập nhật liên tục các ngành học theo xu hướng công nghệ mới (AI, Blockchain, Quantum Computing, Metaverse); (2) Tăng cường hợp tác công-tư với các tập đoàn công nghệ toàn cầu; (3) Xây dựng trung tâm nghiên cứu và đổi mới sáng tạo đẳng cấp quốc tế; (4) Phát triển hệ sinh thái khởi nghiệp (startup ecosystem) trong khuôn viên trường; (5) Đẩy mạnh đào tạo từ xa và học liệu mở (MOOC) để mở rộng tầm ảnh hưởng.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Thành tích CTF (Capture The Flag) của UIT: UIT được cộng đồng an ninh mạng Việt Nam và quốc tế biết đến như 'cái nôi' đào tạo chuyên gia bảo mật qua các cuộc thi CTF. Các thành tích nổi bật: Giải Nhất ASEAN Cyber Shield 2024 (bảng General, giá trị 20.000 USD), Giải Nhất M*CTF International 2025 (đội Wanna.W1n), Giải Nhất Capture The Intruder 2026. Một sinh viên UIT trở thành người Việt Nam đầu tiên và thứ 8 thế giới hoàn thành tất cả thử thách Flare-On 11. Đội Sp33d_0f_T1m3 và O.W.C.A là những đội tuyển CTF tiêu biểu của UIT.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
-        }
-    },
-    {
-        "text": "Thành tích ICPC của UIT - Lập trình thi đấu: ICPC (International Collegiate Programming Contest) là cuộc thi lập trình đồng đội danh giá nhất thế giới cấp đại học. Sinh viên UIT liên tục tham dự và đạt thành tích ấn tượng: Huy chương Vàng ICPC Asia Regional Hanoi 2024, Huy chương Đồng ICPC Asia Pacific Championship 2026 (đội VNUHCM.UIT.JobSeekers). Đây là những danh hiệu quý báu khẳng định trình độ lập trình đỉnh cao của sinh viên UIT, sánh vai với các đội tuyển từ các trường đại học hàng đầu châu Á.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
-        }
-    },
-    {
-        "text": "Ngành Kỹ thuật Phần mềm tại UIT: Đây là một trong những ngành được sinh viên lựa chọn nhiều nhất tại UIT. Chương trình đào tạo kỹ sư có khả năng thiết kế, xây dựng và bảo trì các hệ thống phần mềm phức tạp, quy mô lớn. Sinh viên học quy trình phát triển phần mềm (Software Development Lifecycle - SDLC), kiểm thử phần mềm, quản lý dự án, kiến trúc phần mềm và các công nghệ hiện đại như Microservices, Cloud Computing, DevOps. Ngành Kỹ thuật Phần mềm UIT gắn kết chặt chẽ với Khoa Công nghệ Phần mềm (CNPM) - nơi đào tạo chuyên sâu nhất về lĩnh vực này.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành Mạng máy tính và Truyền thông dữ liệu tại UIT: Đào tạo chuyên gia có khả năng thiết kế, triển khai và quản trị hệ thống mạng máy tính. Sinh viên học về giao thức mạng, hạ tầng viễn thông, mạng không dây 5G/6G, điện toán đám mây (Cloud Computing), IoT và SDN (Software Defined Networking). Trong bối cảnh chuyển đổi số toàn diện, kỹ sư mạng của UIT là nguồn nhân lực không thể thiếu cho các doanh nghiệp viễn thông và CNTT.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Đào tạo sau đại học tại UIT - Thạc sĩ và Tiến sĩ: UIT cung cấp 5 chương trình thạc sĩ: Khoa học Máy tính, Công nghệ Thông tin, Hệ thống Thông tin, An toàn Thông tin và Kỹ thuật Máy tính. Hai chương trình tiến sĩ: Khoa học Máy tính và Công nghệ Thông tin. Sinh viên sau đại học được tiếp cận môi trường nghiên cứu hiện đại, làm việc cùng các giáo sư có uy tín quốc tế, có cơ hội tham gia đề tài nghiên cứu được tài trợ và công bố bài báo trên tạp chí ISI/Scopus. Nhiều học viên thạc sĩ và nghiên cứu sinh của UIT đã nhận học bổng toàn phần từ các tổ chức quốc tế.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Thống kê tổng quan về UIT năm 2026: Hơn 40.000 cựu sinh viên đang làm việc tại Việt Nam và quốc tế. Hơn 200 giảng viên với 2 Giáo sư, 9 Phó Giáo sư, 77 Tiến sĩ, 158 Thạc sĩ. 12 ngành đào tạo đại học chính quy. 5 chương trình thạc sĩ, 2 chương trình tiến sĩ. Hơn 70 câu lạc bộ, đội và nhóm học thuật. 14 hecta khuôn viên hiện đại tại ĐHQG-HCM. Tỉ lệ 100% sinh viên có việc làm sau tốt nghiệp, trên 90% làm đúng chuyên ngành. Trường đứng trong top các trường đại học CNTT hàng đầu Việt Nam.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
-        }
-    },
-    {
-        "text": "Ngành Thương mại Điện tử tại UIT: Kết hợp kiến thức CNTT với kinh doanh số, đào tạo chuyên gia có khả năng xây dựng và vận hành nền tảng thương mại điện tử, phân tích dữ liệu kinh doanh, marketing số và quản lý chuỗi cung ứng số. Sinh viên học về lập trình web/app, hệ thống thanh toán trực tuyến, bảo mật giao dịch, UI/UX và chiến lược kinh doanh số. Trong bối cảnh thương mại điện tử Việt Nam tăng trưởng mạnh, sinh viên ngành này của UIT có rất nhiều cơ hội tại Shopee, Lazada, Tiki, VNG và các startup fintech.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành Truyền thông Đa phương tiện tại UIT: Kết hợp giữa kỹ thuật số và sáng tạo nghệ thuật, đào tạo chuyên gia có khả năng sản xuất nội dung số đa phương tiện: video, đồ họa, animation, game, ứng dụng thực tế ảo (VR/AR). Sinh viên học xử lý ảnh, xử lý âm thanh, thiết kế đồ họa kỹ thuật số, phát triển game và truyền thông kỹ thuật số. Đây là ngành duy nhất tại UIT kết hợp sâu giữa công nghệ và nghệ thuật sáng tạo.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "UIT và doanh nghiệp - Hệ sinh thái hợp tác: Trường ĐH CNTT xây dựng mối quan hệ chặt chẽ với hàng trăm doanh nghiệp công nghệ hàng đầu. Các hình thức hợp tác gồm: cung cấp đề tài nghiên cứu và thực tập, tổ chức hội thảo kỹ thuật, trao học bổng cho sinh viên xuất sắc, tuyển dụng trực tiếp tại campus, phối hợp xây dựng chương trình đào tạo phù hợp nhu cầu thực tế. Ngày hội việc làm (UIT Career Fair) được tổ chức hàng năm với sự tham gia của hàng trăm doanh nghiệp và thu hút hàng nghìn sinh viên. Nhiều công ty như Viettel, FPT, VNG, Samsung, Intel đã ký kết thỏa thuận hợp tác chiến lược với UIT.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành Hệ thống Thông tin tại UIT: Đào tạo chuyên gia phân tích, thiết kế và quản lý hệ thống thông tin cho tổ chức và doanh nghiệp. Sinh viên học về phân tích kinh doanh, quản trị cơ sở dữ liệu, ERP (Enterprise Resource Planning), quản lý dự án CNTT và chuyển đổi số. Đây là ngành giao thoa giữa CNTT và quản trị, phù hợp với sinh viên có định hướng kết hợp công nghệ với kinh doanh. Kỹ sư Hệ thống Thông tin của UIT được tuyển dụng nhiều tại các ngân hàng, tập đoàn tài chính và các tổ chức lớn đang trong quá trình chuyển đổi số.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành Khoa học Máy tính tại UIT: Là một trong những ngành truyền thống và uy tín nhất của UIT, Khoa học Máy tính (Computer Science) đào tạo chuyên gia có nền tảng lý thuyết vững chắc và khả năng nghiên cứu cao. Sinh viên học về thuật toán, cấu trúc dữ liệu, lý thuyết tính toán, trình biên dịch, hệ điều hành và các lĩnh vực nghiên cứu tiên tiến như AI, Machine Learning. Nhiều sinh viên Khoa học Máy tính UIT tiếp tục học lên thạc sĩ và tiến sĩ tại các trường danh tiếng trong và ngoài nước.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Ngành Kỹ thuật Máy tính tại UIT: Kết hợp giữa phần cứng và phần mềm, đào tạo kỹ sư có khả năng thiết kế và phát triển hệ thống nhúng (embedded systems), IoT, robot, vi xử lý và kiến trúc máy tính. Sinh viên học điện tử số, thiết kế vi mạch, lập trình nhúng, điều khiển tự động và kiến trúc hệ thống. Trong bối cảnh cách mạng công nghiệp 4.0, kỹ sư Kỹ thuật Máy tính UIT có cơ hội làm việc tại Samsung, LG, Intel, NVIDIA và các công ty bán dẫn toàn cầu đang đầu tư mạnh vào Việt Nam.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Trường Đại học Công nghệ Thông tin (UIT) được thành lập theo Quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ trên cơ sở Trung tâm Phát triển Công nghệ Thông tin. Sự ra đời của UIT đánh dấu việc hình thành một trường đại học chuyên biệt, tập trung hoàn toàn vào lĩnh vực CNTT & Truyền thông trong hệ thống Đại học Quốc gia TP.HCM, đáp ứng nhu cầu cấp bách về nhân lực chất lượng cao cho cuộc cách mạng công nghiệp tại Việt Nam.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Trong giai đoạn 2020-2024, UIT liên tục khẳng định vị thế quốc tế qua các bảng xếp hạng. Trường đạt chuẩn chất lượng giáo dục quốc tế AUN-QA (ASEAN University Network-Quality Assurance) cho nhiều chương trình đào tạo như Khoa học Máy tính, Hệ thống Thông tin, Kỹ thuật Phần mềm và Mạng máy tính. Điều này giúp bằng cấp của sinh viên UIT được công nhận rộng rãi tại khu vực Đông Nam Á và tạo thuận lợi cho việc trao đổi sinh viên quốc tế.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Về hoạt động nghiên cứu khoa học gần đây, UIT đã thành lập các nhóm nghiên cứu mạnh về Xử lý ngôn ngữ tự nhiên (NLP) và Thị giác máy tính. Giai đoạn 2021-2025, số lượng công bố quốc tế trên các tạp chí thuộc danh mục Q1, Q2 (Scopus/ISI) tăng trưởng hơn 30% mỗi năm. Trường cũng chủ trì nhiều hội thảo quốc tế lớn như KSE (Knowledge and Systems Engineering) và RIVF, thu hút hàng trăm nhà khoa học từ khắp nơi trên thế giới đến trao đổi tại cơ sở Thủ Đức.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Chương trình đào tạo từ xa qua mạng của UIT (UIT-Onl) trong 5 năm gần đây đã có sự bứt phá mạnh mẽ, đặc biệt là sau đại dịch COVID-19. Với hệ thống LMS (Learning Management System) hiện đại, UIT cung cấp các khóa học cử nhân CNTT chất lượng cao cho người học trên khắp cả nước và cả người Việt Nam đang làm việc tại nước ngoài. Đây là minh chứng cho định hướng 'Đại học số' mà nhà trường đang theo đuổi.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Hoạt động kết nối doanh nghiệp là điểm sáng của UIT trong những năm gần đây. Hàng năm, 'Ngày hội việc làm UIT' (UIT Career Day) thu hút hơn 50 doanh nghiệp công nghệ hàng đầu như FPT Software, VNG, KMS Technology, NAB Innovation Centre Vietnam tham gia. Tỷ lệ sinh viên có việc làm trước khi nhận bằng tốt nghiệp tại một số ngành như Kỹ thuật Phần mềm, An toàn Thông tin thường xuyên đạt mức trên 95%.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Năm 2025, UIT tiếp tục đẩy mạnh mô hình đào tạo 'Co-op' (Hợp tác giáo dục giữa nhà trường và doanh nghiệp). Sinh viên từ năm 3 sẽ có cơ hội thực tập dài hạn từ 6 tháng đến 1 năm tại doanh nghiệp và được tính điểm tín chỉ tương đương các môn học chuyên ngành. Mô hình này giúp rút ngắn khoảng cách giữa lý thuyết và thực tiễn, giúp sinh viên UIT có kinh nghiệm thực chiến ngay khi còn ngồi trên ghế nhà trường.",
-        "metadata": {
-        }
-    },
-    {
-        "text": "Năm 2026, Trường Đại học Công nghệ Thông tin (UIT) ghi dấu ấn quan trọng khi có thêm 05 chương trình đào tạo đạt chuẩn kiểm định quốc tế ASIIN (Đức). Các chương trình mới được công nhận bao gồm: Cử nhân Khoa học Dữ liệu, Cử nhân Công nghệ Thông tin, Cử nhân Kỹ thuật Phần mềm, Cử nhân Kỹ thuật Máy tính và Thạc sĩ Công nghệ Thông tin. Kết quả này nâng tổng số chương trình đào tạo đạt chuẩn ASIIN của trường lên 12 chương trình.",
-        "metadata": {
-            "url": "https://vnuhcm.edu.vn/bai-viet/truong-dh-cong-nghe-thong-tin-khang-dinh-chat-luong-dao-tao-voi-12-chuong-trinh-dat-kiem-dinh-asiin"
-        }
-    },
-    {
-        "text": "Trong giai đoạn 2024 - 2025, UIT đã liên tục đạt các chứng nhận kiểm định ASIIN cho nhiều ngành trọng điểm. Cụ thể, năm 2024 gồm các chương trình: Cử nhân Hệ thống Thông tin, Cử nhân Thương mại điện tử, Thạc sĩ Hệ thống Thông tin. Năm 2025 tiếp nối với: Cử nhân Khoa học Máy tính, Thạc sĩ Khoa học Máy tính, Cử nhân Mạng máy tính và Truyền thông dữ liệu, Thạc sĩ An toàn Thông tin.",
-        "metadata": {
-            "url": "https://vnuhcm.edu.vn/bai-viet/truong-dh-cong-nghe-thong-tin-khang-dinh-chat-luong-dao-tao-voi-12-chuong-trinh-dat-kiem-dinh-asiin"
-        }
-    },
-    {
-        "text": "ASIIN là tổ chức kiểm định uy tín của Đức với các tiêu chuẩn khắt khe về chuẩn đầu ra, cấu trúc chương trình, đội ngũ giảng viên và cơ sở vật chất. Việc UIT sở hữu hệ sinh thái 12 chương trình đạt chuẩn quốc tế ASIIN từ bậc đại học đến sau đại học khẳng định cam kết của nhà trường trong việc liên tục cải tiến chất lượng và hội nhập giáo dục toàn cầu theo chiến lược 'Vươn tầm quốc tế'.",
-        "metadata": {
-            "url": "https://vnuhcm.edu.vn/bai-viet/truong-dh-cong-nghe-thong-tin-khang-dinh-chat-luong-dao-tao-voi-12-chuong-trinh-dat-kiem-dinh-asiin"
-        }
-    },
-    {
-        "text": "Thành công của các chương trình đào tạo đạt chuẩn ASIIN tại UIT là kết quả từ sự nỗ lực của đội ngũ giảng viên, sinh viên và cựu sinh viên. Đây là nền tảng để trường mở rộng hợp tác quốc tế, khẳng định uy tín học thuật và vị thế của một trường đại học hàng đầu trong lĩnh vực Công nghệ thông tin trên bản đồ giáo dục thế giới.",
-        "metadata": {
-            "url": "https://vnuhcm.edu.vn/bai-viet/truong-dh-cong-nghe-thong-tin-khang-dinh-chat-luong-dao-tao-voi-12-chuong-trinh-dat-kiem-dinh-asiin"
-        }
-    },
-    {
-        "text": "UIT xây dựng hệ sinh thái hợp tác doanh nghiệp toàn diện nhằm gắn kết đào tạo với thực tiễn. Năm 2025, trường tạo bước đột phá khi phối hợp với VNG tổ chức môn học 'Phát triển Kỹ năng Lập trình Game ứng dụng trong thực tế' ngay tại VNG Campus. Mô hình 'học như làm' này giúp sinh viên trải nghiệm trực tiếp văn hóa doanh nghiệp và rèn luyện tư duy nghề nghiệp thực tế.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
-        }
-    },
-    {
-        "text": "Trong năm 2025, UIT tăng cường ký kết hợp tác với các tập đoàn lớn như CT Group để phát triển nguồn nhân lực chất lượng cao. Thỏa thuận tập trung vào việc xây dựng chương trình đào tạo sát với nhu cầu thị trường, tổ chức thực tập, tham quan doanh nghiệp và tạo điều kiện cho sinh viên tham gia giải quyết các bài toán công nghệ thực tế của doanh nghiệp.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
-        }
-    },
-    {
-        "text": "Khoa Hệ thống Thông tin tại UIT phối hợp cùng Axon Active Việt Nam tổ chức khóa học 'Triển khai Dự án IT với SCRUM'. Khóa học giúp sinh viên trực tiếp trải nghiệm quy trình quản lý dự án phần mềm theo phương pháp Scrum trong môi trường thực tế, nâng cao khả năng thích ứng và tư duy làm việc chuyên nghiệp ngay từ khi còn đi học.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
-        }
-    },
-    {
-        "text": "UIT thường xuyên tổ chức các chương trình tham quan và trải nghiệm thực tế tại các doanh nghiệp công nghệ lớn như VNG, KMS Technology, NAB Vietnam... Hoạt động này giúp sinh viên quan sát quy trình vận hành chuyên nghiệp, giao lưu với các chuyên gia và cựu sinh viên, từ đó nắm bắt yêu cầu kỹ năng và tiêu chuẩn tuyển dụng của thị trường lao động.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
-        }
-    },
-    {
-        "text": "Ngày hội việc làm 'UIT Career Day' và 'UIT Job Fair' là cầu nối quan trọng giữa nhà trường và doanh nghiệp. Sự kiện thu hút nhiều đối tác lớn như ELCA, KMS Technology, SAP, Bosch, Endava... mang đến hàng ngàn cơ hội thực tập và việc làm, giúp sinh viên tiếp cận sớm với xu hướng thị trường lao động trong lĩnh vực CNTT.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
-        }
-    },
-    {
-        "text": "Ngày 10/04/2026, UIT và Viện Quantum AI & Cyber Security (QACI) thuộc Tập đoàn FPT đã ký kết Biên bản ghi nhớ hợp tác (MOU) chiến lược. Sự kiện này tập trung vào việc thúc đẩy đào tạo và nghiên cứu trong ba trụ cột công nghệ mũi nhọn: Trí tuệ nhân tạo (AI), Công nghệ lượng tử (Quantum Computing) và An ninh mạng (Cyber Security).",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/uit-va-qaci-fpt-ky-ket-hop-tac-chien-luoc-phat-trien-cac-linh-vuc-cong-nghe-mui-nhon"
-        }
-    },
-    {
-        "text": "Hợp tác giữa UIT và QACI hướng đến việc giải quyết các bài toán thực tế từ doanh nghiệp theo các mốc thời gian ngắn và trung hạn. Hai bên cam kết phối hợp nguồn lực nội tại cùng mạng lưới chuyên gia quốc tế để tạo ra những giá trị thực tiễn cho hệ sinh thái công nghệ Việt Nam, thay vì chỉ dừng lại ở các nghiên cứu lý thuyết riêng lẻ.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/uit-va-qaci-fpt-ky-ket-hop-tac-chien-luoc-phat-trien-cac-linh-vuc-cong-nghe-mui-nhon"
-        }
-    },
-    {
-        "text": "Trong thỏa thuận hợp tác với FPT QACI, UIT chú trọng phát triển nguồn nhân lực chất lượng cao, đặc biệt là đào tạo bậc sau đại học. Mục tiêu là xây dựng đội ngũ kỹ sư và chuyên gia trẻ có năng lực tham gia trực tiếp vào các hoạt động nghiên cứu phát triển (R&D) và sản xuất các sản phẩm công nghệ lõi trong kỷ nguyên số.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/uit-va-qaci-fpt-ky-ket-hop-tac-chien-luoc-phat-trien-cac-linh-vuc-cong-nghe-mui-nhon"
-        }
-    },
-    {
-        "text": "Viện Quantum AI & Cyber Security (QACI) - đối tác chiến lược của UIT - là đơn vị thuộc Tập đoàn FPT chuyên cung cấp các giải pháp nghiên cứu ứng dụng. Viện tập trung vào việc phát triển các công nghệ lõi và đào tạo nhân lực chuyên sâu nhằm phục vụ nhu cầu phát triển dài hạn của doanh nghiệp và sự vươn mình của khoa học công nghệ Việt Nam.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/uit-va-qaci-fpt-ky-ket-hop-tac-chien-luoc-phat-trien-cac-linh-vuc-cong-nghe-mui-nhon"
-        }
-    },
-    {
-        "text": "Sáng ngày 22/07/2011, Trường Đại học Công nghệ Thông tin (UIT) đã long trọng tổ chức Lễ kỷ niệm 5 năm thành lập (2006 – 2011). Đây là cột mốc quan trọng đánh dấu giai đoạn hình thành và đặt nền móng vững chắc cho một trường đại học chuyên biệt về CNTT&TT trong hệ thống Đại học Quốc gia Thành phố Hồ Chí Minh.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
-        }
-    },
-    {
-        "text": "Tại lễ kỷ niệm 5 năm thành lập, UIT đã trao bằng tốt nghiệp đợt 1 cho 247 sinh viên khóa đầu tiên (khóa 2006). Kết quả tốt nghiệp đạt tỉ lệ ấn tượng với 7,7% sinh viên loại Giỏi và 60,7% loại Khá, khẳng định chất lượng đào tạo ngay từ những ngày đầu thành lập của nhà trường.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
-        }
-    },
-    {
-        "text": "Sau 5 năm hoạt động (2006-2011), UIT đã kiện toàn bộ máy tổ chức gồm 07 phòng chức năng, 05 khoa chuyên ngành, 01 phòng thí nghiệm cấp trường và 06 trung tâm. Đội ngũ nhân sự phát triển lên 189 cán bộ công chức, trong đó 60% giảng viên có trình độ sau đại học, được đào tạo từ các quốc gia tiên tiến như Hoa Kỳ, Úc, Nhật, Pháp, Hàn Quốc.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
-        }
-    },
-    {
-        "text": "Trong giai đoạn đầu thành lập, UIT đã xác lập định hướng nghiên cứu khoa học là nhiệm vụ trọng tâm, tập trung vào các ứng dụng thiết thực và chuyển giao công nghệ. Nhà trường cũng thiết lập quan hệ hợp tác quốc tế sâu rộng với các viện, trường đại học tại Mỹ, Nhật Bản, Trung Quốc nhằm nâng cao năng lực chuyên môn cho cán bộ và sinh viên.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
-        }
-    },
-    {
-        "text": "Trong giai đoạn đầu thành lập (2006), Nhà giáo ưu tú - GS. TSKH. Hoàng Văn Kiếm được bổ nhiệm làm Hiệu trưởng đầu tiên của Trường Đại học Công nghệ Thông tin. Cùng sát cánh trong Ban Giám hiệu thời kỳ này còn có PGS. TS. Đỗ Phúc, PGS. TS. Trần Vĩnh Phước và TS. Dương Tôn Đảm. Đây là đội ngũ lãnh đạo then chốt đã đặt ra những định hướng chiến lược đầu tiên cho sự phát triển của nhà trường.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
-        }
-    },
-    {
-        "text": "GS. TSKH. Hoàng Văn Kiếm, Hiệu trưởng đầu tiên của UIT, là người có công lớn trong việc xây dựng đội ngũ giảng viên nhiệt tình, giàu kinh nghiệm và thiết lập hệ thống 05 khoa chuyên ngành CNTT đầu tiên. Dưới sự dẫn dắt của Thầy, UIT đã nhanh chóng khẳng định vị thế là trường đại học đầu tiên trên cả nước tập trung đào tạo nguồn nhân lực CNTT chất lượng cao theo mô hình hiện đại.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
-        }
-    },
-    {
-        "text": "Ngày 08/06/2016, Trường Đại học Công nghệ Thông tin (UIT) đã long trọng tổ chức Lễ kỷ niệm 10 năm thành lập và vinh dự đón nhận Huân chương Lao động hạng Ba của Chủ tịch nước. Đây là sự ghi nhận to lớn cho những nỗ lực bứt phá của nhà trường trong việc xây dựng một cơ sở đào tạo công lập chuyên sâu về CNTT duy nhất tại Việt Nam.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
-        }
-    },
-    {
-        "text": "Trong giai đoạn kỷ niệm 10 năm, PGS. TS. Dương Anh Đức giữ vai trò Hiệu trưởng nhà trường. Ông nhấn mạnh UIT đã tạo nên những 'điểm son' như: trường đầu tiên và duy nhất thí điểm đào tạo thạc sĩ qua mạng, nơi đầu tiên đào tạo ngành An toàn Thông tin và là cơ sở đào tạo CNTT có số lượng thí sinh dự tuyển hàng đầu cả nước.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
-        }
-    },
-    {
-        "text": "Tính đến năm 2016, sau một thập kỷ hình thành, UIT đã đào tạo hơn 2.500 cử nhân và kỹ sư chính quy, 459 thạc sĩ và 18.000 cử nhân hệ từ xa. Nhà trường duy trì tỷ lệ 100% sinh viên tốt nghiệp có việc làm, với 90% làm đúng chuyên ngành, khẳng định uy tín và chất lượng đào tạo gắn liền với nhu cầu thực tiễn của xã hội.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
-        }
-    },
-    {
-        "text": "Về nghiên cứu khoa học, trong 10 năm đầu (2006-2016), UIT đã chủ trì 156 đề tài các cấp với hơn 100 công bố khoa học mỗi năm trên các tạp chí quốc tế và hội thảo chuyên ngành. Trường cũng là đơn vị tiên phong ứng dụng hệ thống Moodle trong giảng dạy trực tuyến, tạo môi trường học tập hiện đại cho hơn 4.200 sinh viên tại thời điểm đó.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
-        }
-    },
-    {
-        "text": "Dấu ấn cộng đồng của sinh viên UIT giai đoạn này gắn liền với chương trình 'Máy tính cũ - Tri thức mới' được khởi xướng từ năm 2008. Bên cạnh đó, sinh viên trường liên tục gặt hái giải thưởng cao tại các kỳ thi học thuật như Robocon, Olympic Tin học và Mastering IT, thể hiện bản sắc năng động và giỏi chuyên môn.",
-        "metadata": {
-            "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
-        }
+  {
+    "text": "Trường Đại học Công nghệ Thông tin (ĐH CNTT), Đại học Quốc gia Thành phố Hồ Chí Minh (ĐHQG-HCM) là trường đại học công lập đào tạo về công nghệ thông tin và truyền thông (CNTT&TT) được thành lập theo quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ. Là trường thành viên của ĐHQG-HCM, trường ĐH CNTT có nhiệm vụ đào tạo nguồn nhân lực công nghệ thông tin chất lượng cao, góp phần tích cực vào sự phát triển của nền công nghiệp công nghệ thông tin Việt Nam, đồng thời tiến hành nghiên cứu khoa học và chuyển giao công nghệ thông tin tiên tiến.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
     }
+  },
+  {
+    "text": " Trường Đại học Công nghệ Thông tin (ĐH CNTT), ĐHQG-HCM là trường Đại học công lập chuyên ngành CNTT được thành lập theo quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ trên cơ sở Trung tâm Phát triển Công nghệ Thông tin. Trường khai giảng năm học đầu tiên vào tháng 10/2006.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/gioi-thieu-chung"
+    }
+  },
+  {
+    "text": "Sau hơn 10 năm xây dựng và phát triển, hiện trường ĐH CNTT sở hữu cơ sở vật chất gồm khu học tập, nghiên cứu và làm việc được đầu tư xây dựng khang trang, hiện đại với tổng diện tích trên 14 hecta trong khuôn viên khu đô thị ĐHQG-HCM.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
+    }
+  },
+  {
+    "text": "Trường ĐH CNTT có triết lý giáo dục là \"Toàn diện, sáng tạo, phụng sự\", đây cũng là giá trị cốt lõi trong vận hành và phát triển nhà trường, xác lập vị trí là trường ĐH hàng đầu trong lĩnh vực CNTT tại Việt Nam, là nơi đào tạo sinh viên phát triển toàn diện cả về kiến thức, kỹ năng chuyên môn lẫn thái độ sống tích cực phục vụ cộng đồng, năng động - bản lĩnh - tự tin hội nhập với cộng đồng quốc tế.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
+    }
+  },
+  {
+    "text": "Đội ngũ giảng viên trường ĐH CNTT với đại đa số có trình độ sau đại học là nguồn nhân lực cốt lõi thúc đẩy quá trình sản sinh và chuyển giao tri thức. Tính đến nay, số lượng giảng viên trình độ sau đại học có 2 Giáo sư, 9 Phó Giáo sư, 77 Tiến sĩ và 158 Thạc sĩ. Đa số cán bộ giảng dạy của Trường tốt nghiệp từ các trường, viện uy tín trong nước và các nước phát triển trên thế giới.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
+    }
+  },
+  {
+    "text": "Trường có 12 ngành đào tạo hệ chính quy: Công nghệ Thông tin, Hệ thống Thông tin, Khoa học Máy tính, Kỹ thuật Máy tính, Kỹ thuật Phần mềm, Mạng máy tính và Truyền thông dữ liệu, An toàn Thông tin, Thương mại Điện tử, Khoa học Dữ liệu, Trí tuệ Nhân tạo, Thiết kế Vi mạch, Truyền thông Đa phương tiện. Trường cũng đào tạo các chương trình đặc biệt như: tài năng, tiên tiến và chương trình Việt - Nhật.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
+    }
+  },
+  {
+    "text": "Ở bậc đào tạo sau đại học, trường có 05 chương trình đào tạo thạc sĩ (ngành Khoa học Máy tính, ngành Công nghệ Thông tin, ngành Hệ thống Thông tin, ngành An toàn Thông tin và ngành Kỹ thuật Máy tính) và 02 chương trình đào tạo trình độ tiến sĩ (ngành Khoa học Máy tính và Công nghệ Thông tin).",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
+    }
+  },
+  {
+    "text": "Các hướng nghiên cứu chủ lực của trường ĐH CNTT thuộc lĩnh vực An toàn thông tin, Internet vạn vật, Trí tuệ nhân tạo, Khoa học dữ liệu và Thiết kế vi mạch. Ngoài ra còn có các hướng nghiên cứu như Thương mại điện tử, Công nghệ tri thức, Xử lý đa phương tiện, Hệ thống thông tin, Kỹ thuật phần mềm.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
+    }
+  },
+  {
+    "text": "Trường ĐH CNTT tự hào có 100% sinh viên tốt nghiệp có việc làm. Trong đó có trên 90% sinh viên tốt nghiệp có việc làm đúng với chuyên ngành được đào tạo nhờ vào sự tăng cường đầu tư cơ sở vật chất, sự tận tâm của giảng viên cùng sự hỗ trợ của các doanh nghiệp, tổ chức.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
+    }
+  },
+  {
+    "text": "Thông tin quy hoạch trường ĐH CNTT - ĐHQG-HCM: Vị trí tại Khu phố 6, Phường Linh Trung, Quận Thủ Đức, TP.Hồ Chí Minh. Diện tích khu quy hoạch: 133,900 m2. Phía Đông giáp trường Đại học An ninh; Phía Nam giáp Xa lộ Hà Nội; Phía Tây giáp Khu CNPM giai đoạn 2; Phía Bắc giáp trường Đại học KH&XHNV.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/thong-tin-quy-hoach-truong-dh-cntt-dhqg-hcm"
+    }
+  },
+  {
+    "text": "Tầm nhìn: Trường Đại học Công nghệ Thông tin trở thành trường đại học tốp đầu về Công nghệ thông tin - Truyền thông ở khu vực châu Á. Sứ mạng: Đào tạo nguồn nhân lực chất lượng cao, tiên phong trong nghiên cứu khoa học, đổi mới sáng tạo và chuyển giao công nghệ.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tam-nhin-su-mang-va-gia-tri-cot-loi"
+    }
+  },
+  {
+    "text": "Giá trị cốt lõi của Trường ĐH CNTT bao gồm: 1. Toàn diện (Phát triển người học toàn diện). 2. Sáng tạo (Đề cao sự tìm tòi, đổi mới). 3. Tự do học thuật. 4. Chuyên nghiệp (Môi trường học tập và làm việc hiệu quả). 5. Phục vụ cộng đồng (Đóng góp vào sự phát triển chung của xã hội).",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tam-nhin-su-mang-va-gia-tri-cot-loi"
+    }
+  },
+  {
+    "text": "Nhận diện thương hiệu: Tên tiếng Việt là Trường Đại Học Công Nghệ Thông Tin. Tên tiếng Anh là University of Information Technology. Tên viết tắt là UIT.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/nhan-dien-thuong-hieu"
+    }
+  },
+  {
+    "text": "Thông tin liên hệ Trường Đại học Công nghệ Thông tin - ĐHQG-HCM: Địa chỉ tại Khu phố 34, Phường Linh Xuân, Thành phố Hồ Chí Minh. Điện thoại: (028) 372 52002. Fax: (028) 372 52148. Email: info@uit.edu.vn. Website: https://www.uit.edu.vn",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/lien-he"
+    }
+  },
+  {
+    "text": "Bảng vàng thành tích sinh viên trường Đại học Công nghệ Thông tin (UIT) năm 2026: Vào tháng 04/2026, UIT tỏa sáng tại kỳ thi Olympic Toán sinh viên toàn quốc. Trong tháng 03/2026, sinh viên UIT xuất sắc đạt Giải Nhất quốc tế tại cuộc thi Capture The Intruder 2026; đồng thời đội tuyển VNUHCM.UIT.JobSeekers cũng đã giành được Huy chương Đồng tại kỳ thi ICPC Asia Pacific Championship 2026.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
+    }
+  },
+  {
+    "text": "Bảng vàng thành tích sinh viên UIT năm 2025 (Từ tháng 04 đến tháng 06): Tháng 06/2025, UIT đạt giải Nhất cuộc thi Thiết kế, Sáng tạo sản phẩm, công nghệ dành cho người khuyết tật; sinh viên Âu Trường Giang giành giải Nhất vòng chung kết cuộc thi Sáng tạo trẻ 'Giao thông xanh' lần 8; sinh viên Phan Thanh Tuấn (KTMT 2021) đạt giải Nhì tại Hội thi Sáng tạo Kỹ thuật TP.HCM lần thứ 28. Trước đó, tháng 05/2025, sinh viên UIT đạt giải tại vòng Quốc gia Olympic Vi Điện Tử Quốc Tế (AMO 2025-UIT). Tháng 04/2025, đội Wanna.W1n giải Nhất Cuộc thi quốc tế M*CTF-International và UIT giành giải cao tại Olympic Toán học sinh viên và học sinh lần thứ 31.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
+    }
+  },
+  {
+    "text": "Bảng vàng thành tích sinh viên UIT đầu năm 2025: Tháng 03/2025, Sinh viên Tạ Quang Hưng xuất sắc giành Giải Ba Cuộc thi 'Tuổi trẻ học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh' do Bộ Giáo dục và Đào tạo tổ chức. Tháng 01/2025, Sinh viên UIT phối hợp cùng Viện Thông tin Quốc gia Nhật Bản đã giành giải Nhất tại cuộc thi VBS 2025.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
+    }
+  },
+  {
+    "text": "Bảng vàng thành tích sinh viên UIT cuối năm 2024: Tháng 12/2024, Đội tuyển UIT liên tiếp giành giải Nhất ở bảng Student cuộc thi ASEAN Cyber Shield; huy chương vàng tại ICPC Asia Regional Hanoi; sinh viên Đỗ Anh Khoa vô địch Chuyên tin OLP'24; ngoài ra Đội tuyển UIT còn xuất sắc đạt cả giải Nhất và giải Nhì tại Hội thi AI-Challenge TP. Hồ Chí Minh.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
+    }
+  },
+  {
+    "text": "Bảng vàng thành tích sinh viên UIT quý 4 năm 2024 về An toàn thông tin: Tháng 11/2024, Đội tuyển UIT giành giải Nhất ở bảng General cuộc thi ASEAN Cyber Shield; đặc biệt có 3 sinh viên góp mặt giúp Việt Nam dẫn đầu thử thách Flare-On 11. Tháng 10/2024, một sinh viên UIT trở thành người Việt Nam đầu tiên và thứ 8 thế giới hoàn thành tất cả các thử thách tại Flare-On 11; bên cạnh đó UIT cũng giành giải Nhất và giải Ba tại cuộc thi An toàn và Bảo mật Thông tin toàn quốc CIS 2024.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
+    }
+  },
+  {
+    "text": "Bảng vàng thành tích sinh viên UIT đầu và giữa năm 2024: Tháng 06/2024, trường tuyên dương sinh viên đạt thành tích tại kỳ thi Olympic Toán toàn quốc. Tháng 03/2024, các sinh viên Lê Khắc Trung Nam, Hồ Trung Kiên, Lê Xuân Hoàng và Võ Nguyên Chương đã đạt thành tích cao tại cuộc thi Olympic Mật mã học Quốc tế Nsucrypto 2023. Trước đó vào tháng 01/2024, sinh viên UIT đạt Giải 3 tại cuộc thi Data For Life 2023.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
+    }
+  },
+  {
+    "text": "Năm 2006 - Khởi nguyên của UIT: Trường Đại học Công nghệ Thông tin chính thức được thành lập theo Quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ. Khóa sinh viên đầu tiên khai giảng vào tháng 10/2006 với khoảng 500 sinh viên theo học 5 chuyên ngành: Khoa học Máy tính, Kỹ thuật Máy tính, Công nghệ Phần mềm, Mạng máy tính và Hệ thống Thông tin. Hiệu trưởng đầu tiên của Trường là GS. Hoàng Văn Kiếm - người đã đặt nền móng vững chắc cho sự phát triển của UIT.",
+    "metadata": {}
+  },
+  {
+    "text": "Giai đoạn 2006-2011 - Xây dựng nền móng: Trong 5 năm đầu tiên, Trường ĐH CNTT đã xây dựng được 7 phòng chức năng, 5 khoa chuyên ngành, 2 bộ môn, 1 phòng thí nghiệm cấp trường và 6 trung tâm. Đội ngũ cán bộ giảng dạy tăng lên 129 người, trong đó 60% có trình độ trên đại học. Đây là giai đoạn đặt nền tảng vật chất và nhân lực quan trọng cho sự phát triển vượt bậc của Trường sau này.",
+    "metadata": {}
+  },
+  {
+    "text": "Năm 2010 - Mở đường: Khóa kỹ sư đầu tiên của Trường ĐH CNTT chính thức tốt nghiệp và ra trường. Đây là thế hệ sinh viên tiên phong - những người đã theo học từ những ngày đầu tiên của Trường, vượt qua hành trình 4 năm đầy thử thách để mang về những tấm bằng kỹ sư đầu tiên mang tên UIT. Họ rời giảng đường mang theo niềm tin vào tương lai và những dòng code khởi đầu cho sự nghiệp xây dựng ngành CNTT Việt Nam.",
+    "metadata": {}
+  },
+  {
+    "text": "Năm 2014-2016 - Bứt phá với hệ thống phòng lab chuyên sâu: Phòng Thí nghiệm An toàn Thông tin (UIT InSecLab) chính thức được thành lập theo Quyết định 19/QĐ-ĐHCNTT-TCHC ngày 19/01/2016, với sự hỗ trợ từ Project-99 của Chính phủ Việt Nam. InSecLab được trang bị hệ thống mạng an toàn chuyên biệt cho thực nghiệm An toàn Thông tin, đặc biệt phục vụ luyện tập CTF (Capture The Flag). Cùng thời gian này, phòng lab Trí tuệ Nhân tạo và các lab chuyên ngành khác lần lượt hình thành, tạo môi trường nghiên cứu đẳng cấp cho sinh viên và giảng viên.",
+    "metadata": {}
+  },
+  {
+    "text": "Năm 2018 - Vươn xa, đặt dấu chân trên bản đồ thế giới: Sinh viên UIT lần đầu tiên giành được huy chương tại kỳ thi lập trình ICPC (International Collegiate Programming Contest) cấp khu vực châu Á - một trong những cuộc thi lập trình danh giá nhất thế giới. Bên cạnh đó, các đội tuyển An toàn Thông tin của UIT liên tiếp đạt thành tích cao tại các cuộc thi CTF (Capture The Flag) quốc tế, khẳng định vị thế của UIT trên bản đồ an ninh mạng thế giới.",
+    "metadata": {}
+  },
+  {
+    "text": "Năm 2022 - Đổi mới toàn diện theo định hướng đại học số: Trường ĐH CNTT chính thức chuyển mình mạnh mẽ theo định hướng đại học số, tăng cường ứng dụng công nghệ trong mọi hoạt động giảng dạy và quản lý. Các phần mềm quản lý học tập, tài liệu số, lớp học trực tuyến được triển khai đồng bộ. Đồng thời, Trường tăng cường kết nối với doanh nghiệp công nghệ hàng đầu, mở rộng cơ hội thực tập và việc làm cho sinh viên. Định hướng đổi mới này đặt UIT vào vị thế tiên phong trong chuyển đổi số giáo dục đại học tại Việt Nam.",
+    "metadata": {}
+  },
+  {
+    "text": "Năm 2026 - Hai mươi năm, một hành trình: Năm 2026 đánh dấu tròn 20 năm kể từ ngày UIT được thành lập (2006-2026). Hai thập kỷ không chỉ là khoảng thời gian - đó là hành trình của hàng chục nghìn sinh viên đã học tập, trưởng thành và tỏa sáng trong ngành CNTT. Từ 500 sinh viên khóa đầu tiên đến hơn 40.000 cựu sinh viên đang làm việc tại Việt Nam và quốc tế, UIT đã thực sự trở thành cái nôi đào tạo nhân tài CNTT hàng đầu miền Nam. Năm 2026, Trường kỷ niệm dấu mốc lịch sử này với loạt sự kiện lớn, trong đó có lễ kỷ niệm 20 năm thành lập đầy tự hào.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành An toàn Thông tin tại UIT: Là một trong những thế mạnh nổi bật nhất của Trường, ngành An toàn Thông tin đào tạo chuyên gia bảo mật có khả năng phòng thủ và phân tích các mối đe dọa mạng. Sinh viên được học về mật mã học, bảo mật hệ thống, phân tích mã độc, kiểm thử xâm nhập (penetration testing), và ứng cứu sự cố. Với phòng lab InSecLab hiện đại và đội ngũ giảng viên giàu kinh nghiệm, sinh viên An toàn Thông tin UIT liên tục giành giải cao tại các cuộc thi CTF trong nước và quốc tế.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành Trí tuệ Nhân tạo (AI) tại UIT: Được mở từ năm 2023-2024, ngành Trí tuệ Nhân tạo đào tạo kỹ sư có khả năng thiết kế và triển khai các hệ thống AI thông minh. Chương trình gồm 128 tín chỉ trong 3.5 năm, bao gồm: kiến thức giáo dục chung (45 TC), kiến thức cơ sở ngành (57 TC), kiến thức chuyên ngành tự chọn (8 TC), kiến thức liên ngành tự chọn (8 TC) và tốt nghiệp (10 TC). UIT cũng là trường đầu tiên và duy nhất cung cấp chương trình học Trí tuệ Nhân tạo qua hệ thống đào tạo từ xa tại Việt Nam.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành Thiết kế Vi mạch tại UIT: Được mở từ năm 2024, ngành Thiết kế Vi mạch (hay còn gọi là thiết kế chip/IC Design) đào tạo kỹ sư có khả năng thiết kế vi điều khiển, System-on-Chip (SoC), xử lý tín hiệu vi điện tử và ứng dụng AI trong chip. Sinh viên được làm quen với các công cụ thiết kế chuyên nghiệp như Synopsys, Cadence, Siemens (Mentor Graphics) và Xilinx. Hai năm đầu, sinh viên học kiến thức nền về toán, khoa học, lập trình và linh kiện bán dẫn trước khi chuyên sâu vào thiết kế vi mạch.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành Khoa học Dữ liệu tại UIT: Được mở từ năm 2024, ngành Khoa học Dữ liệu (Data Science) trang bị cho sinh viên kỹ năng thu thập, xử lý, phân tích và trực quan hóa dữ liệu lớn để đưa ra quyết định thông minh. Sinh viên học về Machine Learning, Deep Learning, Big Data Analytics, Data Engineering và Business Intelligence. Với sự bùng nổ của dữ liệu trong kỷ nguyên số, kỹ sư Khoa học Dữ liệu của UIT được các doanh nghiệp hàng đầu săn đón ngay từ khi còn trên ghế nhà trường.",
+    "metadata": {}
+  },
+  {
+    "text": "Chương trình Việt - Nhật tại UIT: Đây là chương trình đào tạo đặc biệt kết hợp học chuyên ngành CNTT bằng tiếng Việt với việc học tiếng Nhật như ngoại ngữ thứ hai. Mục tiêu đào tạo kỹ sư CNTT đạt chuẩn ngôn ngữ JLPT N3 (tiếng Nhật), tạo cơ hội thực tập tại Nhật Bản hoặc làm việc tại các công ty Nhật Bản ở Việt Nam. Lớp học có quy mô nhỏ (20-40 sinh viên), giảng viên trình độ Thạc sĩ/Tiến sĩ, tạo môi trường học tập thân thiện và chuyên nghiệp. Đây là cầu nối giữa sinh viên Việt Nam với thị trường công nghệ Nhật Bản đang có nhu cầu tuyển dụng kỹ sư CNTT rất cao.",
+    "metadata": {}
+  },
+  {
+    "text": "Chương trình Tài năng và Tiên tiến tại UIT: Bên cạnh các ngành học thông thường, UIT còn có chương trình Tài năng dành cho sinh viên xuất sắc với nội dung đào tạo chuyên sâu, cường độ cao và cơ hội tham gia nghiên cứu khoa học từ sớm. Chương trình Tiên tiến được xây dựng theo chuẩn của các đại học quốc tế, toàn bộ tài liệu bằng tiếng Anh, giúp sinh viên có nền tảng vững chắc để học tập và làm việc trong môi trường quốc tế.",
+    "metadata": {}
+  },
+  {
+    "text": "Phòng Thí nghiệm An toàn Thông tin UIT (InSecLab): Được thành lập ngày 19/01/2016, InSecLab là trung tâm nghiên cứu và thực hành An toàn Thông tin hàng đầu tại UIT. Phòng lab được trang bị hệ thống mạng an toàn chuyên biệt, phục vụ nghiên cứu khoa học, đào tạo đại học và sau đại học, hợp tác quốc tế và chuyển giao công nghệ. Đặc biệt, InSecLab là nơi các đội tuyển CTF của UIT luyện tập, từ đó giành nhiều giải thưởng quốc tế danh giá. Phòng lab được hỗ trợ từ Project-99 của Chính phủ Việt Nam.",
+    "metadata": {
+      "url": "https://inseclab.uit.edu.vn"
+    }
+  },
+  {
+    "text": "Hệ thống phòng thí nghiệm và cơ sở vật chất của UIT: Ngoài InSecLab, Trường còn có nhiều phòng thí nghiệm hiện đại phục vụ nghiên cứu và thực hành: Phòng TN Truyền thông Đa phương tiện, Phòng TN Hệ thống Thông tin, Phòng TN Mạng máy tính, Phòng TN Cơ sở dữ liệu, và các phòng máy tính cấu hình cao phục vụ thực hành. Tổng diện tích khuôn viên trên 14 hecta với tổng diện tích xây dựng 93,750 m², vốn đầu tư 412 tỷ đồng. Hệ thống WiFi tốc độ cao phủ sóng toàn campus, phòng học trực tuyến và phòng học điện tử trang bị đầy đủ.",
+    "metadata": {}
+  },
+  {
+    "text": "Đời sống sinh viên tại UIT - Câu lạc bộ và hoạt động ngoại khóa: UIT có hơn 70 câu lạc bộ, đội và nhóm học thuật, xã hội và thể thao. Các CLB học thuật nổi bật gồm: CLB Lập trình, CLB An toàn Thông tin, WebDev Studios, Open English Club, Câu lạc bộ Tiếng Nhật UIT (Wakame), Books and Action Club. CLB xã hội có UIT Social Work Team chuyên làm từ thiện và cộng đồng. Thể thao có UIT Futsal Club (thành lập 2018). Tham gia CLB giúp sinh viên phát triển kỹ năng mềm như teamwork, giao tiếp, thuyết trình, lãnh đạo, tổ chức sự kiện - những kỹ năng thiết yếu cho nghề kỹ sư CNTT.",
+    "metadata": {}
+  },
+  {
+    "text": "Đời sống sinh viên tại UIT - Một ngày ở giảng đường: Khuôn viên UIT nằm trong khu đô thị ĐHQG-HCM, tạo thành một cộng đồng học thuật sôi động. Sinh viên có thể sống tại ký túc xá của ĐHQG-HCM ngay trong khuôn viên khu đô thị đại học với đầy đủ tiện nghi. Môi trường học tập hiện đại với wifi tốc độ cao, thư viện điện tử, phòng máy tính 24/7. Nhiều không gian học nhóm, café học thuật, sân thể thao đa năng. Sinh viên UIT được biết đến với tinh thần năng động, sáng tạo và đam mê công nghệ.",
+    "metadata": {}
+  },
+  {
+    "text": "Đời sống sinh viên UIT - Các cuộc thi và sự kiện lớn: Hàng năm, UIT tổ chức nhiều sự kiện lớn thu hút sinh viên: Đấu trường IT (cuộc thi lập trình toàn trường), UIT Hackathon, ngày hội CNTT, lễ khai giảng và tốt nghiệp hoành tráng. Sinh viên cũng tham gia tích cực các cuộc thi ngoài trường như ICPC, các cuộc thi CTF (Capture The Flag), Olympic Toán, Tin học toàn quốc. Ngoài ra còn có chương trình kết nối doanh nghiệp, ngày hội việc làm (career fair) giúp sinh viên tiếp cận nhà tuyển dụng ngay từ năm 3-4.",
+    "metadata": {}
+  },
+  {
+    "text": "Cựu sinh viên UIT - Những gương mặt tiêu biểu: UIT tự hào có hơn 40.000 cựu sinh viên đang làm việc trong ngành CNTT tại Việt Nam và nhiều quốc gia trên thế giới. Nhiều cựu sinh viên đã trở thành lãnh đạo cấp cao tại các tập đoàn công nghệ lớn như VNG, FPT, VNPT, Viettel Digital. Một số cựu sinh viên xuất sắc đã bảo vệ thành công luận án tiến sĩ tại các đại học danh tiếng như Đại học Chung-Ang (Hàn Quốc), Đại học Công nghệ Quốc gia Seoul. Tỉ lệ 100% sinh viên có việc làm ngay sau tốt nghiệp là minh chứng rõ nhất cho chất lượng đào tạo của UIT.",
+    "metadata": {
+      "url": "https://alumni.uit.edu.vn"
+    }
+  },
+  {
+    "text": "Cựu sinh viên UIT tiêu biểu - Câu chuyện thành công: Lê Mạnh Hùng (Khoa học Máy tính) sau khi tốt nghiệp UIT đã phát triển sự nghiệp qua FPT Telecom, VNG Corporation, HIIP và hiện là Senior Data Engineer tại ELSA Speak - startup EdTech nổi tiếng toàn cầu với 7 năm kinh nghiệm và chứng chỉ AWS. Nguyễn Trí Hải (Khoa học Máy tính) đã bảo vệ thành công luận án Tiến sĩ tại Đại học Chung-Ang (Hàn Quốc) và hiện công tác nghiên cứu tại Seoul National University of Science and Technology. Chế Quang Huy là sinh viên song ngành đầu tiên của UIT (Kỹ thuật Máy tính & Khoa học Máy tính), tốt nghiệp loại giỏi với điểm GPA 8.36.",
+    "metadata": {
+      "url": "https://alumni.uit.edu.vn"
+    }
+  },
+  {
+    "text": "Hợp tác quốc tế của UIT: Trường ĐH CNTT có quan hệ hợp tác rộng rãi với các trường đại học và tổ chức quốc tế từ Nhật Bản, Hàn Quốc, Mỹ, Vương quốc Anh, Đức và Úc. Hình thức hợp tác đa dạng: trao đổi giảng viên và sinh viên, phát triển chương trình đào tạo liên kết, tổ chức hội thảo/seminar khoa học quốc tế, phối hợp nghiên cứu và xuất bản bài báo khoa học. Chương trình Việt - Nhật là minh chứng tiêu biểu cho sự hợp tác thực chất, tạo cơ hội thực tập tại Nhật Bản cho sinh viên. Trường cũng tham chiếu chuẩn ABET 2021-2022 của Mỹ trong xây dựng chương trình đào tạo.",
+    "metadata": {}
+  },
+  {
+    "text": "Nghiên cứu khoa học tại UIT - Thành tựu và công bố: Trường ĐH CNTT có thành tích nghiên cứu khoa học ngày càng ấn tượng với số lượng bài báo quốc tế tăng đều hàng năm trên các tạp chí ISI/Scopus uy tín. Các hướng nghiên cứu mũi nhọn gồm: Xử lý ngôn ngữ tự nhiên (NLP), Thị giác máy tính (Computer Vision), An toàn mạng, IoT và Thiết kế vi mạch. Nhiều nhóm nghiên cứu của UIT được tài trợ từ Quỹ Khoa học Công nghệ Quốc gia (NAFOSTED) và các nguồn quốc tế. Giảng viên UIT thường xuyên được mời tham dự và báo cáo tại các hội nghị khoa học quốc tế hàng đầu.",
+    "metadata": {}
+  },
+  {
+    "text": "Giảng viên tiêu biểu của UIT: PGS.TS Cao Thanh Tình được trao danh hiệu 'Outstanding Educator' ghi nhận đóng góp xuất sắc trong giảng dạy và nghiên cứu. TS. Lê Kim Hùng nhận Giải thưởng Golden Earth Award for Science and Technology và danh hiệu 'Outstanding Young Face'. Các giảng viên Phạm Văn Hậu và Nguyễn Tấn Cầm nhận danh hiệu 'Lecturer of the Year'. Đội ngũ giảng viên UIT được đào tạo bài bản từ các đại học uy tín trong nước và quốc tế, nhiều người có kinh nghiệm thực tế tại doanh nghiệp trước khi trở thành giảng viên, giúp chương trình đào tạo luôn gắn với thực tiễn.",
+    "metadata": {}
+  },
+  {
+    "text": "UIT và tầm nhìn 10 năm tới (2026-2036): Trong giai đoạn tiếp theo, UIT hướng đến mục tiêu trở thành trường đại học CNTT tốp đầu khu vực châu Á, được xếp hạng trong các bảng xếp hạng đại học quốc tế danh tiếng. Chiến lược phát triển tập trung vào: (1) Mở rộng và cập nhật liên tục các ngành học theo xu hướng công nghệ mới (AI, Blockchain, Quantum Computing, Metaverse); (2) Tăng cường hợp tác công-tư với các tập đoàn công nghệ toàn cầu; (3) Xây dựng trung tâm nghiên cứu và đổi mới sáng tạo đẳng cấp quốc tế; (4) Phát triển hệ sinh thái khởi nghiệp (startup ecosystem) trong khuôn viên trường; (5) Đẩy mạnh đào tạo từ xa và học liệu mở (MOOC) để mở rộng tầm ảnh hưởng.",
+    "metadata": {}
+  },
+  {
+    "text": "Thành tích CTF (Capture The Flag) của UIT: UIT được cộng đồng an ninh mạng Việt Nam và quốc tế biết đến như 'cái nôi' đào tạo chuyên gia bảo mật qua các cuộc thi CTF. Các thành tích nổi bật: Giải Nhất ASEAN Cyber Shield 2024 (bảng General, giá trị 20.000 USD), Giải Nhất M*CTF International 2025 (đội Wanna.W1n), Giải Nhất Capture The Intruder 2026. Một sinh viên UIT trở thành người Việt Nam đầu tiên và thứ 8 thế giới hoàn thành tất cả thử thách Flare-On 11. Đội Sp33d_0f_T1m3 và O.W.C.A là những đội tuyển CTF tiêu biểu của UIT.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
+    }
+  },
+  {
+    "text": "Thành tích ICPC của UIT - Lập trình thi đấu: ICPC (International Collegiate Programming Contest) là cuộc thi lập trình đồng đội danh giá nhất thế giới cấp đại học. Sinh viên UIT liên tục tham dự và đạt thành tích ấn tượng: Huy chương Vàng ICPC Asia Regional Hanoi 2024, Huy chương Đồng ICPC Asia Pacific Championship 2026 (đội VNUHCM.UIT.JobSeekers). Đây là những danh hiệu quý báu khẳng định trình độ lập trình đỉnh cao của sinh viên UIT, sánh vai với các đội tuyển từ các trường đại học hàng đầu châu Á.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bang-vang-sinh-vien"
+    }
+  },
+  {
+    "text": "Ngành Kỹ thuật Phần mềm tại UIT: Đây là một trong những ngành được sinh viên lựa chọn nhiều nhất tại UIT. Chương trình đào tạo kỹ sư có khả năng thiết kế, xây dựng và bảo trì các hệ thống phần mềm phức tạp, quy mô lớn. Sinh viên học quy trình phát triển phần mềm (Software Development Lifecycle - SDLC), kiểm thử phần mềm, quản lý dự án, kiến trúc phần mềm và các công nghệ hiện đại như Microservices, Cloud Computing, DevOps. Ngành Kỹ thuật Phần mềm UIT gắn kết chặt chẽ với Khoa Công nghệ Phần mềm (CNPM) - nơi đào tạo chuyên sâu nhất về lĩnh vực này.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành Mạng máy tính và Truyền thông dữ liệu tại UIT: Đào tạo chuyên gia có khả năng thiết kế, triển khai và quản trị hệ thống mạng máy tính. Sinh viên học về giao thức mạng, hạ tầng viễn thông, mạng không dây 5G/6G, điện toán đám mây (Cloud Computing), IoT và SDN (Software Defined Networking). Trong bối cảnh chuyển đổi số toàn diện, kỹ sư mạng của UIT là nguồn nhân lực không thể thiếu cho các doanh nghiệp viễn thông và CNTT.",
+    "metadata": {}
+  },
+  {
+    "text": "Đào tạo sau đại học tại UIT - Thạc sĩ và Tiến sĩ: UIT cung cấp 5 chương trình thạc sĩ: Khoa học Máy tính, Công nghệ Thông tin, Hệ thống Thông tin, An toàn Thông tin và Kỹ thuật Máy tính. Hai chương trình tiến sĩ: Khoa học Máy tính và Công nghệ Thông tin. Sinh viên sau đại học được tiếp cận môi trường nghiên cứu hiện đại, làm việc cùng các giáo sư có uy tín quốc tế, có cơ hội tham gia đề tài nghiên cứu được tài trợ và công bố bài báo trên tạp chí ISI/Scopus. Nhiều học viên thạc sĩ và nghiên cứu sinh của UIT đã nhận học bổng toàn phần từ các tổ chức quốc tế.",
+    "metadata": {}
+  },
+  {
+    "text": "Thống kê tổng quan về UIT năm 2026: Hơn 40.000 cựu sinh viên đang làm việc tại Việt Nam và quốc tế. Hơn 200 giảng viên với 2 Giáo sư, 9 Phó Giáo sư, 77 Tiến sĩ, 158 Thạc sĩ. 12 ngành đào tạo đại học chính quy. 5 chương trình thạc sĩ, 2 chương trình tiến sĩ. Hơn 70 câu lạc bộ, đội và nhóm học thuật. 14 hecta khuôn viên hiện đại tại ĐHQG-HCM. Tỉ lệ 100% sinh viên có việc làm sau tốt nghiệp, trên 90% làm đúng chuyên ngành. Trường đứng trong top các trường đại học CNTT hàng đầu Việt Nam.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/tong-quan-ve-truong-dh-cong-nghe-thong-tin"
+    }
+  },
+  {
+    "text": "Ngành Thương mại Điện tử tại UIT: Kết hợp kiến thức CNTT với kinh doanh số, đào tạo chuyên gia có khả năng xây dựng và vận hành nền tảng thương mại điện tử, phân tích dữ liệu kinh doanh, marketing số và quản lý chuỗi cung ứng số. Sinh viên học về lập trình web/app, hệ thống thanh toán trực tuyến, bảo mật giao dịch, UI/UX và chiến lược kinh doanh số. Trong bối cảnh thương mại điện tử Việt Nam tăng trưởng mạnh, sinh viên ngành này của UIT có rất nhiều cơ hội tại Shopee, Lazada, Tiki, VNG và các startup fintech.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành Truyền thông Đa phương tiện tại UIT: Kết hợp giữa kỹ thuật số và sáng tạo nghệ thuật, đào tạo chuyên gia có khả năng sản xuất nội dung số đa phương tiện: video, đồ họa, animation, game, ứng dụng thực tế ảo (VR/AR). Sinh viên học xử lý ảnh, xử lý âm thanh, thiết kế đồ họa kỹ thuật số, phát triển game và truyền thông kỹ thuật số. Đây là ngành duy nhất tại UIT kết hợp sâu giữa công nghệ và nghệ thuật sáng tạo.",
+    "metadata": {}
+  },
+  {
+    "text": "UIT và doanh nghiệp - Hệ sinh thái hợp tác: Trường ĐH CNTT xây dựng mối quan hệ chặt chẽ với hàng trăm doanh nghiệp công nghệ hàng đầu. Các hình thức hợp tác gồm: cung cấp đề tài nghiên cứu và thực tập, tổ chức hội thảo kỹ thuật, trao học bổng cho sinh viên xuất sắc, tuyển dụng trực tiếp tại campus, phối hợp xây dựng chương trình đào tạo phù hợp nhu cầu thực tế. Ngày hội việc làm (UIT Career Fair) được tổ chức hàng năm với sự tham gia của hàng trăm doanh nghiệp và thu hút hàng nghìn sinh viên. Nhiều công ty như Viettel, FPT, VNG, Samsung, Intel đã ký kết thỏa thuận hợp tác chiến lược với UIT.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành Hệ thống Thông tin tại UIT: Đào tạo chuyên gia phân tích, thiết kế và quản lý hệ thống thông tin cho tổ chức và doanh nghiệp. Sinh viên học về phân tích kinh doanh, quản trị cơ sở dữ liệu, ERP (Enterprise Resource Planning), quản lý dự án CNTT và chuyển đổi số. Đây là ngành giao thoa giữa CNTT và quản trị, phù hợp với sinh viên có định hướng kết hợp công nghệ với kinh doanh. Kỹ sư Hệ thống Thông tin của UIT được tuyển dụng nhiều tại các ngân hàng, tập đoàn tài chính và các tổ chức lớn đang trong quá trình chuyển đổi số.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành Khoa học Máy tính tại UIT: Là một trong những ngành truyền thống và uy tín nhất của UIT, Khoa học Máy tính (Computer Science) đào tạo chuyên gia có nền tảng lý thuyết vững chắc và khả năng nghiên cứu cao. Sinh viên học về thuật toán, cấu trúc dữ liệu, lý thuyết tính toán, trình biên dịch, hệ điều hành và các lĩnh vực nghiên cứu tiên tiến như AI, Machine Learning. Nhiều sinh viên Khoa học Máy tính UIT tiếp tục học lên thạc sĩ và tiến sĩ tại các trường danh tiếng trong và ngoài nước.",
+    "metadata": {}
+  },
+  {
+    "text": "Ngành Kỹ thuật Máy tính tại UIT: Kết hợp giữa phần cứng và phần mềm, đào tạo kỹ sư có khả năng thiết kế và phát triển hệ thống nhúng (embedded systems), IoT, robot, vi xử lý và kiến trúc máy tính. Sinh viên học điện tử số, thiết kế vi mạch, lập trình nhúng, điều khiển tự động và kiến trúc hệ thống. Trong bối cảnh cách mạng công nghiệp 4.0, kỹ sư Kỹ thuật Máy tính UIT có cơ hội làm việc tại Samsung, LG, Intel, NVIDIA và các công ty bán dẫn toàn cầu đang đầu tư mạnh vào Việt Nam.",
+    "metadata": {}
+  },
+  {
+    "text": "Trường Đại học Công nghệ Thông tin (UIT) được thành lập theo Quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ trên cơ sở Trung tâm Phát triển Công nghệ Thông tin. Sự ra đời của UIT đánh dấu việc hình thành một trường đại học chuyên biệt, tập trung hoàn toàn vào lĩnh vực CNTT & Truyền thông trong hệ thống Đại học Quốc gia TP.HCM, đáp ứng nhu cầu cấp bách về nhân lực chất lượng cao cho cuộc cách mạng công nghiệp tại Việt Nam.",
+    "metadata": {}
+  },
+  {
+    "text": "Trong giai đoạn 2020-2024, UIT liên tục khẳng định vị thế quốc tế qua các bảng xếp hạng. Trường đạt chuẩn chất lượng giáo dục quốc tế AUN-QA (ASEAN University Network-Quality Assurance) cho nhiều chương trình đào tạo như Khoa học Máy tính, Hệ thống Thông tin, Kỹ thuật Phần mềm và Mạng máy tính. Điều này giúp bằng cấp của sinh viên UIT được công nhận rộng rãi tại khu vực Đông Nam Á và tạo thuận lợi cho việc trao đổi sinh viên quốc tế.",
+    "metadata": {}
+  },
+  {
+    "text": "Về hoạt động nghiên cứu khoa học gần đây, UIT đã thành lập các nhóm nghiên cứu mạnh về Xử lý ngôn ngữ tự nhiên (NLP) và Thị giác máy tính. Giai đoạn 2021-2025, số lượng công bố quốc tế trên các tạp chí thuộc danh mục Q1, Q2 (Scopus/ISI) tăng trưởng hơn 30% mỗi năm. Trường cũng chủ trì nhiều hội thảo quốc tế lớn như KSE (Knowledge and Systems Engineering) và RIVF, thu hút hàng trăm nhà khoa học từ khắp nơi trên thế giới đến trao đổi tại cơ sở Thủ Đức.",
+    "metadata": {}
+  },
+  {
+    "text": "Chương trình đào tạo từ xa qua mạng của UIT (UIT-Onl) trong 5 năm gần đây đã có sự bứt phá mạnh mẽ, đặc biệt là sau đại dịch COVID-19. Với hệ thống LMS (Learning Management System) hiện đại, UIT cung cấp các khóa học cử nhân CNTT chất lượng cao cho người học trên khắp cả nước và cả người Việt Nam đang làm việc tại nước ngoài. Đây là minh chứng cho định hướng 'Đại học số' mà nhà trường đang theo đuổi.",
+    "metadata": {}
+  },
+  {
+    "text": "Hoạt động kết nối doanh nghiệp là điểm sáng của UIT trong những năm gần đây. Hàng năm, 'Ngày hội việc làm UIT' (UIT Career Day) thu hút hơn 50 doanh nghiệp công nghệ hàng đầu như FPT Software, VNG, KMS Technology, NAB Innovation Centre Vietnam tham gia. Tỷ lệ sinh viên có việc làm trước khi nhận bằng tốt nghiệp tại một số ngành như Kỹ thuật Phần mềm, An toàn Thông tin thường xuyên đạt mức trên 95%.",
+    "metadata": {}
+  },
+  {
+    "text": "Năm 2025, UIT tiếp tục đẩy mạnh mô hình đào tạo 'Co-op' (Hợp tác giáo dục giữa nhà trường và doanh nghiệp). Sinh viên từ năm 3 sẽ có cơ hội thực tập dài hạn từ 6 tháng đến 1 năm tại doanh nghiệp và được tính điểm tín chỉ tương đương các môn học chuyên ngành. Mô hình này giúp rút ngắn khoảng cách giữa lý thuyết và thực tiễn, giúp sinh viên UIT có kinh nghiệm thực chiến ngay khi còn ngồi trên ghế nhà trường.",
+    "metadata": {}
+  },
+  {
+    "text": "Năm 2026, Trường Đại học Công nghệ Thông tin (UIT) ghi dấu ấn quan trọng khi có thêm 05 chương trình đào tạo đạt chuẩn kiểm định quốc tế ASIIN (Đức). Các chương trình mới được công nhận bao gồm: Cử nhân Khoa học Dữ liệu, Cử nhân Công nghệ Thông tin, Cử nhân Kỹ thuật Phần mềm, Cử nhân Kỹ thuật Máy tính và Thạc sĩ Công nghệ Thông tin. Kết quả này nâng tổng số chương trình đào tạo đạt chuẩn ASIIN của trường lên 12 chương trình.",
+    "metadata": {
+      "url": "https://vnuhcm.edu.vn/bai-viet/truong-dh-cong-nghe-thong-tin-khang-dinh-chat-luong-dao-tao-voi-12-chuong-trinh-dat-kiem-dinh-asiin"
+    }
+  },
+  {
+    "text": "Trong giai đoạn 2024 - 2025, UIT đã liên tục đạt các chứng nhận kiểm định ASIIN cho nhiều ngành trọng điểm. Cụ thể, năm 2024 gồm các chương trình: Cử nhân Hệ thống Thông tin, Cử nhân Thương mại điện tử, Thạc sĩ Hệ thống Thông tin. Năm 2025 tiếp nối với: Cử nhân Khoa học Máy tính, Thạc sĩ Khoa học Máy tính, Cử nhân Mạng máy tính và Truyền thông dữ liệu, Thạc sĩ An toàn Thông tin.",
+    "metadata": {
+      "url": "https://vnuhcm.edu.vn/bai-viet/truong-dh-cong-nghe-thong-tin-khang-dinh-chat-luong-dao-tao-voi-12-chuong-trinh-dat-kiem-dinh-asiin"
+    }
+  },
+  {
+    "text": "ASIIN là tổ chức kiểm định uy tín của Đức với các tiêu chuẩn khắt khe về chuẩn đầu ra, cấu trúc chương trình, đội ngũ giảng viên và cơ sở vật chất. Việc UIT sở hữu hệ sinh thái 12 chương trình đạt chuẩn quốc tế ASIIN từ bậc đại học đến sau đại học khẳng định cam kết của nhà trường trong việc liên tục cải tiến chất lượng và hội nhập giáo dục toàn cầu theo chiến lược 'Vươn tầm quốc tế'.",
+    "metadata": {
+      "url": "https://vnuhcm.edu.vn/bai-viet/truong-dh-cong-nghe-thong-tin-khang-dinh-chat-luong-dao-tao-voi-12-chuong-trinh-dat-kiem-dinh-asiin"
+    }
+  },
+  {
+    "text": "Thành công của các chương trình đào tạo đạt chuẩn ASIIN tại UIT là kết quả từ sự nỗ lực của đội ngũ giảng viên, sinh viên và cựu sinh viên. Đây là nền tảng để trường mở rộng hợp tác quốc tế, khẳng định uy tín học thuật và vị thế của một trường đại học hàng đầu trong lĩnh vực Công nghệ thông tin trên bản đồ giáo dục thế giới.",
+    "metadata": {
+      "url": "https://vnuhcm.edu.vn/bai-viet/truong-dh-cong-nghe-thong-tin-khang-dinh-chat-luong-dao-tao-voi-12-chuong-trinh-dat-kiem-dinh-asiin"
+    }
+  },
+  {
+    "text": "UIT xây dựng hệ sinh thái hợp tác doanh nghiệp toàn diện nhằm gắn kết đào tạo với thực tiễn. Năm 2025, trường tạo bước đột phá khi phối hợp với VNG tổ chức môn học 'Phát triển Kỹ năng Lập trình Game ứng dụng trong thực tế' ngay tại VNG Campus. Mô hình 'học như làm' này giúp sinh viên trải nghiệm trực tiếp văn hóa doanh nghiệp và rèn luyện tư duy nghề nghiệp thực tế.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
+    }
+  },
+  {
+    "text": "Trong năm 2025, UIT tăng cường ký kết hợp tác với các tập đoàn lớn như CT Group để phát triển nguồn nhân lực chất lượng cao. Thỏa thuận tập trung vào việc xây dựng chương trình đào tạo sát với nhu cầu thị trường, tổ chức thực tập, tham quan doanh nghiệp và tạo điều kiện cho sinh viên tham gia giải quyết các bài toán công nghệ thực tế của doanh nghiệp.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
+    }
+  },
+  {
+    "text": "Khoa Hệ thống Thông tin tại UIT phối hợp cùng Axon Active Việt Nam tổ chức khóa học 'Triển khai Dự án IT với SCRUM'. Khóa học giúp sinh viên trực tiếp trải nghiệm quy trình quản lý dự án phần mềm theo phương pháp Scrum trong môi trường thực tế, nâng cao khả năng thích ứng và tư duy làm việc chuyên nghiệp ngay từ khi còn đi học.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
+    }
+  },
+  {
+    "text": "UIT thường xuyên tổ chức các chương trình tham quan và trải nghiệm thực tế tại các doanh nghiệp công nghệ lớn như VNG, KMS Technology, NAB Vietnam... Hoạt động này giúp sinh viên quan sát quy trình vận hành chuyên nghiệp, giao lưu với các chuyên gia và cựu sinh viên, từ đó nắm bắt yêu cầu kỹ năng và tiêu chuẩn tuyển dụng của thị trường lao động.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
+    }
+  },
+  {
+    "text": "Ngày hội việc làm 'UIT Career Day' và 'UIT Job Fair' là cầu nối quan trọng giữa nhà trường và doanh nghiệp. Sự kiện thu hút nhiều đối tác lớn như ELCA, KMS Technology, SAP, Bosch, Endava... mang đến hàng ngàn cơ hội thực tập và việc làm, giúp sinh viên tiếp cận sớm với xu hướng thị trường lao động trong lĩnh vực CNTT.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/he-sinh-thai-hop-tac-doanh-nghiep-trong-dao-tao-va-huong-nghiep-tai-uit"
+    }
+  },
+  {
+    "text": "Ngày 10/04/2026, UIT và Viện Quantum AI & Cyber Security (QACI) thuộc Tập đoàn FPT đã ký kết Biên bản ghi nhớ hợp tác (MOU) chiến lược. Sự kiện này tập trung vào việc thúc đẩy đào tạo và nghiên cứu trong ba trụ cột công nghệ mũi nhọn: Trí tuệ nhân tạo (AI), Công nghệ lượng tử (Quantum Computing) và An ninh mạng (Cyber Security).",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/uit-va-qaci-fpt-ky-ket-hop-tac-chien-luoc-phat-trien-cac-linh-vuc-cong-nghe-mui-nhon"
+    }
+  },
+  {
+    "text": "Hợp tác giữa UIT và QACI hướng đến việc giải quyết các bài toán thực tế từ doanh nghiệp theo các mốc thời gian ngắn và trung hạn. Hai bên cam kết phối hợp nguồn lực nội tại cùng mạng lưới chuyên gia quốc tế để tạo ra những giá trị thực tiễn cho hệ sinh thái công nghệ Việt Nam, thay vì chỉ dừng lại ở các nghiên cứu lý thuyết riêng lẻ.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/uit-va-qaci-fpt-ky-ket-hop-tac-chien-luoc-phat-trien-cac-linh-vuc-cong-nghe-mui-nhon"
+    }
+  },
+  {
+    "text": "Trong thỏa thuận hợp tác với FPT QACI, UIT chú trọng phát triển nguồn nhân lực chất lượng cao, đặc biệt là đào tạo bậc sau đại học. Mục tiêu là xây dựng đội ngũ kỹ sư và chuyên gia trẻ có năng lực tham gia trực tiếp vào các hoạt động nghiên cứu phát triển (R&D) và sản xuất các sản phẩm công nghệ lõi trong kỷ nguyên số.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/uit-va-qaci-fpt-ky-ket-hop-tac-chien-luoc-phat-trien-cac-linh-vuc-cong-nghe-mui-nhon"
+    }
+  },
+  {
+    "text": "Viện Quantum AI & Cyber Security (QACI) - đối tác chiến lược của UIT - là đơn vị thuộc Tập đoàn FPT chuyên cung cấp các giải pháp nghiên cứu ứng dụng. Viện tập trung vào việc phát triển các công nghệ lõi và đào tạo nhân lực chuyên sâu nhằm phục vụ nhu cầu phát triển dài hạn của doanh nghiệp và sự vươn mình của khoa học công nghệ Việt Nam.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/uit-va-qaci-fpt-ky-ket-hop-tac-chien-luoc-phat-trien-cac-linh-vuc-cong-nghe-mui-nhon"
+    }
+  },
+  {
+    "text": "Sáng ngày 22/07/2011, Trường Đại học Công nghệ Thông tin (UIT) đã long trọng tổ chức Lễ kỷ niệm 5 năm thành lập (2006 – 2011). Đây là cột mốc quan trọng đánh dấu giai đoạn hình thành và đặt nền móng vững chắc cho một trường đại học chuyên biệt về CNTT&TT trong hệ thống Đại học Quốc gia Thành phố Hồ Chí Minh.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
+    }
+  },
+  {
+    "text": "Tại lễ kỷ niệm 5 năm thành lập, UIT đã trao bằng tốt nghiệp đợt 1 cho 247 sinh viên khóa đầu tiên (khóa 2006). Kết quả tốt nghiệp đạt tỉ lệ ấn tượng với 7,7% sinh viên loại Giỏi và 60,7% loại Khá, khẳng định chất lượng đào tạo ngay từ những ngày đầu thành lập của nhà trường.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
+    }
+  },
+  {
+    "text": "Sau 5 năm hoạt động (2006-2011), UIT đã kiện toàn bộ máy tổ chức gồm 07 phòng chức năng, 05 khoa chuyên ngành, 01 phòng thí nghiệm cấp trường và 06 trung tâm. Đội ngũ nhân sự phát triển lên 189 cán bộ công chức, trong đó 60% giảng viên có trình độ sau đại học, được đào tạo từ các quốc gia tiên tiến như Hoa Kỳ, Úc, Nhật, Pháp, Hàn Quốc.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
+    }
+  },
+  {
+    "text": "Trong giai đoạn đầu thành lập, UIT đã xác lập định hướng nghiên cứu khoa học là nhiệm vụ trọng tâm, tập trung vào các ứng dụng thiết thực và chuyển giao công nghệ. Nhà trường cũng thiết lập quan hệ hợp tác quốc tế sâu rộng với các viện, trường đại học tại Mỹ, Nhật Bản, Trung Quốc nhằm nâng cao năng lực chuyên môn cho cán bộ và sinh viên.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
+    }
+  },
+  {
+    "text": "Trong giai đoạn đầu thành lập (2006), Nhà giáo ưu tú - GS. TSKH. Hoàng Văn Kiếm được bổ nhiệm làm Hiệu trưởng đầu tiên của Trường Đại học Công nghệ Thông tin. Cùng sát cánh trong Ban Giám hiệu thời kỳ này còn có PGS. TS. Đỗ Phúc, PGS. TS. Trần Vĩnh Phước và TS. Dương Tôn Đảm. Đây là đội ngũ lãnh đạo then chốt đã đặt ra những định hướng chiến lược đầu tiên cho sự phát triển của nhà trường.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
+    }
+  },
+  {
+    "text": "GS. TSKH. Hoàng Văn Kiếm, Hiệu trưởng đầu tiên của UIT, là người có công lớn trong việc xây dựng đội ngũ giảng viên nhiệt tình, giàu kinh nghiệm và thiết lập hệ thống 05 khoa chuyên ngành CNTT đầu tiên. Dưới sự dẫn dắt của Thầy, UIT đã nhanh chóng khẳng định vị thế là trường đại học đầu tiên trên cả nước tập trung đào tạo nguồn nhân lực CNTT chất lượng cao theo mô hình hiện đại.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/ky-niem-5-nam-ngay-thanh-lap-truong-dai-hoc-cntt-2006-2011"
+    }
+  },
+  {
+    "text": "Ngày 08/06/2016, Trường Đại học Công nghệ Thông tin (UIT) đã long trọng tổ chức Lễ kỷ niệm 10 năm thành lập và vinh dự đón nhận Huân chương Lao động hạng Ba của Chủ tịch nước. Đây là sự ghi nhận to lớn cho những nỗ lực bứt phá của nhà trường trong việc xây dựng một cơ sở đào tạo công lập chuyên sâu về CNTT duy nhất tại Việt Nam.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
+    }
+  },
+  {
+    "text": "Trong giai đoạn kỷ niệm 10 năm, PGS. TS. Dương Anh Đức giữ vai trò Hiệu trưởng nhà trường. Ông nhấn mạnh UIT đã tạo nên những 'điểm son' như: trường đầu tiên và duy nhất thí điểm đào tạo thạc sĩ qua mạng, nơi đầu tiên đào tạo ngành An toàn Thông tin và là cơ sở đào tạo CNTT có số lượng thí sinh dự tuyển hàng đầu cả nước.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
+    }
+  },
+  {
+    "text": "Tính đến năm 2016, sau một thập kỷ hình thành, UIT đã đào tạo hơn 2.500 cử nhân và kỹ sư chính quy, 459 thạc sĩ và 18.000 cử nhân hệ từ xa. Nhà trường duy trì tỷ lệ 100% sinh viên tốt nghiệp có việc làm, với 90% làm đúng chuyên ngành, khẳng định uy tín và chất lượng đào tạo gắn liền với nhu cầu thực tiễn của xã hội.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
+    }
+  },
+  {
+    "text": "Về nghiên cứu khoa học, trong 10 năm đầu (2006-2016), UIT đã chủ trì 156 đề tài các cấp với hơn 100 công bố khoa học mỗi năm trên các tạp chí quốc tế và hội thảo chuyên ngành. Trường cũng là đơn vị tiên phong ứng dụng hệ thống Moodle trong giảng dạy trực tuyến, tạo môi trường học tập hiện đại cho hơn 4.200 sinh viên tại thời điểm đó.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
+    }
+  },
+  {
+    "text": "Dấu ấn cộng đồng của sinh viên UIT giai đoạn này gắn liền với chương trình 'Máy tính cũ - Tri thức mới' được khởi xướng từ năm 2008. Bên cạnh đó, sinh viên trường liên tục gặt hái giải thưởng cao tại các kỳ thi học thuật như Robocon, Olympic Tin học và Mastering IT, thể hiện bản sắc năng động và giỏi chuyên môn.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/bai-viet/truong-dh-cntt-ky-niem-10-nam-thanh-lap"
+    }
+  },
+  {
+    "text": "Năm 2025, Trường Đại học Công nghệ Thông tin (UIT), ĐHQG-HCM tuyển sinh đại học chính quy theo 3 phương thức xét tuyển: (1) Tuyển thẳng và ưu tiên xét tuyển, gồm thí sinh tuyển thẳng theo quy chế Bộ GD&ĐT, học sinh giỏi/tài năng của các trường THPT, học sinh thuộc 149 trường THPT ưu tiên của ĐHQG-HCM, và thí sinh có thành tích cao hoặc chứng chỉ quốc tế (SAT, ACT, A-level, IB); (2) Xét tuyển dựa trên kết quả Kỳ thi Đánh giá năng lực do ĐHQG-HCM tổ chức; (3) Xét tuyển dựa trên kết quả kỳ thi tốt nghiệp THPT 2025. Ngưỡng đảm bảo chất lượng đầu vào (điểm sàn) là 22 điểm cho tất cả các ngành; riêng ngành Thiết kế vi mạch yêu cầu điểm Toán tối thiểu 6,5.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/2025-phuong-thuc-tuyen-sinh-nam-2025"
+    }
+  },
+  {
+    "text": "Cách tính điểm xét tuyển UIT năm 2025: Với phương thức thi tốt nghiệp THPT, Điểm xét tuyển = Điểm thi tổ hợp môn + Điểm cộng (nếu có) + Điểm ưu tiên, trên thang 30 điểm. Với phương thức Đánh giá năng lực do ĐHQG-HCM tổ chức, Điểm xét tuyển = Điểm thi ĐGNL + Điểm cộng + Điểm ưu tiên, trên thang 1200 điểm (điểm cộng tối đa 120). Điểm cộng tối đa cho mỗi thí sinh là 3 điểm trên thang 30 (tương ứng 10%), chủ yếu dành cho chứng chỉ ngoại ngữ quốc tế như IELTS, TOEFL iBT, TOEIC, JLPT. Năm 2025 các trường đại học không còn được xét tuyển sớm; điểm trúng tuyển giữa các phương thức được quy đổi tương đương về một thang chung theo phương pháp bách phân vị, dựa trên khung quy đổi do ĐHQG-HCM và Bộ GD&ĐT công bố.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/2025-thong-bao-quy-tac-quy-doi-tuong-duong-diem-trung-tuyen-cua-cac-phuong-thuc-tuyen-sinh-nam-2025"
+    }
+  },
+  {
+    "text": "Quá trình thay đổi phương thức tuyển sinh của Trường Đại học Công nghệ Thông tin (UIT) giai đoạn 2022-2025: Năm 2022 và 2023, trường xét tuyển theo nhiều phương thức gồm tuyển thẳng và ưu tiên xét tuyển, ưu tiên xét tuyển theo quy định ĐHQG-HCM, xét điểm thi tốt nghiệp THPT, xét kết quả thi Đánh giá năng lực ĐHQG-HCM, xét chứng chỉ quốc tế, và tiêu chí riêng cho chương trình liên kết quốc tế. Đến năm 2025, theo định hướng chung của ĐHQG-HCM, trường rút gọn còn 3 phương thức; xét chứng chỉ quốc tế không còn là phương thức độc lập mà được gộp vào phương thức Tuyển thẳng và ưu tiên xét tuyển hoặc tính thành điểm cộng. Năm 2025 cũng là năm đầu áp dụng quy chế tuyển sinh mới của Bộ GD&ĐT: bỏ xét tuyển sớm và quy đổi điểm tương đương giữa các phương thức.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/2025-phuong-thuc-tuyen-sinh-nam-2025"
+    }
+  },
+  {
+    "text": "Điểm chuẩn Trường Đại học Công nghệ Thông tin (UIT) theo phương thức xét kết quả thi tốt nghiệp THPT các năm 2022 và 2023: Năm 2022, điểm chuẩn dao động từ 26,2 đến 28,05, ngành Kỹ thuật phần mềm có điểm chuẩn cao nhất là 28,05. Năm 2023, điểm chuẩn giảm còn 25,4 đến 27,8, ngành Trí tuệ nhân tạo cao nhất với 27,8, tiếp theo là Khoa học dữ liệu 27,1.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/diem-chuan-cua-truong-dh-cong-nghe-thong-tin-qua-cac-nam"
+    }
+  },
+  {
+    "text": "Điểm chuẩn Trường Đại học Công nghệ Thông tin (UIT) năm 2024 theo phương thức xét kết quả thi tốt nghiệp THPT dao động từ 25,55 đến 28,3, với 11 trong 13 ngành tăng điểm so với năm 2023 (mức tăng cao nhất khoảng 1 điểm). Điểm chuẩn từng ngành năm 2024: Trí tuệ nhân tạo 28,3 (cao nhất); Khoa học dữ liệu 27,5; Khoa học máy tính 27,3; Công nghệ thông tin 27,1; Kỹ thuật phần mềm 26,85; Thiết kế vi mạch 26,5 (năm đầu tuyển sinh); Hệ thống thông tin 26,25; Kỹ thuật máy tính 26,25; Thương mại điện tử 26,12; Hệ thống thông tin chương trình tiên tiến 25,55; Công nghệ thông tin chương trình Việt-Nhật 25,55.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/2024-thong-bao-diem-chuan-xet-tuyen-theo-phuong-thuc-xet-ket-qua-thi-tot-nghiep-thpt-nam-2024"
+    }
+  },
+  {
+    "text": "Điểm chuẩn Trường Đại học Công nghệ Thông tin (UIT) năm 2025 theo phương thức xét kết quả thi tốt nghiệp THPT dao động từ 24,0 đến 29,6. Điểm chuẩn từng ngành năm 2025: Trí tuệ nhân tạo 29,6 (cao nhất); Khoa học dữ liệu 27,7; Khoa học máy tính 27,2; Thiết kế vi mạch 27,0; Công nghệ thông tin 26,6; An toàn thông tin 26,27; Kỹ thuật phần mềm 26,0; Kỹ thuật máy tính 25,3; Truyền thông đa phương tiện 25,0; Hệ thống thông tin 24,7; Thương mại điện tử 24,57; Hệ thống thông tin chương trình tiên tiến 24,2; Công nghệ thông tin chương trình Việt-Nhật 24,2; Mạng máy tính và truyền thông dữ liệu 24,0.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/2025-thong-bao-diem-trung-tuyen-phuong-thuc-xet-ket-qua-thi-tot-nghiep-thpt-nam-2025"
+    }
+  },
+  {
+    "text": "Điểm chuẩn Trường Đại học Công nghệ Thông tin (UIT) theo phương thức xét kết quả Kỳ thi Đánh giá năng lực do ĐHQG-HCM tổ chức, tính trên thang 1200 điểm: Năm 2024, ngành Trí tuệ nhân tạo cao nhất khoảng 980 điểm; các ngành khác gồm Khoa học dữ liệu khoảng 935, Kỹ thuật phần mềm khoảng 926, Khoa học máy tính khoảng 925, Công nghệ thông tin khoảng 915, Kỹ thuật máy tính khoảng 888, Hệ thống thông tin khoảng 880, Thương mại điện tử khoảng 870, Công nghệ thông tin Việt-Nhật khoảng 850. Năm 2025, ngành Trí tuệ nhân tạo có điểm chuẩn Đánh giá năng lực cao nhất là 1098 điểm, ngành Mạng máy tính và truyền thông dữ liệu thấp nhất khoảng 854 điểm.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/diem-chuan-cua-truong-dh-cong-nghe-thong-tin-qua-cac-nam"
+    }
+  },
+  {
+    "text": "Nhận xét về xu hướng điểm chuẩn và phương thức tuyển sinh của Trường Đại học Công nghệ Thông tin (UIT) giai đoạn 2022-2025: Điểm chuẩn luôn ở mức cao so với mặt bằng chung, các ngành Trí tuệ nhân tạo, Khoa học máy tính và Khoa học dữ liệu liên tục dẫn đầu. Điểm chuẩn theo phương thức thi tốt nghiệp THPT giảm năm 2023 rồi tăng trở lại năm 2024; năm 2025 biên độ điểm chuẩn giãn rộng (24,0 đến 29,6) do kỳ thi tốt nghiệp THPT 2025 theo Chương trình giáo dục phổ thông 2018 mới và do áp dụng quy đổi điểm tương đương giữa các phương thức, nên không thể so sánh trực tiếp điểm chuẩn 2025 với các năm trước. Việc rút gọn còn 3 phương thức, bỏ xét tuyển sớm và siết điểm cộng tối đa 3 điểm giúp quá trình xét tuyển minh bạch và công bằng hơn giữa các phương thức.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/diem-chuan-cua-truong-dh-cong-nghe-thong-tin-qua-cac-nam"
+    }
+  },
+  {
+    "text": "Trong giai đoạn tuyển sinh 2023-2025, Trường Đại học Công nghệ Thông tin (UIT) - ĐHQG TP.HCM duy trì hệ thống tuyển sinh đa phương thức và tái cấu trúc mạnh quy chế nhằm thích ứng chiến lược công nghệ bán dẫn quốc gia và xu hướng trí tuệ nhân tạo. Năm 2025 trường áp dụng 3 phương thức xét tuyển: Phương thức 1 - Tuyển thẳng và ưu tiên xét tuyển; Phương thức 2 - Xét tuyển dựa trên kết quả kỳ thi Đánh giá năng lực (ĐGNL) của ĐHQG-HCM; Phương thức 3 - Xét tuyển dựa trên kết quả thi tốt nghiệp THPT.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Điểm chuẩn Trường Đại học Công nghệ Thông tin (UIT) theo phương thức xét tuyển dựa trên kết quả thi tốt nghiệp THPT giai đoạn 2023-2025 (điểm chuẩn 2023 / 2024 / 2025): Trí tuệ Nhân tạo (mã ngành 7480107): 27,80 / 28,30 / 29,60. Khoa học Dữ liệu (7460108): 27,10 / 27,50 / 27,70. Khoa học Máy tính (7480101): 26,90 / 27,30 / 27,20. Thiết kế Vi mạch (7520201): 25,40 / 26,50 / 27,00. Công nghệ Thông tin (7480201): 26,90 / 27,10 / 26,60. An toàn Thông tin (7480202): 26,30 / 26,77 / 26,27. Kỹ thuật Phần mềm (7480103): 26,90 / 26,85 / 26,00. Hệ thống Thông tin (7480104): 26,10 / 26,25 / 24,70. Kỹ thuật Máy tính (7480106): 25,60 / 26,25 / 25,30. Thương mại Điện tử (7340122): 25,80 / 26,12 / 24,57. Mạng máy tính và Truyền thông dữ liệu (7480102): 25,40 / 25,70 / 24,00. Truyền thông Đa phương tiện (7320104): chưa mở / chưa mở / 25,00. CNTT chương trình Việt - Nhật (7480201_N): chưa tuyển / 25,55 / 24,20. Hệ thống Thông tin chương trình Tiên tiến (7480104_TT): chưa tuyển / chưa tuyển / 24,20.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Phân tích điểm chuẩn theo phương thức thi tốt nghiệp THPT của Trường Đại học Công nghệ Thông tin (UIT) giai đoạn 2023-2025 cho thấy sự phân cực học thuật rõ nét. Ngành Trí tuệ Nhân tạo dẫn đầu sức hút, điểm chuẩn tăng kỷ lục +1,80 lên 29,60 điểm năm 2025 - mức gần tuyệt đối. Ngành Thiết kế Vi mạch đón đầu làn sóng công nghiệp bán dẫn, tăng +1,60 từ 25,40 (2023) lên 27,00 (2025). Ngược lại, các ngành thiên về ứng dụng và quản trị thương mại có xu hướng giảm: Hệ thống Thông tin giảm 1,40 điểm, Thương mại Điện tử giảm 1,23 điểm, Mạng máy tính và Truyền thông dữ liệu giảm 1,40 điểm. Ngành Kỹ thuật Phần mềm giảm liên tục 0,90 điểm, từ 26,90 (2023) xuống 26,00 (2025).",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Ngưỡng đảm bảo chất lượng đầu vào (điểm sàn) phương thức thi tốt nghiệp THPT của Trường Đại học Công nghệ Thông tin (UIT): năm 2022 điểm sàn nhận hồ sơ tất cả các ngành được ấn định ở mức 23 điểm. Năm 2025 trường áp dụng mức sàn phân hóa: ngành Thiết kế Vi mạch yêu cầu tối thiểu 24 điểm kèm điều kiện về điểm môn Toán, các ngành học còn lại áp dụng mức sàn chung 22,5 điểm.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Phương thức xét tuyển dựa trên kết quả kỳ thi Đánh giá năng lực (ĐGNL) do ĐHQG-HCM tổ chức được Trường Đại học Công nghệ Thông tin (UIT) sử dụng như một bộ lọc tư duy logic độc lập để lựa chọn thí sinh có năng lực giải quyết vấn đề xuất sắc. Điểm xét tuyển của phương thức này được tính trên thang điểm tối đa 1200 điểm. Thí sinh sở hữu chứng chỉ ngoại ngữ quốc tế như IELTS, TOEFL iBT hoặc JLPT đáp ứng điều kiện tối thiểu được cộng trực tiếp vào điểm xét tuyển ĐGNL với mức cộng tối đa lên tới 120 điểm.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Cơ chế cộng điểm ưu tiên cho phương thức Đánh giá năng lực (ĐGNL) của Trường Đại học Công nghệ Thông tin (UIT): với thí sinh đạt từ 900 điểm trở lên, điểm ưu tiên được quy đổi giảm dần tuyến tính để tổng điểm không vượt trần 1200 điểm; thí sinh càng tiệm cận mức 1200 thì phần điểm ưu tiên cộng thêm càng co hẹp. Mức điểm ưu tiên gốc quy đổi sang thang ĐGNL: Khu vực 1 là 30 điểm, Khu vực 2 nông thôn là 20 điểm, Khu vực 2 là 10 điểm, Nhóm Ưu tiên 1 là 80 điểm, Nhóm Ưu tiên 2 là 40 điểm. Thí sinh dưới 900 điểm được cộng trực tiếp mức điểm ưu tiên gốc mà không qua công thức quy đổi giảm dần.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Điểm chuẩn Trường Đại học Công nghệ Thông tin (UIT) theo phương thức xét tuyển kết quả kỳ thi Đánh giá năng lực (ĐGNL) ĐHQG-HCM, thang điểm 1200, giai đoạn 2023-2025 (điểm chuẩn 2023 / 2024 / 2025): Trí tuệ Nhân tạo: 970 / 980 / 1098. Khoa học Dữ liệu: khoảng 870-900 / 935 / 1010. Khoa học Máy tính: 915 / khoảng 910-920 / 993. Thiết kế Vi mạch: 810 / khoảng 900 / 984. Công nghệ Thông tin: khoảng 870 / khoảng 910 / 969. An toàn Thông tin: 855 / 855 / 956. Kỹ thuật Phần mềm: khoảng 870 / khoảng 900 / 946. Kỹ thuật Máy tính: 820 / 880 / 923. Truyền thông Đa phương tiện: chưa tuyển / chưa tuyển / 911. Hệ thống Thông tin: khoảng 830 / 870 / 891. Thương mại Điện tử: 810 / khoảng 830 / 889. CNTT chương trình Việt - Nhật: chưa tuyển / 850 / 867. Hệ thống Thông tin chương trình Tiên tiến: chưa tuyển / chưa tuyển / 867. Mạng máy tính và Truyền thông dữ liệu: khoảng 810 / 850 / 854.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Phân tích diễn biến điểm chuẩn Đánh giá năng lực (ĐGNL) của Trường Đại học Công nghệ Thông tin (UIT): năm 2023 điểm chuẩn dao động trong khoảng 810-970 điểm, năm 2024 nâng lên 850-980 điểm, năm 2025 bùng nổ với ngành Trí tuệ Nhân tạo chạm mốc kỷ lục 1098 điểm và ngành Khoa học Dữ liệu chính thức vượt ngưỡng 1000 điểm (1010). Ngành Thiết kế Vi mạch thay đổi ấn tượng nhất, từ vị thế ngành điểm chuẩn thấp nhất trường năm 2023 (810 điểm) vươn lên 984 điểm năm 2025, tăng 174 điểm. Năm 2025 UIT nâng điểm sàn nhận đăng ký xét tuyển ĐGNL lên 720 điểm cho tất cả các ngành (không tính điểm cộng và điểm ưu tiên); riêng ngành Thiết kế Vi mạch yêu cầu thêm tối thiểu 195 điểm phần thi môn Toán của bài thi ĐGNL.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Phương thức Tuyển thẳng và Ưu tiên xét tuyển (UTXT - Phương thức 1) của Trường Đại học Công nghệ Thông tin (UIT) hướng đến nhóm học sinh giỏi, tài năng đạt giải cao trong các kỳ thi học sinh giỏi quốc gia hoặc thuộc danh sách 149 trường THPT chuyên, chất lượng cao được ĐHQG-HCM ưu tiên xét tuyển. Điểm xét tuyển được tính trên thang 30 điểm, dựa trên tổng điểm trung bình 3 năm THPT của 3 môn trong tổ hợp xét tuyển kết hợp với điểm cộng thành tích học thuật. Điểm cộng tối đa cho mỗi thí sinh là 3 điểm, chỉ áp dụng cho giải thưởng cao nhất. Thí sinh có chứng nhận tham gia cuộc thi lập trình UIT Code Contest do trường tổ chức được hưởng chính sách quy đổi điểm ưu tiên đặc thù, thời hạn chứng nhận không quá 2 năm tính đến ngày xét tuyển.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Điểm chuẩn Trường Đại học Công nghệ Thông tin (UIT) theo phương thức Ưu tiên xét tuyển và học sinh giỏi, tài năng năm 2025 (thang 30 điểm): Trí tuệ Nhân tạo 29,91; Khoa học Dữ liệu 29,14; Khoa học Máy tính 28,90; Công nghệ Thông tin 28,64; An toàn Thông tin 28,48; Kỹ thuật Phần mềm 28,37; Kỹ thuật Máy tính 28,10; Truyền thông Đa phương tiện 27,97; Hệ thống Thông tin 27,81; Thương mại Điện tử 27,75; Hệ thống Thông tin chương trình Tiên tiến 27,58; CNTT chương trình Việt - Nhật 27,58; Mạng máy tính và Truyền thông dữ liệu 27,47. Đối tượng áp dụng là học sinh giỏi 149 trường chuyên và học sinh giỏi tài năng.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Phương thức xét tuyển bằng chứng chỉ quốc tế của Trường Đại học Công nghệ Thông tin (UIT), mã phương thức 408, yêu cầu thí sinh tốt nghiệp THPT, có hạnh kiểm tốt trong toàn bộ các năm học và đạt các ngưỡng điểm số chứng chỉ. So với giai đoạn 2023-2024, tiêu chuẩn năm 2025 được thắt chặt rõ rệt: SAT nâng từ mức trung bình khá (khoảng 510 điểm mỗi phần thi) lên 1200 điểm tổng với điều kiện mỗi môn không dưới 600; A-Level yêu cầu điểm từ B trở lên cho mỗi môn thay vì từ C đến A; Tú tài quốc tế (IB) nâng tổng điểm tối thiểu từ 21 lên 30; ACT tăng yêu cầu về điểm trung bình.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Phương thức kết hợp kết quả học tập THPT với chứng chỉ ngoại ngữ quốc tế của Trường Đại học Công nghệ Thông tin (UIT), mã phương thức 410, có tiêu chí siết chặt qua từng năm: Năm 2023 yêu cầu học lực Khá trở lên, tổng điểm trung bình học bạ 3 năm của 3 môn trong tổ hợp xét tuyển lớn hơn hoặc bằng 24, chứng chỉ tiếng Anh tối thiểu IELTS 5.5 hoặc TOEFL iBT 60. Năm 2024 yêu cầu điểm trung bình 3 năm THPT của từng môn trong tổ hợp đạt mức tối thiểu quy định, đồng thời nâng sàn ngoại ngữ lên IELTS 6.5 hoặc TOEFL iBT 65. Năm 2025 nâng điều kiện lên học lực Giỏi và hạnh kiểm Tốt trong tất cả các năm THPT, đồng thời tích hợp quy đổi ngoại ngữ thành điểm cộng trực tiếp vào phương thức ĐGNL và THPT thay vì xét tuyển độc lập.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Bảng quy đổi điểm chứng chỉ IELTS sang thang điểm 10 để tính điểm xét tuyển học bạ của Trường Đại học Công nghệ Thông tin (UIT) thay đổi nâng chuẩn giữa năm 2023 và 2024 (yêu cầu IELTS năm 2023 / năm 2024): mức quy đổi 10,0 điểm cần IELTS 6.0 (2023) nâng lên IELTS 7.5 trở lên (2024); mức 9,5 điểm cần IELTS 5.5 (2023), không áp dụng (2024); mức 9,0 điểm cần IELTS 5.0 (2023) nâng lên IELTS 7.0 (2024); mức 8,0 điểm cần IELTS 4.5 (2023) nâng lên IELTS 6.5 (2024).",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Xu hướng tổng thể điểm chuẩn Trường Đại học Công nghệ Thông tin (UIT) giai đoạn 2023-2025: điểm chuẩn các ngành công nghệ cao cốt lõi như Trí tuệ Nhân tạo, Khoa học Dữ liệu và Thiết kế Vi mạch bùng nổ do nhu cầu tuyển dụng của thị trường công nghệ toàn cầu dịch chuyển sang AI tạo sinh và điện toán đám mây. Trường thắt chặt điều kiện học thuật đầu vào ở mọi phương thức xét tuyển sớm: nâng điểm sàn ĐGNL lên 720 điểm, siết tiêu chuẩn SAT từ 510 lên 1200 điểm, nâng chuẩn học bạ kết hợp từ học sinh khá lên học sinh giỏi. Chứng chỉ ngoại ngữ quốc tế được tích hợp cộng điểm trực tiếp vào các phương thức xét tuyển chính quy, trở thành công cụ cạnh tranh bắt buộc đối với thí sinh muốn vào các ngành chất lượng cao.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1V5UImaSYlLM0uuNgTwvWBogs6aXmnfXXM2-iMENl4oI"
+    }
+  },
+  {
+    "text": "Hệ sinh thái nghiên cứu và đổi mới sáng tạo của Trường Đại học Công nghệ Thông tin (UIT) được xây dựng quanh mạng lưới phòng thí nghiệm chuyên sâu, các nhóm nghiên cứu và câu lạc bộ học thuật. UIT vận hành 4 phòng thí nghiệm nghiên cứu chính:\n\n| Phòng thí nghiệm | Lĩnh vực trọng tâm | Lãnh đạo |\n|---|---|---|\n| InSecLab | An toàn thông tin | TS. Phạm Văn Hậu |\n| MMLab | Thị giác máy tính & AI | Nguyễn Vinh Tiệp |\n| ISLab | Hệ thống thông tin | Nguyễn Thanh Bình |\n| ASIC Lab | Thiết kế vi mạch bán dẫn | TS. Nguyễn Minh Sơn |",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "InSecLab (Phòng thí nghiệm An toàn Thông tin UIT - The UIT Information Security Laboratory) đặt tại phòng E8.1, Tòa nhà E, cơ sở chính UIT. Website: inseclab.uit.edu.vn, Facebook: facebook.com/inseclab. Lãnh đạo: TS. Phạm Văn Hậu (Giám đốc - Trưởng phòng thí nghiệm An toàn Thông tin, Trưởng Bộ môn An toàn Thông tin, Giám đốc Trung tâm An ninh mạng); ThS. Phan Thế Duy (Cố vấn kỹ thuật). Các hướng nghiên cứu: (1) An ninh mạng và ứng dụng - quét, phát hiện lỗ hổng và cơ chế phòng thủ chủ động chống khai thác ứng dụng web và mạng doanh nghiệp; (2) An ninh thiết bị di động và IoT - giao thức xác thực nhẹ cho thiết bị hạn chế tài nguyên; (3) An ninh điện toán đám mây - bảo vệ tính toàn vẹn, sẵn sàng của dữ liệu, mã hóa đồng cấu và kiểm soát truy cập phi tập trung; (4) Công nghệ Blockchain - nền tảng sổ cái phân tán, tối ưu giao thức đồng thuận, hợp đồng thông minh; (5) AI cho An toàn và An toàn cho AI - tự động phát hiện mã độc, phân tích bất thường, ứng phó sự cố thời gian thực, phòng chống tấn công đối kháng cho mô hình ML. InSecLab tổ chức huấn luyện nâng cao nhận thức an toàn thông tin cho cán bộ ĐHQG-HCM.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "MMLab (Phòng thí nghiệm Phân tích Đa phương tiện và Nhận dạng - Multimedia Analysis and Pattern Recognition Laboratory) của UIT. Website: mmlab.uit.edu.vn, kho Hugging Face: huggingface.co/uit-mmlab. Lãnh đạo: Nguyễn Vinh Tiệp (Giám đốc Lab); ThS. Võ Duy Nguyên (Nghiên cứu viên/Giảng viên). Các hướng nghiên cứu: (1) Nền tảng AI và Học máy - giảm chiều dữ liệu, mô hình đồ thị xác suất, Transfer Learning, Federated Learning, Explainable/Trustworthy AI; (2) Thị giác máy tính - phân tích ảnh/video, phân vùng ảnh, phát hiện và nhận dạng đối tượng 2D/3D, theo vết chuyển động, nhận dạng cử chỉ, nhận dạng khuôn mặt, nhận dạng dáng đi, egocentric vision, multi-view geometry; (3) Phân tích đa phương tiện - trích xuất đặc trưng, lọc và khôi phục tín hiệu âm thanh/ảnh, nén dữ liệu, siêu phân giải, truy hồi đa thể thức (cross-modal retrieval). MMLab đăng cai hội nghị quốc tế MAPR 2026 (9th International Conference on Multimedia Analysis and Pattern Recognition) tại Huế tháng 8/2026, được Hội Nhận dạng Việt Nam (VAPR) bảo trợ. MMLab phát triển công cụ Jupyter Notebook Grader chấm code sinh viên tự động (github.com/vuraemon/assignment-grader, giấy phép BSD-3-Clause).",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "ISLab (Phòng thí nghiệm Hệ thống Thông tin - Information Systems Laboratory) của UIT, đặt tại phòng E9.1. Website: islab.uit.edu.vn, liên hệ: ptn.httt@uit.edu.vn. Giám đốc Lab: Nguyễn Thanh Bình. Các hướng nghiên cứu: (1) Điện toán đám mây - kiến trúc ảo hóa, quản lý tài nguyên phân tán, thiết kế phần mềm SaaS/PaaS; (2) Dữ liệu lớn - hạ tầng lưu trữ quy mô lớn, thuật toán xử lý giải quyết bài toán volume, velocity, variety; (3) Trí tuệ nhân tạo - tích hợp hệ thống thông minh, phân tích dự báo, tối ưu tự động, hỗ trợ ra quyết định; (4) Internet vạn vật - xử lý luồng dữ liệu cảm biến, kết nối thế giới vật lý - số. Các dự án tiêu biểu: Hệ thống Digital Twin (hợp tác với Đại học Ulsan, Hàn Quốc); phân tích ảnh drone phục vụ giám sát giao thông, tối ưu ứng phó khẩn cấp và nông nghiệp thông minh; dịch vụ Chuyển đổi số (DX) dựa trên AI.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "ASIC Lab UIT (Phòng thí nghiệm Thiết kế Vi mạch tích hợp chuyên dụng - Application-Specific Integrated Circuits Laboratory), với khẩu hiệu 'The Hub of IC Design Excellence'. Website: asic.uit.edu.vn. Giám đốc: TS. Nguyễn Minh Sơn. Các hướng nghiên cứu: (1) Thiết kế SoC - tích hợp CPU, bộ nhớ, cổng giao tiếp và ngoại vi trên một đế silicon; (2) Thiết kế ASIC và hệ thống VLSI - thiết kế mạch tùy chỉnh ở mức RTL, tổng hợp, kỹ thuật layout mật độ siêu cao; (3) Embedded IoT và FPGA - tạo nguyên mẫu trên FPGA trước khi sản xuất chip; (4) Tăng tốc phần cứng cho AI và IoT - thiết kế IC chuyên dụng chạy thuật toán ML tối ưu tốc độ và điện năng.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "Các công trình nghiên cứu tiêu biểu của ASIC Lab UIT giai đoạn 2022-2025:\n\n| Năm | Công trình nghiên cứu | Thành viên | Ứng dụng thực tiễn |\n|---|---|---|---|\n| 2025 | Tích hợp kỹ thuật phân vùng trên thiết bị biên cho nhận dạng biển số xe | Duy Dieu Nguyen, Tan Sang Vo, Manh Hung Le, Minh Son Nguyen | Tối ưu Edge AI, loại bỏ độ trễ phụ thuộc đám mây cho giao thông thông minh |\n| 2025 | Tăng cường ảnh thiếu sáng qua mạng Encoder-Decoder | Le-Anh Tran, Chung Nguyen Tran, Ngoc-Luu Nguyen, Minh Son Nguyen | Cải thiện chất lượng tiền xử lý ảnh trong điều kiện ánh sáng kém cho camera an ninh, xe tự hành |\n| 2024 | Thuật toán phát hiện mống mắt sống cho hệ thống nhúng dựa trên đặc trưng kết cấu | Jordi Carrabina, Chung Nguyen Tran, Minh Son Nguyen, David Castells-Rufas | Ngăn tấn công giả mạo sinh trắc học trên thiết bị hạn chế tài nguyên |\n| 2023 | Thiết kế bộ tăng tốc AI tối ưu điện năng cho camera thông minh | Tri Nhut Do, Quang Vinh Tran, Hoai Nhan Nguyen, Minh Son Nguyen | Cân bằng hiệu năng nhận dạng với thời lượng pin thiết bị |\n| 2023 | Hệ thống Smart Desk trong lớp học Hybrid đánh giá mức độ mất tập trung của sinh viên | Thien Minh Doan, Manh Hung Le, Duy Dieu Nguyen, Minh Son Nguyen | Ứng dụng EdTech dùng cảm biến và hệ thống nhúng phân tích hành vi học tập |\n| 2022 | Hệ thống chẩn đoán glôcôm toàn diện dùng ML và xử lý ảnh võng mạc | Duy Doan, Phuong Thanh Tai Ho, Minh Son Nguyen | Ứng dụng MedTech đưa độ chính xác chẩn đoán lâm sàng lên vi mạch nhỏ gọn cho y tế từ xa |",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "UIT NLP Group (Nhóm nghiên cứu Xử lý ngôn ngữ tự nhiên của UIT) đặt tại phòng A117, Tòa nhà A. Website: nlp.uit.edu.vn. Lãnh đạo cấp cao: TS. Nguyễn Lưu Thùy Ngân (Người hướng dẫn, Tiến sĩ từ Đại học Tokyo, định hướng phương pháp nghiên cứu quốc tế và chiến lược dài hạn); TS. Nguyễn Văn Kiệt (Thành viên nòng cốt, Phó Khoa Khoa học và Kỹ thuật Thông tin, Phó Trưởng Bộ môn Khoa học Dữ liệu). Các hướng nghiên cứu chính: (1) Phân tích cú pháp phụ thuộc (Dependency Parsing) tiếng Việt đạt kết quả state-of-the-art; (2) Phân tích cảm xúc theo khía cạnh (aspect-based sentiment analysis) trên hai miền dữ liệu giáo dục và sản phẩm thương mại, chú trọng xây dựng kho ngữ liệu chất lượng cao; (3) Công cụ hỗ trợ viết - tự động sửa ngữ pháp, chính tả và văn phong cho lĩnh vực khoa học, hỗ trợ người không bản ngữ tiếng Anh nâng cao chất lượng bản thảo; (4) Hỏi đáp và Đọc hiểu máy (Question Answering & Machine Reading Comprehension) - hệ thống AI đọc dữ liệu lớn, hiểu câu hỏi ngôn ngữ tự nhiên và trích xuất câu trả lời trực tiếp. Triết lý nghiên cứu của nhóm: 'Publication is our work' - tích cực hỗ trợ sinh viên vượt rào cản tài chính và kỹ thuật để công bố quốc tế.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "UiTiOt (UIT Internet of Things Group - Nhóm nghiên cứu Internet vạn vật của UIT). Website: nc.uit.edu.vn/uitiot. Nhóm tập trung vào chuyển đổi số trong Công nghiệp 4.0, nghiên cứu giao thức và kiến trúc truyền thông cho các hệ thống kết nối. Hoạt động cốt lõi: tổ chức seminar học thuật hàng tuần để khám phá chuyên sâu, báo cáo tiến độ và phản biện ý tưởng. Thành viên nòng cốt: TS. Huỳnh Văn Đáng (cựu sinh viên UIT quay về đóng góp, đề xuất hỗ trợ tối đa cho giảng viên trẻ tham gia công bố khoa học, xin tài trợ dự án và mở rộng hợp tác quốc tế). Nhóm hướng dẫn sinh viên qua các đồ án chuyên ngành (ĐACN) và khóa luận tốt nghiệp (KLTN), tích hợp xu hướng công nghệ mới nhất vào chương trình giảng dạy.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "Hệ sinh thái câu lạc bộ học thuật của UIT gồm 25 câu lạc bộ, đội và nhóm, đóng vai trò 'vườn ươm' tài năng. Mô hình phát triển tài năng theo chiều dọc: sinh viên bắt đầu từ câu lạc bộ (rèn kỹ năng nền tảng, kỹ năng mềm, nuôi dưỡng đam mê), tiến lên các nhóm nghiên cứu (NLP Group, UiTiOt) để có kinh nghiệm nghiên cứu dưới sự hướng dẫn của các tiến sĩ, rồi lên các phòng thí nghiệm (InSecLab, MMLab, ISLab, ASIC Lab) để nghiên cứu chuyên sâu và công bố quốc tế. Các tiến sĩ định hướng nghiên cứu gồm: TS. Phạm Văn Hậu (an ninh mạng), TS. Nguyễn Minh Sơn (thiết kế phần cứng), TS. Nguyễn Lưu Thùy Ngân (xử lý ngôn ngữ tự nhiên), TS. Huỳnh Văn Đáng (IoT).",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "DS@UIT (Câu lạc bộ Khoa học Dữ liệu UIT) thuộc Khoa Khoa học và Kỹ thuật Thông tin, thành lập ngày 01/06/2023. Hoạt động: DS@UIT Sharing (chia sẻ kiến thức hàng tuần vào thứ Sáu), sự kiện DS Day, các khóa học ngắn (mini-course) và seminar chuyên đề. Thành tích: Vô địch CLEF 2023 nội dung Hỏi đáp Hình ảnh Y khoa (Medical Visual Question Answering - MedVQA-GI), cuộc thi học thuật quốc tế yêu cầu AI quan sát ảnh y khoa và trả lời câu hỏi lâm sàng; Giải Ba và Giải Khuyến khích tại hội nghị DSAA-2023.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "CS-UIT AI Club (Câu lạc bộ Trí tuệ Nhân tạo UIT) là tổ chức cấp sinh viên. Thành tích: hơn 16 giải thưởng, hơn 27 bài báo khoa học được công bố, hơn 42 thành viên nòng cốt. Mô hình hoạt động: liên kết với các phòng lab lớn (MMLab, NLP Group); sinh viên rèn kỹ năng nền tảng (thiết kế bài trình bày, lập luận seminar, tư duy phản biện) ở cấp câu lạc bộ, sau đó tiến lên các lab để hoàn thiện nghiên cứu và công bố.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "CEEC (Câu lạc bộ Lập trình Nhúng và Robot - Computer Engineering Embedded Club) thuộc Khoa Kỹ thuật Máy tính, thành lập năm 2011, tập trung vào lập trình ứng dụng điện tử và hệ thống điều khiển tự động. Sự kiện thường niên UIT Car Racing - cuộc thi xe tự hành tổ chức cùng đoàn khoa, là phòng thí nghiệm thực hành kiểm thử khả năng tối ưu thuật toán điều khiển, xử lý cảm biến và thị giác máy tính thời gian thực, làm nền cho nghiên cứu tại ASIC Lab và UiTiOt. ICC (Câu lạc bộ Vi mạch - Integrated Circuit Club) thuộc Khoa Kỹ thuật Máy tính, liên hệ icc.ktmt@gmail.com, tạo môi trường học tập kích thích sáng tạo thiết kế IC, là bộ lọc tài năng chuẩn bị cho sinh viên kiến thức vật lý bán dẫn và logic trước khi vào nghiên cứu chuyên sâu tại ASIC Lab, đáp ứng tình trạng thiếu hụt nhân lực ngành bán dẫn toàn cầu.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "OEC (Open English Club - Câu lạc bộ Tiếng Anh) của UIT giúp sinh viên vượt rào cản ngôn ngữ vốn hạn chế kỹ sư Việt Nam trong công bố quốc tế, cung cấp môi trường rèn luyện giao tiếp tiếng Anh. Ngoài ra UIT còn có IT Creative Club (cập nhật công nghệ, đồ họa 2D/3D), UIT Game Club (công nghệ phát triển game) cùng nhiều câu lạc bộ học thuật và ngoại khóa khác, tổng cộng 25 câu lạc bộ trên toàn trường.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "Chương trình Kỹ thuật Phần mềm (Software Engineering Program) thuộc Khoa Công nghệ Phần mềm (CNPM) UIT là một hệ sinh thái cấp khoa chứ không phải một phòng lab đơn lẻ. Website: oep.uit.edu.vn/en/software-engineering. Cấu trúc chương trình: tổng 153 tín chỉ; nền tảng toán học cốt lõi gồm Giải tích, Đại số tuyến tính, Nhập môn lập trình. Triết lý đào tạo coi Toán học là bộ công cụ thiết yếu để tối ưu thuật toán và làm nền tảng cho AI, không chỉ là lý thuyết. Chương trình tập trung vào quy trình vòng đời phần mềm: phân tích, thiết kế, hiện thực, quản trị và bảo trì hệ thống. Đối tác doanh nghiệp gồm: Microsoft, Nokia, Fsoft, CSC, VNG, Gameloft. Sinh viên trực tiếp xử lý công tác học vụ qua hệ thống quản lý của khoa; các nghiên cứu và đồ án giải quyết bài toán thực tế của thị trường thông qua quan hệ đối tác chiến lược. Sinh viên tốt nghiệp đủ năng lực làm việc trong hệ thống CNTT của lĩnh vực hành chính, ngân hàng, viễn thông, giáo dục hoặc theo hướng nghiên cứu học thuật nâng cao.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1a1AmB01idodMVcZnAkFft1yHp4mWnlgohdpyB89U_tQ"
+    }
+  },
+  {
+    "text": "Trường Đại học Công nghệ Thông tin (UIT) xây dựng một hệ sinh thái cuộc thi học thuật quy mô và phân tầng trong giai đoạn 2022-2026, với sự tham gia của tất cả các đơn vị nòng cốt: Khoa Khoa học Máy tính, Khoa Mạng Máy tính và Truyền thông, Khoa Công nghệ Phần mềm (CNPM), Khoa Kỹ thuật Máy tính và Văn phòng Các chương trình Đặc biệt (OEP). Hệ sinh thái được chia thành các trụ cột chính: (1) Lập trình thuật toán - UCPC, ICPC, OLP; (2) Bảo mật và An toàn thông tin theo mô hình CTF - WannaGame; (3) Khoa học Dữ liệu và Trí tuệ Nhân tạo - UIT Data Science Challenge, Zalo AI Challenge; (4) Kiến thức CNTT tổng hợp - IT Arena; (5) Khởi nghiệp và kiến tạo sản phẩm thực tế - Spark IT up, GameUIT Hackathon; (6) Hệ thống nhúng, phần cứng và xe tự hành - UIT Car Racing.",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1HkkgcYGftoqRzGgO8bml9p0O6Ha8nKbVJxN3MwuDbmM"
+    }
+  },
+  {
+    "text": "Cuộc thi lập trình thuật toán UCPC (UIT Collegiate Programming Contest) do Khoa Khoa học Máy tính UIT tổ chức. Tháng 05/2022, cuộc thi lập trình truyền thống UIT ACM (đã có 11 mùa giải) được nâng cấp và đổi tên thành UCPC nhằm đáp ứng tiêu chuẩn các kỳ thi quốc tế. Cuộc thi UCPC dự kiến tổ chức năm 2021 từng phải tạm hoãn do các yếu tố khách quan (theo chỉ đạo của Hội Sinh viên và Phòng Công tác Sinh viên). Sự ra mắt năm 2022 thiết lập một tiêu chuẩn mới cho phong trào lập trình thi đấu tại trường.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/cuoc-thi-lap-trinh-thuat-toan-danh-gia-nhat-uit-chinh-thuc-mo-dang-ky"
+    }
+  },
+  {
+    "text": "Quy chế cuộc thi UCPC của UIT: mô phỏng chính xác format kỳ thi lập trình thi đấu quốc tế ICPC (International Collegiate Programming Contest). Thí sinh thi đấu theo đội gồm 3 thành viên, giải các bài toán thuật toán phức tạp hoàn toàn bằng tiếng Anh. Đối tượng tham dự mở rộng cho sinh viên toàn trường và cả học sinh Trung học phổ thông (độ tuổi 15-23) có đam mê lập trình. Tuy nhiên, các thí sinh đã từng đoạt giải Nhất, Nhì, Ba tại các kỳ thi cấp Quốc gia trở lên (Học sinh giỏi Quốc gia, OLP Tin học Sinh viên Việt Nam, ICPC National/Regional) không được phép tham dự, nhằm tạo cơ hội phát hiện và ươm mầm những nhân tố mới.",
+    "metadata": {
+      "url": "https://tuyensinh.uit.edu.vn/cuoc-thi-lap-trinh-thuat-toan-danh-gia-nhat-uit-chinh-thuc-mo-dang-ky"
+    }
+  },
+  {
+    "text": "Từ nền tảng UCPC, sinh viên UIT tham gia Olympic Tin học Sinh viên Việt Nam (OLP) và Kỳ thi ICPC. Năm 2023, Trường Đại học Khoa học - Đại học Huế đăng cai OLP'23 và ICPC Asia Hue City từ ngày 5 đến 8/12/2023; vòng loại khu vực (Miền Bắc, Miền Trung, Miền Nam) tổ chức online vào tháng 10. Chính sách tài trợ của UIT: các đội sinh viên giải được từ 1 bài trở lên tại vòng loại khu vực được trường tài trợ toàn bộ 1.000.000 VNĐ lệ phí dự thi vòng Quốc gia (5/11/2023); đội có thành tích tốt tại vòng Quốc gia mới được cấp kinh phí dự vòng ICPC Asia cấp châu lục. Mùa giải 2023, UIT là điểm cầu tổ chức thi vòng Quốc gia cho 45 đội thi từ 7 trường đại học. Thể thức thi: 3 sinh viên/đội, giải khoảng 10 bài trong 5 tiếng liên tục, chỉ dùng một máy tính duy nhất và từ điển giấy.",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/thong-tin-ve-ky-thi-olympic-tin-hoc-sinh-vien-viet-nam-ky-thi-lap-trinh-vien-quoc-te-asia-hue-city-2023"
+    }
+  },
+  {
+    "text": "Thành tích ICPC của sinh viên UIT giai đoạn 2024-2026: (1) ICPC Asia Regional Hanoi 2024 - đội UIT.KHQ.TheUnkillableDemonKings (Trần Vinh Khánh, Lê Thiên Quân, Đinh Mạnh Hùng) đoạt Huy chương Vàng; (2) ICPC Asia Pacific Championship Singapore 2025 - vòng chung kết khu vực quy tụ 65 đội thi xuất sắc nhất từ Hàn Quốc, Nhật Bản, Indonesia, Việt Nam và các nước khác, UIT đóng góp 3 đội tuyển hạt giống: UIT.KHQ.TheUnkillableDemonKings, UIT.KNT.2mic1cup, UIT.TTT.Baka; (3) ICPC Asia Bangkok Regional 2025 - đội UIT.JobSeekers giành Huy chương Đồng; (4) ICPC Vietnam Southern Provincial 2025 - nhiều đội UIT đạt kết quả tốt như UIT.PAT.Kamabuko, UIT.BBM.BBM, UIT.NTD.anbatukam, UIT.GPT.Baguette, UIT.BDH.PhoBERTer; (5) ICPC Asia Pacific Championship 2026 - sinh viên UIT tiếp tục giành Huy chương Đồng sau kỳ thi 5 tiếng căng thẳng.",
+    "metadata": {
+      "url": "https://en.uit.edu.vn/article/uit-students-win-bronze-medal-icpc-asia-pacific-championship-2026"
+    }
+  },
+  {
+    "text": "Bảng tổng hợp các cuộc thi thuộc trụ cột Lập trình Thuật toán tại UIT (giai đoạn 2022-2026):\n\n| Tên cuộc thi / sự kiện | Giai đoạn | Đơn vị tổ chức / Trọng tâm | Đường dẫn tham khảo |\n|---|---|---|---|\n| UCPC (UIT Collegiate Programming Contest) | 2022 | Khoa Khoa học Máy tính (thay thế UIT ACM) | https://tuyensinh.uit.edu.vn/cuoc-thi-lap-trinh-thuat-toan-danh-gia-nhat-uit-chinh-thuc-mo-dang-ky |\n| ICPC Vietnam Southern Provincial & National | 2023-2025 | Vòng loại Quốc gia & Khu vực Miền Nam | https://forum.uit.edu.vn/t/moi-sv-dang-ky-tham-gia-cuoc-thi-lap-trinh-icpc-2025-mien-nam-ngay-12-10-2025/158566 |\n| OLP'23 & ICPC Asia Hue City | 2023 | Vòng thi cấp Châu Á tại Huế | https://www.uit.edu.vn/thong-tin-ve-ky-thi-olympic-tin-hoc-sinh-vien-viet-nam-ky-thi-lap-trinh-vien-quoc-te-asia-hue-city-2023 |\n| ICPC Asia Pacific Championship | 2025-2026 | Vòng Chung kết Châu Á - Thái Bình Dương (Singapore) | https://en.uit.edu.vn/uit-participates-icpc-asia-pacific-championship-2025 |\n| ICPC Asia Bangkok Regional | 2025 | Vòng Khu vực tại Bangkok | https://en.uit.edu.vn/uit-talented-students-win-bronze-medal-2025-icpc-asia-bangkok-regional-contest |",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1HkkgcYGftoqRzGgO8bml9p0O6Ha8nKbVJxN3MwuDbmM"
+    }
+  },
+  {
+    "text": "Hệ sinh thái bảo mật và an toàn thông tin của UIT mang thương hiệu WannaGame, do Khoa Mạng Máy tính & Truyền thông, Phòng Thí nghiệm An toàn Thông tin (InSecLab) và Trung tâm An ninh mạng (CNSC) xây dựng. Hệ thống áp dụng thể thức Capture The Flag (CTF) dạng Jeopardy, yêu cầu thí sinh tìm ra các chuỗi ký tự bí mật (flags) được giấu sau các lỗ hổng hệ thống. WannaGame gồm ba cấp độ phân tầng: WannaGame Freshman (cánh cửa nhập môn), WannaGame Weekly (huấn luyện liên tục) và WannaGame Championship (vũ đài quốc tế).",
+    "metadata": {
+      "url": "https://inseclab.uit.edu.vn/category/ctf/"
+    }
+  },
+  {
+    "text": "WannaGame Freshman là cuộc thi CTF nhập môn thường niên do InSecLab UIT tổ chức nhằm loại bỏ rào cản tâm lý cho sinh viên mới. Phiên bản ngày 05/10/2025 (Chủ nhật) dành riêng cho sinh viên Khóa 2025 (K20) và Khóa 2024 (K19) chưa từng tham gia hệ thống WannaGame. Hình thức: thi đấu cá nhân trong 8 tiếng (8:00-16:00), lệ phí hỗ trợ tượng trưng 30.000 VNĐ (đã bao gồm ăn trưa và nước uống). Đề thi bao phủ các khái niệm cơ sở: Cryptography (Mật mã học), Pwnable (Khai thác nhị phân), Web Exploitation (Khai thác Web), Forensic/Misc (Điều tra số và tạp kỹ), Reverse Engineering (Dịch ngược mã máy), Linux và Programming. Cơ cấu giải thưởng: Giải Nhất 800.000 VNĐ, 2 Giải Nhì 400.000 VNĐ, 7 Giải Ba 200.000 VNĐ.",
+    "metadata": {
+      "url": "https://inseclab.uit.edu.vn/wannagame-freshman-2025/"
+    }
+  },
+  {
+    "text": "Chuỗi WannaGame Weekly của InSecLab UIT định hướng sinh viên tham gia trực tiếp các giải CTF uy tín do các trường đại học top đầu thế giới tổ chức, rồi lấy kết quả đó để vinh danh nội bộ. Các phiên bản: WannaGame Weekly #1 đồng bộ với giải picoCTF do Đại học Carnegie Mellon (Mỹ) tổ chức (2024, 2025) - sinh viên năm nhất lập nhóm tối đa 5 người, hoàn thành ít nhất 50% số thử thách để được xét giải thưởng 200.000-800.000 VNĐ; kết quả 2024 vinh danh các đội 41_dun7_kn0w (Giải Nhất), Zafk1el (Giải Nhì), Ry0iki_T3nk4i và 3RROR N3WB1E (đồng Giải Ba). WannaGame Weekly #2 tích hợp giải UTCTF do ISSS thuộc Đại học Texas tại Austin (Hoa Kỳ) tổ chức (2024, 2026). WannaGame Weekly #3 tích hợp giải Grey Cat The Flag do Đại học Quốc gia Singapore (NUS) tổ chức (2024). Năm 2026 còn kết hợp giải b01lers CTF của đội CTF Đại học Purdue (Mỹ).",
+    "metadata": {
+      "url": "https://inseclab.uit.edu.vn/wannagame-weekly-utctf-2026/"
+    }
+  },
+  {
+    "text": "WannaGame Championship là giải đấu CTF tầm vóc quốc tế do UIT đăng cai tổ chức. Khởi điểm năm 2023, cuộc thi kéo dài 24 tiếng (02-03/12/2023), chủ yếu nhắm vào sinh viên Việt Nam, Quán quân nhận 2.500.000 VNĐ. WannaGame Championship 2025 (06-08/12/2025) nâng thời gian thi đấu lên 48 giờ liên tục, thu hút hơn 600 đội thi toàn cầu (bao gồm 130 đội Việt Nam, quy tụ cả học sinh THPT, sinh viên và kỹ sư an ninh mạng chuyên nghiệp). Đề thi mở rộng thêm mảng Web3 (khai thác lỗ hổng hợp đồng thông minh Smart Contracts trên Blockchain). Bảo trợ chuyên môn: OtterSec, ECQ, CITD, GreenNode. Kết quả 2025 chia ba bảng: Bảng Quốc tế - Nhất 400 USD (BLACKPINKER - ĐH Khoa học Tự nhiên TP.HCM), Nhì 200 USD (UNIVERSEA - Học viện Kỹ thuật Mật mã), Ba 100 USD (LAVIAESPA - UIT); Bảng Việt Nam - Nhất 4.000.000 VNĐ (RIPERICE - KMA), Nhì (BKISC - HCMUT), Ba (FPTU EHC - ĐH FPT); Bảng UIT - vinh danh các đội ME_ANH_BAT_CHIA_TAY, RANDOM, ANH_EM_TAO_37_38.",
+    "metadata": {
+      "url": "https://inseclab.uit.edu.vn/cong-bo-ket-qua-wannagame-championship-2025/"
+    }
+  },
+  {
+    "text": "Thành tựu cộng đồng quốc tế từ đào tạo CTF của InSecLab UIT: sinh viên Võ Quang Vũ (sinh viên năm 2) nhờ thành tích Top 3 WannaGame Championship 2025, Top 1 M*CTF 2025 Qualifiers và Top 5 HDBank Hackathon 2025 đã trở thành một trong hai đại diện của Việt Nam tham dự khóa huấn luyện ASEAN Cyber Shield Bootcamp 2025 tại Busan, Hàn Quốc (tài trợ bởi Quỹ Hợp tác ASEAN-Hàn Quốc, đào sâu vào Incident Response và Digital Forensics). Sinh viên UIT cũng lọt top 273 người trên toàn thế giới hoàn thành 9/9 thử thách cực khó của giải dịch ngược mã độc Flare-On mùa 12 (do Mandiant/Google tổ chức). InSecLab (đại diện bởi PGS.TS Phạm Văn Hậu) nhận danh hiệu 'Thư cảm ơn - Đồng hành cùng phát triển' từ Giám đốc ĐHQG-HCM.",
+    "metadata": {
+      "url": "https://en.uit.edu.vn/journey-conquering-asean-cyber-shield-bootcamp-2025-uit-student-vo-quang-vu"
+    }
+  },
+  {
+    "text": "Bảng tổng hợp các cuộc thi thuộc trụ cột Bảo mật và An toàn Thông tin (mô hình CTF) tại UIT:\n\n| Tên cuộc thi / nền tảng | Năm tổ chức | Đối tượng mục tiêu | Đường dẫn tham khảo |\n|---|---|---|---|\n| WannaGame Freshman | 2025 | Sinh viên K19, K20 UIT | https://inseclab.uit.edu.vn/wannagame-freshman-2025/ |\n| WannaGame Weekly #1 (picoCTF) | 2024, 2025 | Tân sinh viên | https://play.picoctf.org/events/73 |\n| WannaGame Weekly #2 (UTCTF) | 2024, 2026 | Sinh viên CNTT | https://inseclab.uit.edu.vn/wannagame-weekly-utctf-2026/ |\n| WannaGame Weekly #3 (Grey Cat The Flag) | 2024 | Sinh viên CNTT | https://ctf.nusgreyhats.org/ |\n| WannaGame Championship | 2023, 2025 | Quy mô toàn cầu | https://ctf.cnsc.com.vn/ |",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1HkkgcYGftoqRzGgO8bml9p0O6Ha8nKbVJxN3MwuDbmM"
+    }
+  },
+  {
+    "text": "UIT Data Science Challenge (DSC) là nền tảng thi đấu chuyên về Khoa học Dữ liệu và Trí tuệ Nhân tạo, do Bộ môn Khoa học Dữ liệu UIT tổ chức, chú trọng ứng dụng dữ liệu để giải quyết các rào cản xã hội và kỹ thuật. UIT Data Science Challenge 2024 diễn ra từ tháng 7 đến tháng 11/2024, nhắm vào sinh viên các trường đại học khu vực Đông Nam Bộ (TP.HCM, Bình Dương, Đồng Nai, Vũng Tàu, Tây Ninh, Bình Phước). Cuộc thi chia hai bảng: Bảng A (Giải pháp thực tiễn) ứng dụng Khoa học dữ liệu xây dựng sản phẩm phục vụ Giáo dục Thông minh (Smart Education); Bảng B (Nghiên cứu mô hình) với thử thách 'Mô hình học đa dữ liệu - Phát hiện sắc thái châm biếm trong nội dung đa phương tiện' (Multimodal learning for sarcasm detection), yêu cầu kết hợp phân tích văn bản (NLP), xử lý âm thanh và xử lý hình ảnh (Computer Vision).",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/phat-dong-cuoc-thi-uit-data-science-challenge-2024"
+    }
+  },
+  {
+    "text": "UIT Data Science Challenge 2025 diễn ra từ 15/08 đến 17/10/2025, mở rộng đối tượng ra toàn bộ sinh viên khu vực Miền Trung và Miền Nam (từ Đà Nẵng đến Cà Mau). Quỹ giải thưởng: Giải Nhất Bảng A 20.000.000 VNĐ, Giải Nhì 5.000.000 VNĐ, Giải Ba 3.000.000 VNĐ. Chủ đề: Bảng A 'Dữ liệu dẫn dắt Chuyển đổi số' (Data Science-based Digital Transformation Innovation) giải quyết các nút thắt trong Y tế, Chính phủ số, Môi trường, Doanh nghiệp và Tài chính; Bảng B tập trung giải quyết hai khiếm khuyết lớn nhất của Mô hình Ngôn ngữ Lớn (LLM): 'Tính chống nhiễu' (Robustness - duy trì hiệu suất khi đầu vào sai chính tả, sai ngữ pháp hoặc bị adversarial prompts) và hiện tượng 'Ảo giác' (Hallucination - AI tự sáng tạo thông tin sai lệch), kế thừa từ các giải học thuật uy tín SemEval và VLSP. Tiêu chí đánh giá dùng độ đo Macro-F1 lấy trung bình trên ba nhãn: no, intrinsic (ảo giác nội sinh) và extrinsic (ảo giác ngoại sinh). Cuộc thi đạt hơn 17.964 lượt tiếp cận, 493 sinh viên đăng ký, 194 thí sinh dự thi, 19 đơn vị hỗ trợ; lễ bế mạc và trao giải diễn ra ngày 21/10/2025.",
+    "metadata": {
+      "url": "https://dsc.uit.edu.vn/"
+    }
+  },
+  {
+    "text": "Nhóm sinh viên AIO_C3A của UIT (gồm 3 sinh viên Khóa 2024 thuộc Khoa Khoa học Máy tính: Nguyễn Cẩm Trân, Trần Trọng Nhân, Võ Cao Nguyên) xuất sắc đăng quang ngôi vô địch tại giải đấu công nghệ danh giá Zalo AI Challenge 2025. Nhóm đã triển khai thành công một mô hình AI tối ưu cho bài toán cứu hộ bằng thiết bị bay không người lái (drone-based rescue), áp dụng các thuật toán thị giác máy tính và phân tích không gian để giải quyết trực tiếp các vấn đề nhân đạo và cứu hộ khẩn cấp trong điều kiện thực tế.",
+    "metadata": {
+      "url": "https://en.uit.edu.vn/article/uit-students-crowned-champions-zalo-ai-challenge-2025"
+    }
+  },
+  {
+    "text": "Bảng tổng hợp các cuộc thi thuộc trụ cột Trí tuệ Nhân tạo và Khoa học Dữ liệu tại UIT:\n\n| Tên cuộc thi / nền tảng | Thời gian | Định hướng thử thách cốt lõi | Đường dẫn tham khảo |\n|---|---|---|---|\n| UIT Data Science Challenge 2024 | 07/2024-11/2024 | Smart Education & Multimodal Sarcasm Detection | https://www.uit.edu.vn/phat-dong-cuoc-thi-uit-data-science-challenge-2024 |\n| UIT Data Science Challenge 2025 | 08/2025-10/2025 | Chuyển đổi số & LLM Hallucination/Robustness | https://dsc.uit.edu.vn/ |\n| Zalo AI Challenge 2025 | 2025 | Drone-based Rescue AI | https://en.uit.edu.vn/article/uit-students-crowned-champions-zalo-ai-challenge-2025 |",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1HkkgcYGftoqRzGgO8bml9p0O6Ha8nKbVJxN3MwuDbmM"
+    }
+  },
+  {
+    "text": "Cuộc thi IT Arena của UIT đánh giá phổ kiến thức CNTT tổng hợp (mạng máy tính, hệ điều hành, cơ sở dữ liệu, các xu hướng công nghệ chung) và kỹ năng làm việc nhóm của sinh viên. Cuộc thi được tổ chức vào sáng ngày 11/05/2024 tại Hội trường A. Phí đăng ký linh hoạt: 75.000 VNĐ/đội 3 người, 90.000 VNĐ/đội 4 người, 100.000 VNĐ/đội 5 người. IT Arena cấp chứng nhận học tập (good study certificate) cho các thí sinh đạt từ 150 điểm trở lên tại vòng Conquest. Cơ cấu giải thưởng: Giải Nhất 1.000.000 VNĐ, Giải Nhì 800.000 VNĐ, cùng các quà tặng độc quyền (lanyards, keychains) cho top 6 đội thi và khán giả may mắn.\n\n| Tên cuộc thi | Thời gian | Định hướng | Đường dẫn tham khảo |\n|---|---|---|---|\n| IT Arena | 11/05/2024 | Thi kiến thức CNTT tổng hợp, làm việc nhóm | https://en.uit.edu.vn/article/official-launch-it-arena |",
+    "metadata": {
+      "url": "https://en.uit.edu.vn/article/official-launch-it-arena"
+    }
+  },
+  {
+    "text": "Cuộc thi Ý tưởng Khởi nghiệp - Sáng tạo 2025 'Spark IT up! - Thắp sáng ý tưởng, vươn tầm công nghệ' do Văn phòng Các chương trình Đặc biệt (OEP) của UIT thiết kế và vận hành. Chủ đề năm 2025: 'Ứng dụng AI nhằm tạo ra giá trị xã hội và phát triển bền vững', trải rộng trên các lĩnh vực Môi trường, Y tế số, Đô thị thông minh và Kinh tế số. Đội thi gồm 3 người, yêu cầu ít nhất 1 sinh viên UIT. Sinh viên trải qua quá trình đào tạo bài bản từ tháng 11/2025 với các khóa tập huấn 'Kỷ nguyên AI Tạo sinh: Từ Prompt đến sản phẩm sáng tạo' và 'Tư duy thiết kế và định hình sản phẩm' (Design Thinking). Vòng Hackathon diễn ra xuyên đêm từ 17:00 ngày 13/12/2025 đến 08:00 ngày 14/12/2025; Vòng Chung kết lúc 08:30 theo hình thức Pitching (thuyết trình dự án 5 phút). Giám khảo gồm các chuyên gia đầu ngành như anh Lê Hồng Hải Nhân (Founder & CEO GEEK Up) và chị Nguyễn Thị Diệu Hằng (CEO BSSC, Phó Chủ tịch Hội Doanh nhân Trẻ). Đội chiến thắng nhận phần thưởng trị giá 8.000.000 VNĐ cùng Kỷ niệm chương và 1 tài khoản pro Diaflow trị giá 468 USD.",
+    "metadata": {
+      "url": "https://oep.uit.edu.vn/vi/chuoi-chuong-trinh-khoi-nghiep-sang-tao-nam-2025"
+    }
+  },
+  {
+    "text": "Bảng tổng hợp các cuộc thi thuộc trụ cột Khởi nghiệp và Kiến tạo Sản phẩm tại UIT:\n\n| Tên cuộc thi | Năm / Thời gian | Đơn vị phụ trách & Trọng tâm | Đường dẫn tham khảo |\n|---|---|---|---|\n| Spark IT up! 2025 | 11/2025-12/2025 | VP Các chương trình Đặc biệt (OEP) / AI vì cộng đồng, Pitching start-up | https://link.uit.edu.vn/sparkitup2025 |\n| GameUIT Hackathon 2022 | 26-27/11/2022 | Khoa Công nghệ Phần mềm / Cuộc thi lập trình 24h, Web/Mobile App | https://www.uit.edu.vn/thong-tin-chinh-thuc-gameuit-hackathon-2022 |\n| GameUIT Hackathon 2021 | 05/2021 | Khoa Công nghệ Phần mềm | https://www.uit.edu.vn/chinh-thuc-mo-form-dang-ky-game-uit-hackathon-2021 |",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1HkkgcYGftoqRzGgO8bml9p0O6Ha8nKbVJxN3MwuDbmM"
+    }
+  },
+  {
+    "text": "Cuộc thi UIT Car Racing (Đua xe tự hành) do Khoa Kỹ thuật Máy tính và Câu lạc bộ Lập trình Nhúng CEEC tổ chức, định hướng nghiên cứu ứng dụng trí tuệ nhân tạo và công nghệ vi điều khiển vào giải pháp xe tự hành (Autonomous Vehicles). Giải Mùa Đông 2023 được tổ chức quy mô với vòng chung kết diễn ra ngày 17-18/11/2023. Mùa giải 2025 khởi động vào tháng 10/2025 với tổng giá trị giải thưởng lên đến 39.000.000 VNĐ, chia thành hai bảng: Bảng Mở Rộng dành cho học sinh THPT và sinh viên năm nhất toàn quốc, thi trên môi trường phần mềm mô phỏng ảo độc quyền do Ban Tổ chức cung cấp (tập trung hoàn thiện các thuật toán điều khiển như PID, không lo rủi ro hỏng hóc thiết bị); Bảng Chuyên Nghiệp dành cho sinh viên đại học tại TP.HCM, xử lý hình ảnh (Computer Vision) nhận diện làn đường và biển báo giao thông, triển khai mã nguồn lên xe mô hình thực tế, bắt buộc áp dụng công nghệ container hóa Docker (Edge AI).",
+    "metadata": {
+      "url": "https://www.uit.edu.vn/kick-uit-car-racing-2025"
+    }
+  },
+  {
+    "text": "Bảng tổng hợp cuộc thi UIT Car Racing (Đua xe tự hành) tại UIT:\n\n| Tên cuộc thi | Giai đoạn | Đơn vị tổ chức & Trọng tâm kỹ thuật | Đường dẫn tham khảo |\n|---|---|---|---|\n| UIT Car Racing (Giải Mùa Đông 2023) | 11/2023 | Khoa Kỹ thuật Máy tính / Xe tự hành | https://en.uit.edu.vn/uit-car-racing-2023-professional-round-rules-announcement |\n| UIT Car Racing 2025 | 10/2025 | CLB Nhúng CEEC / Bảng Mở rộng (Mô phỏng) & Bảng Chuyên nghiệp (Docker, Xử lý ảnh) | https://www.uit.edu.vn/kick-uit-car-racing-2025 |",
+    "metadata": {
+      "url": "https://docs.google.com/document/d/1HkkgcYGftoqRzGgO8bml9p0O6Ha8nKbVJxN3MwuDbmM"
+    }
+  }
 ]

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
+import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
 import FeedbackButtons from './FeedbackButtons';
 import { ChatModeContext } from '../context/ChatModeContext';
@@ -20,6 +21,24 @@ const mdComponents = (ink) => ({
   h1: ({ children }) => <h1 style={{ fontSize: 18, fontWeight: 700, margin: '8px 0 4px' }}>{children}</h1>,
   h2: ({ children }) => <h2 style={{ fontSize: 16, fontWeight: 700, margin: '8px 0 4px' }}>{children}</h2>,
   h3: ({ children }) => <h3 style={{ fontSize: 15, fontWeight: 600, margin: '6px 0 4px' }}>{children}</h3>,
+  table: ({ children }) => (
+    <div style={{ overflowX: 'auto', margin: '8px 0' }}>
+      <table style={{ borderCollapse: 'collapse', width: '100%', fontSize: 13.5 }}>{children}</table>
+    </div>
+  ),
+  thead: ({ children }) => <thead>{children}</thead>,
+  tbody: ({ children }) => <tbody>{children}</tbody>,
+  tr:    ({ children }) => <tr>{children}</tr>,
+  th:    ({ children }) => (
+    <th style={{ border: '1px solid rgba(0,0,0,0.18)', padding: '7px 10px', textAlign: 'left', fontWeight: 700, background: 'rgba(0,0,0,0.06)' }}>
+      {children}
+    </th>
+  ),
+  td:    ({ children }) => (
+    <td style={{ border: '1px solid rgba(0,0,0,0.14)', padding: '7px 10px', verticalAlign: 'top' }}>
+      {children}
+    </td>
+  ),
   code: ({ className, children }) => {
     const isBlock = !!className;
     return isBlock
@@ -98,7 +117,7 @@ export default function Message({ msg, pal, brand, onChip }) {
               fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', borderRadius: 4,
             }}>TRẢ LỜI</div>
             <ReactMarkdown
-              remarkPlugins={[remarkMath]}
+              remarkPlugins={[remarkGfm, remarkMath]}
               rehypePlugins={[rehypeKatex]}
               components={mdComponents(pal.ink)}
             >

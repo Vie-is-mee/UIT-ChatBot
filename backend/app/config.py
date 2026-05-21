@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     # ── Google Gemini API ──────────────────────────────────────────────────────
-    GOOGLE_API_KEY: str = ""
+    GOOGLE_API_KEY: str = "AIzaSyCyGPRxqsrlH5NLDLYpbyomVWzp8pawyV8"
 
     LLM_MODEL: str = "models/gemini-2.5-flash"
     EMBEDDING_MODEL: str = "models/gemini-embedding-001"

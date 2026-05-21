@@ -21,6 +21,11 @@ import argparse
 import faiss
 import numpy as np
 
+# Ép stdout/stderr sang UTF-8 để in được tiếng Việt trên console Windows
+# (codepage mặc định cp1258 không encode được ký tự Unicode tiếng Việt).
+sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
+
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from app.config import settings
