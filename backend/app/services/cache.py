@@ -7,17 +7,21 @@ from app.utils.sanitize import is_error_response
 
 # ── Kết nối Redis ──────────────────────────────────────────────────────────────
 # Trong backend/app/services/cache.py
-try:
-    # Kết nối Upstash qua URL (Hỗ trợ cả SSL/TLS tự động)
-    redis_client = redis.Redis.from_url(
-        settings.REDIS_URL,
-        decode_responses=True,
-        socket_connect_timeout=5
-    )
-    redis_client.ping()
-    app_logger.info("Đã kết nối Upstash Redis thành công!")
-except Exception as e:
-    app_logger.error(f"Kết nối Upstash thất bại: {e}")
+# Chỉ kết nối Redis khi REDIS_URL được cấu hình (không rỗng)
+if settings.REDIS_URL and settings.REDIS_URL.strip():
+    try:
+        redis_client = redis.Redis.from_url(
+            settings.REDIS_URL,
+            decode_responses=True,
+            socket_connect_timeout=5
+        )
+        redis_client.ping()
+        app_logger.info("Đã kết nối Redis thành công!")
+    except Exception as e:
+        app_logger.error(f"Kết nối Redis thất bại: {e}. Dùng in-process cache.")
+        redis_client = None
+else:
+    app_logger.warning("REDIS_URL chưa được cấu hình → dùng in-process cache (không bền vững).")
     redis_client = None
 
 

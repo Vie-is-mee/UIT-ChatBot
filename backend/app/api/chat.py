@@ -10,6 +10,8 @@ from collections import defaultdict
 
 from app.services.rag import generate_answer, detect_scope, _is_realtime_query
 from app.services import session as session_svc
+from app.services.embedding import get_embedding
+from app.services.retrieval import search_vector_db
 from app.utils.sanitize import clean_and_validate_input
 from app.utils.logger import app_logger
 from app.config import settings
@@ -94,6 +96,33 @@ def _sse(data: dict) -> str:
     return f"data: {json.dumps(data, ensure_ascii=False)}\n\n"
 
 
+def _should_web_search(query: str, scope: str, api_key: str) -> bool:
+    """
+    Kiểm tra nhanh có cần web search không dựa trên:
+      1. Câu hỏi realtime
+      2. DB không có dữ liệu liên quan (vector search nhanh)
+    Dùng kết quả embedding cache nên không tốn thêm API call.
+    """
+    if not settings.WEB_SEARCH_ENABLED:
+        return False
+
+    # Realtime query → luôn cần web
+    if _is_realtime_query(query):
+        return True
+
+    # Thử vector search nhanh để xem DB có data không
+    try:
+        from app.services.rag import _MIN_CONTEXT_CHARS
+        query_vector = get_embedding(query, api_key=api_key)
+        context, _, found_relevant = search_vector_db(query_vector, scope)
+        if not found_relevant or len(context.strip()) < _MIN_CONTEXT_CHARS:
+            return True
+    except Exception:
+        pass  # Nếu lỗi thì cứ để generate_answer tự xử lý
+
+    return False
+
+
 # ── Endpoint /chat (giữ nguyên) ────────────────────────────────────────────────
 
 @router.post("/chat", response_model=ChatResponse)
@@ -169,7 +198,7 @@ async def chat_with_bot(request: ChatRequest, http_request: Request):
 
 @router.post("/chat/stream")
 async def chat_stream(request: ChatRequest, http_request: Request):
-    """SSE endpoint phat tung buoc: thinking -> token -> done"""
+    """SSE endpoint phát từng bước: thinking -> token -> done"""
     client_ip = getattr(http_request.client, "host", "unknown")
     if not _check_rate_limit(client_ip):
         raise HTTPException(
@@ -185,31 +214,44 @@ async def chat_stream(request: ChatRequest, http_request: Request):
         try:
             safe_msg = clean_and_validate_input(request.message)
 
-            # Stage 1: Phan tich
+            # Xác định scope trước để kiểm tra DB
+            scope_hint = (
+                detect_scope(safe_msg)
+                if request.scope == "auto"
+                else request.scope
+            )
+
+            # Stage 1: Phân tích
             yield _sse({"type": "thinking", "stage": "analyzing",
                         "message": _thinking_message("analyzing", safe_msg)})
             await asyncio.sleep(0.35)
 
-            # Stage 2: Tim kiem
+            # Stage 2: Tìm kiếm DB
             yield _sse({"type": "thinking", "stage": "searching",
                         "message": _thinking_message("searching", safe_msg)})
             await asyncio.sleep(0.25)
 
-            # Stage 3: Web search neu realtime
-            if _is_realtime_query(safe_msg):
+            # Stage 3: Kiểm tra có cần web search không (dùng embedding cache)
+            # Chạy trong executor để không block event loop
+            loop = asyncio.get_event_loop()
+            need_web = await loop.run_in_executor(
+                None,
+                lambda: _should_web_search(safe_msg, scope_hint, api_key)
+            )
+
+            if need_web:
                 yield _sse({"type": "thinking", "stage": "web_searching",
                             "message": _thinking_message("web_searching", safe_msg)})
                 await asyncio.sleep(0.2)
 
-            # Lich su session
+            # Lịch sử session
             history = None
             if request.session_id:
                 raw = session_svc.get_history(request.session_id)
                 if raw:
                     history = raw
 
-            # Chay RAG pipeline trong thread
-            loop = asyncio.get_event_loop()
+            # Chạy RAG pipeline trong thread
             rag_result = await loop.run_in_executor(
                 None,
                 lambda: generate_answer(
@@ -225,23 +267,23 @@ async def chat_stream(request: ChatRequest, http_request: Request):
             scope_result = rag_result["scope"]
             suggestions  = rag_result.get("suggestions", [])
 
-            # Stage 4: Da tim thay
+            # Stage 4: Đã tìm thấy
             yield _sse({"type": "thinking", "stage": "found",
                         "message": _thinking_message("found", safe_msg)})
             await asyncio.sleep(0.18)
 
-            # Stage 5: Dang soan
+            # Stage 5: Đang soạn
             yield _sse({"type": "thinking", "stage": "generating",
                         "message": _thinking_message("generating", safe_msg)})
             await asyncio.sleep(0.28)
 
-            # Stream tung cum ky tu (4 chars / 12ms ≈ 333 chars/s)
+            # Stream từng cụm ký tự (4 chars / 12ms ≈ 333 chars/s)
             chunk_size = 4
             for i in range(0, len(answer_text), chunk_size):
                 yield _sse({"type": "token", "text": answer_text[i:i + chunk_size]})
                 await asyncio.sleep(0.012)
 
-            # Luu session
+            # Lưu session
             if request.session_id:
                 session_svc.append_turn(
                     session_id=request.session_id,
