@@ -75,8 +75,23 @@ _DIRECT_PAGES = [
     ),
     (
         ["cnpm", "công nghệ phần mềm", "khoa phần mềm", "software engineering",
-         "selab", "se "],
-         "https://se.uit.edu.vn/gioi-thieu",
+         "selab", "se ", "kỹ thuật phần mềm"],
+        "https://se.uit.edu.vn/gioi-thieu",
+    ),
+    (
+        ["cnpm", "đào tạo cnpm", "chương trình phần mềm",
+         "môn học cnpm", "học phần cnpm", "tín chỉ cnpm"],
+        "https://se.uit.edu.vn/dao-tao",
+    ),
+    (
+        ["giảng viên cnpm", "giảng viên khoa", "bộ môn cnpm",
+         "giáo viên phần mềm", "cán bộ khoa cnpm", "nhân sự cnpm"],
+        "https://se.uit.edu.vn/nhan-su",
+    ),
+    (
+        ["nghiên cứu cnpm", "selab", "phòng thí nghiệm phần mềm",
+         "lab phần mềm", "đề tài cnpm", "dự án cnpm"],
+        "https://se.uit.edu.vn/nghien-cuu",
     ),
     (
         ["liên kết quốc tế", "hợp tác quốc tế", "international", "đối tác"],

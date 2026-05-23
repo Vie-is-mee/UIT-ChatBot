@@ -18,11 +18,17 @@ const UIT_PAL = {
 };
 
 const CNPM_PAL = {
-  isDark: false,
-  bg: '#f3f6fb', panel: '#ffffff', soft: '#eaf0fa',
-  ink: '#0a1a3a', mute: '#5d6f8e',
-  accent: '#1d4ed8', accent2: '#3b82f6', glow: '#bcd2ff',
-  gold: '#1e3a8a', warm: '#ea580c',
+  isDark: true,
+  bg: '#0a1245',        // xanh navy rất đậm (nền trang)
+  panel: '#131f6b',     // xanh đậm (panel/card)
+  soft: '#1a2db5',      // xanh hoàng gia — màu chủ đạo logo CNPM
+  ink: '#eef2ff',       // trắng xanh nhạt (chữ chính)
+  mute: '#8da5e0',      // xanh muted (chữ phụ)
+  accent: '#2a46d9',    // xanh sáng (accent chính)
+  accent2: '#5b7ef5',   // xanh nhạt hơn (hover, gradient)
+  glow: '#99b3ff',      // glow nhẹ
+  gold: '#5b7ef5',      // dùng xanh thay gold (logo không có vàng)
+  warm: '#ffffff',      // trắng — màu icon/chữ nổi bật trong logo
 };
 
 // ── Brand copy ───────────────────────────────────────────────────────────────
@@ -44,8 +50,8 @@ const BRAND = {
     schoolName: 'Khoa Công nghệ Phần mềm',
     tagline: 'Software Engineering · UIT',
     eyebrow: 'TRÒ CHUYỆN VỚI KHOA',
-    heroTitle: ['Người viết phần mềm,', 'viết tiếp', ' hai thập kỷ.'],
-    heroBody: 'Trò chuyện với trợ lý của Khoa Công nghệ Phần mềm — câu chuyện riêng của một khoa đã đào tạo nên hàng nghìn kỹ sư phần mềm Việt Nam.',
+    heroTitle: ['Người làm phần mềm,', 'kiến tạo nên', ' hành trình 18 năm.'],
+    heroBody: 'Trò chuyện với trợ lý của Khoa CNPM — nơi đào tạo những người làm phần mềm thực thụ, xây dựng sản phẩm thật, giải quyết bài toán thật của Việt Nam.',
     botName: 'Trợ lý Khoa CNPM',
     placeholder: 'Hỏi về khoa CNPM…',
     timelineTitle: '18 năm của một Khoa',

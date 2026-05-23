@@ -143,7 +143,7 @@ export default function Message({ msg, pal, brand, onChip, onEditSubmit }) {
           ) : (
             /* Inline edit textarea */
             <div style={{
-              width: '100%', minWidth: 260,
+              width: '100%', minWidth: 320,
               borderRadius: 12,
               border: `2px solid ${pal.accent}`,
               background: pal.panel,
@@ -159,14 +159,14 @@ export default function Message({ msg, pal, brand, onChip, onEditSubmit }) {
                   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleUpdate(); }
                   if (e.key === 'Escape') handleCancel();
                 }}
-                rows={Math.min(6, Math.max(2, editText.split('\n').length))}
+                rows={Math.min(10, Math.max(3, editText.split('\n').length + 1))}
                 style={{
                   width: '100%', boxSizing: 'border-box',
-                  padding: '10px 14px',
+                  padding: '12px 16px',
                   background: 'transparent', border: 'none', outline: 'none',
-                  color: pal.ink, fontSize: 14, lineHeight: 1.6,
-                  fontFamily: 'inherit', resize: 'none',
-                  maxHeight: '9em', overflowY: 'auto',
+                  color: pal.ink, fontSize: 14.5, lineHeight: 1.65,
+                  fontFamily: 'inherit', resize: 'vertical',
+                  minHeight: '80px', maxHeight: '220px', overflowY: 'auto',
                 }}
               />
               <div style={{
@@ -330,32 +330,41 @@ export default function Message({ msg, pal, brand, onChip, onEditSubmit }) {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           {/* Bubble trả lời */}
           <div style={{
-            padding: '16px 18px', borderRadius: '4px 16px 16px 16px',
+            borderRadius: '4px 16px 16px 16px',
             background: `linear-gradient(180deg, ${pal.soft}, ${pal.panel})`,
             border: `1px solid ${pal.accent}25`,
             boxShadow: pal.isDark ? 'none' : '0 6px 24px -16px rgba(10,26,58,0.35)',
-            color: pal.ink, lineHeight: 1.75, fontSize: 14.5,
+            color: pal.ink,
             fontFamily: "'Be Vietnam Pro', sans-serif",
             animation: 'fadeUp .5s both',
-            position: 'relative',
           }}>
+            {/* Dòng trên cùng: badge trái + nút copy phải */}
             <div style={{
-              position: 'absolute', top: -8, left: 18,
-              padding: '1px 8px', background: pal.gold,
-              color: pal.isDark ? pal.bg : '#fff',
-              fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', borderRadius: 4,
-            }}>TRẢ LỜI</div>
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '9px 12px 9px 18px',
+              borderBottom: `1px solid ${pal.accent}18`,
+              background: `${pal.accent}08`,
+            }}>
+              <div style={{
+                padding: '2px 10px', background: pal.gold,
+                color: pal.isDark ? pal.bg : '#fff',
+                fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', borderRadius: 4,
+                display: 'inline-block',
+              }}>TRẢ LỜI</div>
 
-            {/* Copy button top-right of bot bubble */}
-            <BotCopyBtn pal={pal} onCopy={handleBotCopy} copied={copied} />
+              <BotCopyBtn pal={pal} onCopy={handleBotCopy} copied={copied} />
+            </div>
 
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm, remarkMath]}
-              rehypePlugins={[rehypeKatex]}
-              components={mdComponents(pal.ink)}
-            >
-              {processedText}
-            </ReactMarkdown>
+            {/* Nội dung văn bản bên dưới */}
+            <div style={{ padding: '14px 18px', lineHeight: 1.75, fontSize: 14.5 }}>
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm, remarkMath]}
+                rehypePlugins={[rehypeKatex]}
+                components={mdComponents(pal.ink)}
+              >
+                {processedText}
+              </ReactMarkdown>
+            </div>
           </div>
 
           {/* Gợi ý + nút chuyển phạm vi */}
@@ -397,36 +406,42 @@ export default function Message({ msg, pal, brand, onChip, onEditSubmit }) {
   );
 }
 
-/* ── Copy button inside bot bubble (top-right) ────────────────────────────── */
+/* ── Copy button below bot bubble (inline, không absolute) ────────────────── */
 function BotCopyBtn({ pal, onCopy, copied }) {
   const [hov, setHov] = React.useState(false);
   return (
-    <button
-      onClick={onCopy}
-      onMouseEnter={() => setHov(true)}
-      onMouseLeave={() => setHov(false)}
-      title={copied ? 'Đã sao chép!' : 'Sao chép văn bản'}
-      style={{
-        position: 'absolute', top: 10, right: 12,
-        width: 28, height: 28, borderRadius: 7,
-        border: `1px solid ${pal.accent}25`,
-        background: hov ? `${pal.accent}15` : 'transparent',
-        color: copied ? pal.accent : pal.mute,
-        cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-        transition: 'all .15s',
-      }}
-    >
-      {copied ? (
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-      ) : (
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-        </svg>
-      )}
-    </button>
+    <div style={{ position: 'relative', display: 'inline-flex' }}>
+      <button
+        onClick={onCopy}
+        onMouseEnter={() => setHov(true)}
+        onMouseLeave={() => setHov(false)}
+        title={copied ? 'Đã sao chép!' : 'Sao chép văn bản'}
+        style={{
+          width: 34, height: 34, borderRadius: 8,
+          border: `1px solid ${copied ? pal.accent + '70' : pal.accent + '30'}`,
+          background: hov ? `${pal.accent}18` : 'transparent',
+          color: copied ? pal.accent : pal.mute,
+          cursor: 'pointer',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          transition: 'all .15s',
+        }}
+      >
+        {copied ? (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" strokeWidth="2.5"
+            strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        ) : (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" strokeWidth="2"
+            strokeLinecap="round" strokeLinejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+        )}
+      </button>
+    </div>
   );
 }
 

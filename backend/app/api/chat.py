@@ -118,7 +118,8 @@ def _should_web_search(query: str, scope: str, api_key: str) -> bool:
         if not found_relevant or len(context.strip()) < _MIN_CONTEXT_CHARS:
             return True
     except Exception:
-        pass  # Nếu lỗi thì cứ để generate_answer tự xử lý
+        # Nếu embedding/search thất bại → cần web search (nhất quán với generate_answer)
+        return True
 
     return False
 
