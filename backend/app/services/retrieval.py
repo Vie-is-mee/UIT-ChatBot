@@ -7,9 +7,28 @@ v2.3: Cải thiện log khi DB chưa được tạo, phân biệt "file không t
 
 import faiss
 import json
+import re
 import numpy as np
 from app.config import settings
 from app.utils.logger import app_logger
+
+# Bắt URL nằm trong nội dung chunk (http/https). Dùng để show DB sources từ link
+# do tài liệu nguồn liệt kê BÊN TRONG nội dung, KHÔNG show URL của chính file/doc.
+_INNER_URL_RE = re.compile(r'https?://[^\s\)\]\>"\'<,;]+', re.IGNORECASE)
+_URL_TRAILING_PUNCT = '.,;:!?)]}>"\''
+
+
+def _extract_inner_urls(text: str) -> list[str]:
+    if not text:
+        return []
+    seen = set()
+    out = []
+    for raw in _INNER_URL_RE.findall(text):
+        u = raw.rstrip(_URL_TRAILING_PUNCT)
+        if u and u not in seen:
+            seen.add(u)
+            out.append(u)
+    return out
 
 dbs = {
     "uit":  {"index": None, "chunks": []},
@@ -112,9 +131,12 @@ def search_vector_db(query_vector: list, scope: str, top_k: int = None) -> tuple
 
         context_parts.append(text)
 
-        src_info = _extract_source_info(chunk.get("metadata"))
-        if src_info and src_info not in sources:
-            sources.append(src_info)
+        # CHỈ lấy các URL được liệt kê BÊN TRONG nội dung chunk làm DB source,
+        # KHÔNG dùng URL của chính tài liệu (metadata.url / metadata.source).
+        for u in _extract_inner_urls(text):
+            src = {"url": u, "title": u, "source_type": "local"}
+            if src not in sources:
+                sources.append(src)
 
     if filtered_count > 0:
         app_logger.info(

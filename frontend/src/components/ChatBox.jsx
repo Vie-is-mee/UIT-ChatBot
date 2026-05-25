@@ -3,27 +3,42 @@ import { ChatModeContext } from '../context/ChatModeContext';
 import { sendChatMessageStream } from '../api';
 import Message from './Message';
 
-const DEFAULT_STOP_SUGGESTIONS = [
-  'Lịch sử UIT?',
-  'Các ngành đào tạo?',
-  'Đời sống sinh viên UIT?',
-];
+// Thứ tự hiển thị của các stage suy nghĩ
+const STAGE_ORDER = ['analyzing', 'searching', 'web_searching', 'found', 'generating'];
 
 export default function ChatBox({ pal, brand, suggested, apiKey }) {
   const {
-    mode, messages, addMessage, truncateMessages, isLoading, setIsLoading,
+    mode, messages, addMessage, isLoading, setIsLoading,
     sessionId, startNewSession,
+    pendingQuery, consumePendingQuery, askQuery, editFromMessage,
   } = useContext(ChatModeContext);
 
-  const [input, setInput]                   = useState('');
-  const [thinkingStages, setThinkingStages] = useState([]);
+  const abortRef = useRef(null);
+  const genRef   = useRef(0);
+
+  const handleEditMessage = (index, newText) => {
+    if (!newText.trim()) return;
+    if (isLoading) {
+      genRef.current += 1;
+      abortRef.current?.abort();
+      abortRef.current = null;
+      setThinkingStages([]);
+      setStreamingText('');
+      setIsStreaming(false);
+      setIsLoading(false);
+    }
+    editFromMessage(index);
+    askQuery(newText);
+  };
+
+  const [input, setInput]               = useState('');
+  const [thinkingStages, setThinkingStages] = useState([]); // [{stage, message, done}]
   const [streamingText, setStreamingText]   = useState('');
   const [isStreaming, setIsStreaming]       = useState(false);
-  const scrollRef        = useRef(null);
-  const streamingDoneRef = useRef(null);
-  const streamingTextRef = useRef('');
-  const abortControllerRef = useRef(null);
+  const scrollRef = useRef(null);
+  const streamingDoneRef = useRef(null); // giữ data của event done
 
+  // Cuộn xuống cuối
   const scrollToBottom = useCallback(() => {
     if (scrollRef.current)
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
@@ -31,45 +46,82 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
 
   useEffect(() => { scrollToBottom(); }, [messages, thinkingStages, streamingText]);
 
-  // ── Hàm dừng stream ─────────────────────────────────────────────────────────
-  const handleStop = () => {
-    if (abortControllerRef.current) {
-      abortControllerRef.current.abort();
-    }
+  const handleSend = async (q) => {
+    if (!q.trim() || isLoading) return;
+    setInput('');
+    addMessage({ role: 'user', text: q });
+    setIsLoading(true);
+    setThinkingStages([]);
+    setStreamingText('');
+    setIsStreaming(false);
+    streamingDoneRef.current = null;
 
-    const partialText = streamingTextRef.current;
-    const doneData    = streamingDoneRef.current;
+    const isFirst = messages.filter((m) => m.role === 'bot').length === 0;
 
+    await sendChatMessageStream(
+      q, mode, isFirst, sessionId, apiKey,
+      {
+        onThinking: (stage, message) => {
+          setThinkingStages((prev) => {
+            // Tandanh done cho stage truoc
+            const updated = prev.map((s) => ({ ...s, done: true }));
+            return [...updated, { stage, message, done: false }];
+          });
+        },
+        onToken: (text) => {
+          if (!isStreaming) setIsStreaming(true);
+          setStreamingText((prev) => prev + text);
+        },
+        onDone: (data) => {
+          streamingDoneRef.current = data;
+        },
+        onError: (msg) => {
+          console.error('Stream error:', msg);
+          setThinkingStages([]);
+          setStreamingText('');
+          setIsStreaming(false);
+          setIsLoading(false);
+          addMessage({
+            id: null,
+            role: 'bot',
+            text: 'Rất tiếc, có lỗi xảy ra. Bạn thử lại nhé.',
+            question: q,
+            suggestions: [],
+            sources: [],
+          });
+        },
+      }
+    );
+
+    // Sau khi stream xong, finalize message
+    const doneData = streamingDoneRef.current;
     setThinkingStages([]);
     setStreamingText('');
     setIsStreaming(false);
     setIsLoading(false);
-    streamingTextRef.current = '';
 
-    // Lưu phần đã sinh (nếu có)
-    if (partialText.trim()) {
+    if (doneData) {
       addMessage({
-        id: doneData?.message_id ?? null,
+        id: doneData.message_id,
         role: 'bot',
-        text: partialText,
-        question: '',
-        suggestions: [],
-        sources: doneData?.sources || [],
+        text: streamingDoneRef._fullText || '',
+        question: q,
+        suggestions: doneData.suggestions || [],
+        sources: doneData.sources || [],
       });
     }
-
-    // Thêm tin nhắn dừng kèm gợi ý
-    addMessage({
-      id: null,
-      role: 'bot',
-      stopped: true,
-      text: '',
-      suggestions: DEFAULT_STOP_SUGGESTIONS,
-      sources: [],
-    });
   };
 
-  // ── Gửi tin nhắn ────────────────────────────────────────────────────────────
+  // Dung ref de track full text (tranh closure stale)
+  const streamingTextRef = useRef('');
+  useEffect(() => {
+    streamingTextRef.current = streamingText;
+    if (streamingDoneRef.current !== null) {
+      streamingDoneRef._fullText = streamingText;
+    }
+  }, [streamingText]);
+
+  // Override handleSend de dung ref
   const handleSendFinal = async (q) => {
     if (!q.trim() || isLoading) return;
     setInput('');
@@ -82,21 +134,25 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
     streamingDoneRef.current = null;
     streamingDoneRef._fullText = '';
 
+    const myGen = ++genRef.current;
     const controller = new AbortController();
-    abortControllerRef.current = controller;
+    abortRef.current = controller;
 
     const isFirst = messages.filter((m) => m.role === 'bot').length === 0;
 
     await sendChatMessageStream(
       q, mode, isFirst, sessionId, apiKey,
       {
+        signal: controller.signal,
         onThinking: (stage, message) => {
+          if (myGen !== genRef.current) return;
           setThinkingStages((prev) => {
             const updated = prev.map((s) => ({ ...s, done: true }));
             return [...updated, { stage, message, done: false }];
           });
         },
         onToken: (text) => {
+          if (myGen !== genRef.current) return;
           setIsStreaming(true);
           setStreamingText((prev) => {
             const next = prev + text;
@@ -107,10 +163,12 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
           });
         },
         onDone: (data) => {
+          if (myGen !== genRef.current) return;
           streamingDoneRef.current = data;
           streamingDoneRef._fullText = streamingTextRef.current;
         },
         onError: () => {
+          if (myGen !== genRef.current) return;
           setThinkingStages([]);
           setStreamingText('');
           setIsStreaming(false);
@@ -121,14 +179,14 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
             question: q, suggestions: [], sources: [],
           });
         },
-      },
-      controller.signal
+      }
     );
 
-    if (controller.signal.aborted) return;
+    if (myGen !== genRef.current) return; // bị abort/replaced bởi edit
+    if (abortRef.current === controller) abortRef.current = null;
 
-    const doneData = streamingDoneRef.current;
-    const fullText = streamingTextRef.current;
+    const doneData   = streamingDoneRef.current;
+    const fullText   = streamingTextRef.current;
     setThinkingStages([]);
     setStreamingText('');
     setIsStreaming(false);
@@ -151,8 +209,19 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
     await startNewSession();
   };
 
-  const hasMessages  = messages.length > 0;
-  const isThinking   = thinkingStages.length > 0 && !isStreaming;
+  // Cho phép Timeline (hoặc nguồn ngoài) đẩy câu hỏi vào pipeline streaming
+  const handlerRef = useRef(null);
+  handlerRef.current = handleSendFinal;
+  useEffect(() => {
+    if (pendingQuery && !isLoading) {
+      const q = pendingQuery.q;
+      consumePendingQuery();
+      handlerRef.current?.(q);
+    }
+  }, [pendingQuery, isLoading, consumePendingQuery]);
+
+  const hasMessages = messages.length > 0;
+  const isThinking  = thinkingStages.length > 0 && !isStreaming;
   const showStreaming = streamingText.length > 0;
 
   return (
@@ -193,10 +262,12 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
       </div>
 
       {/* Messages */}
-      <div ref={scrollRef} style={{
-        flex: 1, overflowY: 'auto', padding: '28px 28px 8px',
-        scrollbarWidth: 'thin', scrollbarColor: `${pal.accent}40 transparent`,
-      }}>
+      <div ref={scrollRef}
+        className="px-4 sm:px-7 pt-5 sm:pt-7 pb-2"
+        style={{
+          flex: 1, overflowY: 'auto', minWidth: 0,
+          scrollbarWidth: 'thin', scrollbarColor: `${pal.accent}40 transparent`,
+        }}>
         {!hasMessages && !isLoading && (
           <EmptyState pal={pal} mode={mode} suggested={suggested} onAsk={handleSendFinal} />
         )}
@@ -204,15 +275,13 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
         {messages.map((msg, i) => (
           <Message
             key={i}
+            index={i}
             msg={msg}
             pal={pal}
             brand={brand}
             onChip={handleSendFinal}
-            onEditSubmit={(newText) => {
-              if (isLoading) return;
-              truncateMessages(i);
-              handleSendFinal(newText);
-            }}
+            onEdit={handleEditMessage}
+            canEdit={true}
           />
         ))}
 
@@ -226,7 +295,7 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
           <StreamingBubble text={streamingText} pal={pal} brand={brand} />
         )}
 
-        {/* Initial loading */}
+        {/* Initial loading (truoc khi co stage nao) */}
         {isLoading && thinkingStages.length === 0 && !showStreaming && (
           <InitialLoader pal={pal} />
         )}
@@ -242,95 +311,43 @@ export default function ChatBox({ pal, brand, suggested, apiKey }) {
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && !isLoading && handleSendFinal(input)}
-            placeholder={isLoading ? 'Đang xử lý...' : brand.placeholder}
-            disabled={isLoading && !isStreaming}
+            onKeyDown={(e) => e.key === 'Enter' && handleSendFinal(input)}
+            placeholder={brand.placeholder}
+            disabled={isLoading}
             style={{
               flex: 1, background: 'transparent', border: 'none', outline: 'none',
               color: pal.ink, fontSize: 14, padding: '10px 0', fontFamily: 'inherit',
-              minWidth: 0, opacity: (isLoading && !isStreaming) ? 0.5 : 1,
+              minWidth: 0, opacity: isLoading ? 0.5 : 1,
             }}
           />
-
-          {/* Nút DỪNG hoặc GỬI */}
-          {isLoading ? (
-            <StopButton pal={pal} onClick={handleStop} />
-          ) : (
-            <SendButton pal={pal} onClick={() => handleSendFinal(input)} disabled={!input.trim()} />
-          )}
+          <button
+            onClick={() => handleSendFinal(input)}
+            disabled={isLoading || !input.trim()}
+            aria-label="Gửi"
+            title="Gửi"
+            className="shrink-0 flex items-center justify-center"
+            style={{
+              width: 40, height: 40, borderRadius: 10, border: 'none',
+              background: `linear-gradient(135deg, ${pal.accent}, ${pal.accent2})`,
+              color: '#fff',
+              cursor: isLoading ? 'not-allowed' : 'pointer',
+              opacity: isLoading ? 0.5 : 1,
+              boxShadow: `0 8px 24px -8px ${pal.accent}`,
+              fontFamily: 'inherit', transition: 'opacity .15s',
+            }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5" />
+              <polyline points="5 12 12 5 19 12" />
+            </svg>
+          </button>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8, fontSize: 11, color: pal.mute }}>
-          <div className="hidden sm:block">
-            {isStreaming ? '■ Nhấn ô vuông để dừng' : '↵ Enter để gửi'}
-          </div>
+          <div className="hidden sm:block">↵ Enter để gửi</div>
           <div className="sm:hidden"></div>
           <div>{mode === 'uit' ? 'UIT · 2006—2026' : 'Khoa CNPM · 2008—2026'}</div>
         </div>
       </div>
     </section>
-  );
-}
-
-/* ── Nút GỬI (mũi tên hướng lên) ────────────────────────────────────────── */
-function SendButton({ pal, onClick, disabled }) {
-  const [hovered, setHovered] = useState(false);
-  return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      title="Gửi tin nhắn"
-      style={{
-        width: 40, height: 40, borderRadius: 10, border: 'none', flexShrink: 0,
-        background: disabled
-          ? `${pal.accent}40`
-          : hovered
-            ? `linear-gradient(135deg, ${pal.accent2}, ${pal.accent})`
-            : `linear-gradient(135deg, ${pal.accent}, ${pal.accent2})`,
-        color: '#fff', cursor: disabled ? 'not-allowed' : 'pointer',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        boxShadow: disabled ? 'none' : `0 8px 24px -8px ${pal.accent}80`,
-        transition: 'all .18s',
-        opacity: disabled ? 0.5 : 1,
-      }}
-    >
-      {/* Up arrow */}
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <line x1="12" y1="19" x2="12" y2="5"/>
-        <polyline points="5 12 12 5 19 12"/>
-      </svg>
-    </button>
-  );
-}
-
-/* ── Nút DỪNG ────────────────────────────────────────────────────────────── */
-function StopButton({ pal, onClick }) {
-  const [hovered, setHovered] = useState(false);
-  return (
-    <button
-      onClick={onClick}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      title="Dừng sinh text"
-      style={{
-        width: 40, height: 40, borderRadius: 10, border: 'none', flexShrink: 0,
-        background: hovered
-          ? `linear-gradient(135deg, #ef4444, #dc2626)`
-          : `linear-gradient(135deg, ${pal.accent}90, ${pal.accent2}90)`,
-        color: '#fff', cursor: 'pointer',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        boxShadow: hovered ? '0 8px 24px -8px #ef444480' : `0 8px 24px -8px ${pal.accent}60`,
-        transition: 'all .18s',
-      }}
-    >
-      <div style={{
-        width: 14, height: 14, borderRadius: 2,
-        background: '#fff',
-        boxShadow: hovered ? '0 0 8px rgba(255,255,255,0.8)' : 'none',
-        transition: 'box-shadow .18s',
-      }} />
-    </button>
   );
 }
 
@@ -346,23 +363,12 @@ function NewChatButton({ pal, onClick, disabled }) {
       title="Bắt đầu cuộc trò chuyện mới"
       style={{
         display: 'flex', alignItems: 'center', gap: 6,
-        padding: '5px 14px', borderRadius: 8,
-        border: `1px solid ${pal.accent}60`,
-        background: hovered
-          ? `linear-gradient(135deg, ${pal.accent}, ${pal.accent2})`
-          : `${pal.accent}18`,
-        color: hovered ? '#fff' : pal.accent,
-        fontSize: 12, fontWeight: 600,
-        cursor: disabled ? 'not-allowed' : 'pointer',
-        fontFamily: 'inherit', transition: 'all .18s',
-        opacity: disabled ? 0.5 : 1,
-        boxShadow: hovered ? `0 4px 16px -4px ${pal.accent}60` : 'none',
+        padding: '5px 12px', borderRadius: 8, border: `1px solid ${pal.accent}40`,
+        background: hovered ? `${pal.accent}18` : 'transparent',
+        color: pal.mute, fontSize: 12, cursor: disabled ? 'not-allowed' : 'pointer',
+        fontFamily: 'inherit', transition: 'all .15s', opacity: disabled ? 0.5 : 1,
       }}
     >
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <line x1="12" y1="5" x2="12" y2="19"/>
-        <line x1="5" y1="12" x2="19" y2="12"/>
-      </svg>
       Cuộc trò chuyện mới
     </button>
   );
@@ -403,12 +409,12 @@ function PromptCard({ s, pal, onClick }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        display: 'flex', alignItems: 'center', gap: 12,
-        padding: '14px 16px', borderRadius: 12,
-        background: pal.soft,
-        border: `1px solid ${hovered ? pal.warm : pal.accent + '25'}`,
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        padding: '12px 20px', borderRadius: 99,
+        background: hovered ? `${pal.accent}18` : pal.soft,
+        border: `1px solid ${hovered ? pal.warm : pal.accent + '35'}`,
         color: pal.ink, fontSize: 13.5, cursor: 'pointer',
-        textAlign: 'left', fontFamily: 'inherit',
+        textAlign: 'center', fontFamily: 'inherit', fontWeight: 500,
         transform: hovered ? 'translateY(-1px)' : 'translateY(0)',
         transition: 'all .2s',
       }}>
@@ -417,7 +423,7 @@ function PromptCard({ s, pal, onClick }) {
   );
 }
 
-/* ── Loader ban đầu ───────────────────────────────────────────────────────── */
+/* ── Loader ban đầu (chưa có stage) ──────────────────────────────────────── */
 function InitialLoader({ pal }) {
   return (
     <div style={{ display: 'flex', gap: 12, marginBottom: 18, alignItems: 'center' }}>
@@ -440,10 +446,11 @@ function InitialLoader({ pal }) {
   );
 }
 
-/* ── Thinking panel ───────────────────────────────────────────────────────── */
+/* ── Thinking panel — hiển thị tung stage ────────────────────────────────── */
 function ThinkingPanel({ stages, streaming, pal, brand }) {
   return (
     <div style={{ display: 'flex', gap: 12, marginBottom: 18, alignItems: 'flex-start' }}>
+      {/* Avatar */}
       <div style={{
         flexShrink: 0, width: 36, height: 36, borderRadius: '50%',
         background: `conic-gradient(from 200deg, ${pal.accent}, ${pal.gold}, ${pal.accent2}, ${pal.accent})`,
@@ -508,28 +515,7 @@ function AnimatedDots() {
   return <span style={{ opacity: 0.7 }}>{dots}</span>;
 }
 
-function renderWithLinks(text) {
-  const urlRegex = /(https?:\/\/[^\s<>"']+[^\s<>"'.,!?)\]]|(?:www\.|(?:facebook|fb|instagram|youtube|youtu|twitter|tiktok|zalo|linkedin|github)\.(?:com|vn|net|org|be))(?:\/[^\s<>"']*)?|(?:[a-zA-Z0-9-]+\.(?:edu\.vn|ac\.vn))(?:\/[^\s<>"']*)?)/gi;
-  const parts = [];
-  let lastIndex = 0;
-  let match;
-  while ((match = urlRegex.exec(text)) !== null) {
-    if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
-    const raw = match[0];
-    const href = /^https?:\/\//i.test(raw) ? raw : `https://${raw}`;
-    parts.push(
-      <a key={match.index} href={href} target="_blank" rel="noopener noreferrer"
-        style={{ color: '#2563eb', textDecoration: 'underline', textDecorationColor: '#2563eb', textUnderlineOffset: '2px', wordBreak: 'break-all' }}>
-        {raw}
-      </a>
-    );
-    lastIndex = match.index + raw.length;
-  }
-  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
-  return parts;
-}
-
-/* ── Streaming bubble ─────────────────────────────────────────────────────── */
+/* ── Streaming bubble — text chay tung chu ───────────────────────────────── */
 function StreamingBubble({ text, pal, brand }) {
   return (
     <div style={{ display: 'flex', gap: 12, marginBottom: 18, alignItems: 'flex-start' }}>
@@ -563,7 +549,7 @@ function StreamingBubble({ text, pal, brand }) {
             color: pal.isDark ? pal.bg : '#fff',
             fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', borderRadius: 4,
           }}>TRẢ LỜI</div>
-          {renderWithLinks(text)}
+          {text}
           <span style={{
             display: 'inline-block', width: 2, height: '1em',
             background: pal.accent, marginLeft: 2, verticalAlign: 'text-bottom',

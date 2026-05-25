@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api/v1';
 
 export const sendChatMessage = async (message, scope = 'auto', isFirstMessage = true, sessionId = null, apiKey = '') => {
   try {
@@ -19,7 +19,6 @@ export const sendChatMessage = async (message, scope = 'auto', isFirstMessage = 
 /**
  * Streaming chat — đọc SSE từ /chat/stream
  * Callbacks: onThinking(stage, message), onToken(text), onDone(data), onError(msg)
- * signal: AbortSignal (tùy chọn) để dừng stream giữa chừng
  */
 export const sendChatMessageStream = async (
   message,
@@ -27,8 +26,7 @@ export const sendChatMessageStream = async (
   isFirstMessage = true,
   sessionId = null,
   apiKey = '',
-  { onThinking, onToken, onDone, onError } = {},
-  signal = null
+  { onThinking, onToken, onDone, onError, signal } = {}
 ) => {
   const payload = { message, scope, is_first_message: isFirstMessage };
   if (sessionId) payload.session_id = sessionId;
@@ -37,14 +35,12 @@ export const sendChatMessageStream = async (
   if (apiKey) headers['X-API-Key'] = apiKey;
 
   try {
-    const fetchOptions = {
+    const response = await fetch(`${API_URL}/chat/stream`, {
       method: 'POST',
       headers,
       body: JSON.stringify(payload),
-    };
-    if (signal) fetchOptions.signal = signal;
-
-    const response = await fetch(`${API_URL}/chat/stream`, fetchOptions);
+      signal,
+    });
 
     if (!response.ok) {
       onError?.(`Lỗi kết nối (HTTP ${response.status})`);
@@ -55,40 +51,29 @@ export const sendChatMessageStream = async (
     const decoder = new TextDecoder();
     let buffer = '';
 
-    try {
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
 
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split('\n');
-        buffer = lines.pop() ?? '';
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop() ?? ''; // giữ lại dòng chưa hoàn chỉnh
 
-        for (const line of lines) {
-          if (!line.startsWith('data: ')) continue;
-          try {
-            const data = JSON.parse(line.slice(6));
-            if (data.type === 'thinking') onThinking?.(data.stage, data.message);
-            else if (data.type === 'token')   onToken?.(data.text);
-            else if (data.type === 'done')    onDone?.(data);
-            else if (data.type === 'error')   onError?.(data.message);
-          } catch {
-            // bỏ qua dòng JSON không hợp lệ
-          }
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        try {
+          const data = JSON.parse(line.slice(6));
+          if (data.type === 'thinking') onThinking?.(data.stage, data.message);
+          else if (data.type === 'token')   onToken?.(data.text);
+          else if (data.type === 'done')    onDone?.(data);
+          else if (data.type === 'error')   onError?.(data.message);
+        } catch {
+          // bỏ qua dòng JSON không hợp lệ
         }
       }
-    } catch (readError) {
-      // Nếu là AbortError thì không báo lỗi (user chủ động dừng)
-      if (readError.name !== 'AbortError') throw readError;
-    } finally {
-      reader.cancel().catch(() => {});
     }
-
   } catch (error) {
-    if (error.name === 'AbortError') {
-      // User chủ động dừng — không gọi onError
-      return;
-    }
+    if (error.name === 'AbortError') return;
     console.error('Lỗi stream API:', error);
     onError?.(error.message || 'Lỗi kết nối');
   }

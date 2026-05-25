@@ -5,12 +5,16 @@ class Settings(BaseSettings):
     # ── Google Gemini API ──────────────────────────────────────────────────────
     GOOGLE_API_KEY: str = ""
 
-    LLM_MODEL: str = "models/gemini-2.5-flash"
+    # ── Groq API ───────────────────────────────────────────────────────────────
+    GROQ_API_KEY: str = ""
+
+    LLM_MODEL: str = "qwen/qwen3-32b"
+    LLM_FALLBACK_MODEL: str = "llama-3.1-8b-instant"
     EMBEDDING_MODEL: str = "models/gemini-embedding-001"
 
     # ── LLM params ────────────────────────────────────────────────────────────
-    MAX_TOKENS: int = 1500           # v2.4: giảm từ 2500 → 1500 (tiết kiệm output token)
-    TEMPERATURE: float = 0.2
+    MAX_TOKENS: int = 4096
+    TEMPERATURE: float = 0.5
     TOP_K_RETRIEVAL: int = 3
     MAX_INPUT_LENGTH: int = 1000
 
@@ -32,6 +36,8 @@ class Settings(BaseSettings):
     WEB_SEARCH_ENABLED: bool = True
     WEB_SEARCH_TIMEOUT: int = 10
     WEB_SEARCH_MAX_RESULTS: int = 2  # v2.4: giảm từ 3 → 2 (ít trang hơn, đủ context)
+    TAVILY_API_KEY: str = ""
+
 
     # ── Đường dẫn dữ liệu ─────────────────────────────────────────────────────
     BASE_DIR: str = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -47,13 +53,27 @@ class Settings(BaseSettings):
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
+    @property
+    def groq_api_keys(self) -> list:
+        if not self.GROQ_API_KEY:
+            return []
+        return [k.strip() for k in self.GROQ_API_KEY.split(",") if k.strip()]
+
 
 settings = Settings()
 
 if not settings.GOOGLE_API_KEY or settings.GOOGLE_API_KEY.strip() in ("", "your-key-here"):
     import warnings
     warnings.warn(
-        "GOOGLE_API_KEY chưa được cấu hình. "
-        "Thêm GOOGLE_API_KEY=<key> vào file .env để bật tính năng AI.",
+        "GOOGLE_API_KEY chưa được cấu hình. Cần thiết cho tính năng Embedding.",
+        stacklevel=2,
+    )
+
+is_groq = not settings.LLM_MODEL.startswith("models/")
+if is_groq and (not settings.GROQ_API_KEY or settings.GROQ_API_KEY.strip() in ("", "your-key-here")):
+    import warnings
+    warnings.warn(
+        "GROQ_API_KEY chưa được cấu hình cho Groq model. "
+        "Thêm GROQ_API_KEY=<key> vào file .env để bật tính năng AI.",
         stacklevel=2,
     )

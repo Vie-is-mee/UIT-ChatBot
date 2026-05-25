@@ -24,26 +24,26 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
   const steps = [
     {
       n: '01',
-      title: 'Mở Google AI Studio',
+      title: 'Mở Groq Console',
       body: (
         <>
           Truy cập{' '}
           <a
-            href="https://aistudio.google.com/app/apikey"
+            href="https://console.groq.com/keys"
             target="_blank"
             rel="noreferrer"
             style={{ color: pal.accent, fontWeight: 600, textDecoration: 'underline', textUnderlineOffset: 3 }}
           >
-            aistudio.google.com/app/apikey
+            console.groq.com/keys
           </a>{' '}
-          và đăng nhập bằng tài khoản Google của bạn. Dịch vụ này hoàn toàn MIỄN PHÍ, không cần thẻ tín dụng.
+          và đăng nhập bằng tài khoản Groq của bạn.
         </>
       ),
     },
     {
       n: '02',
-      title: 'Bấm "Create API key"',
-      body: 'Trong trang vừa mở, bấm nút "Create API key" và chọn một project Google Cloud (hoặc để mặc định nếu bạn chưa có). Google sẽ tạo ra một chuỗi dài và thường bắt đầu bằng "AIza…".',
+      title: 'Bấm "Create API Key"',
+      body: 'Trong trang vừa mở, bấm nút "Create API Key", nhập tên tùy ý cho key và xác nhận tạo. Hệ thống sẽ cấp một chuỗi bắt đầu bằng "gsk_".',
     },
     {
       n: '03',
@@ -58,6 +58,7 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
   ];
 
   const submit = () => { onSave(key.trim()); };
+  const skip   = () => { onSave(''); };
 
   return (
     <div
@@ -115,10 +116,10 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
               fontFamily: "'Fraunces', serif", fontSize: 'clamp(22px, 5vw, 26px)', color: pal.ink,
               marginTop: 4, letterSpacing: '-0.01em', fontWeight: 500, lineHeight: 1.2,
             }}>
-              Thiết lập Google AI API key
+              Thiết lập Groq API key
             </div>
             <div style={{ fontSize: 13.5, color: pal.mute, marginTop: 6, lineHeight: 1.5, maxWidth: 560 }}>
-              Để có trải nghiệm ổn định hơn và tránh giới hạn dùng chung, bạn nên dùng Gemini API key riêng. Nếu không có, hệ thống sẽ tự động dùng API key mặc định từ server.
+              Để có trải nghiệm ổn định hơn và tránh giới hạn dùng chung, bạn nên dùng Groq API key riêng. Nếu không có, hệ thống sẽ tự động dùng API key mặc định từ server.
             </div>
           </div>
         </div>
@@ -172,7 +173,7 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
             fontSize: 11, color: pal.mute, letterSpacing: '0.16em',
             fontWeight: 600, textTransform: 'uppercase',
           }}>
-            Gemini API key
+            Groq API key
           </label>
           <div style={{
             marginTop: 8, display: 'flex', alignItems: 'center', gap: 8,
@@ -220,12 +221,27 @@ export default function ApiKeyModal({ pal, open, onSave, savedKey = '' }) {
         </div>
 
         {/* Footer action */}
-        <div 
-          className="px-5 sm:px-9 py-5 sm:py-6 flex justify-end mt-3 sm:mt-4"
+        <div
+          className="px-5 sm:px-9 py-5 sm:py-6 flex flex-col-reverse sm:flex-row justify-end items-stretch sm:items-center gap-3 mt-3 sm:mt-4"
           style={{
             borderTop: `1px solid ${pal.accent}20`,
             background: pal.isDark ? 'transparent' : `${pal.soft}40`,
           }}>
+          <button
+            onClick={skip}
+            title="Bỏ qua và dùng API key mặc định từ server"
+            className="w-full sm:w-auto flex justify-center items-center"
+            style={{
+              padding: '12px 22px', borderRadius: 12,
+              border: `1px solid ${pal.accent}40`,
+              background: 'transparent',
+              color: pal.mute, fontSize: 13.5, fontWeight: 500,
+              cursor: 'pointer', gap: 6,
+              fontFamily: 'inherit', letterSpacing: '0.01em',
+            }}
+          >
+            Bỏ qua, dùng key mặc định
+          </button>
           <button
             onClick={submit}
             className="w-full sm:w-auto flex justify-center items-center"

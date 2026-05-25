@@ -69,10 +69,27 @@ _REALTIME_KEYWORDS = [
     "gần đây", "hiện tại là", "bây giờ là", "current", "latest", "now",
 ]
 
+# Từ khoá kích hoạt chế độ kể chuyện (đồng bộ với rule 8 trong llm.py).
+# Storytelling cần nhiều chi tiết → nên enrich bằng web search dù DB đã có chunk.
+_STORYTELLING_KEYWORDS = [
+    "kể", "kể về", "kể câu chuyện", "storytelling", "dấu mốc", "cột mốc",
+    "highlight", "hành trình", "chương",
+]
+
+# Ngưỡng context tối thiểu khi đang ở chế độ storytelling — cần dày hơn bình thường
+_STORYTELLING_MIN_CONTEXT_CHARS = 1200
+
+
 def _is_realtime_query(query: str) -> bool:
     """Phát hiện câu hỏi yêu cầu thông tin thời gian thực."""
     lower = query.lower()
     return any(kw in lower for kw in _REALTIME_KEYWORDS)
+
+
+def _is_storytelling_query(query: str) -> bool:
+    """Phát hiện câu hỏi yêu cầu kể chuyện / điểm nhấn / cột mốc."""
+    lower = query.lower()
+    return any(kw in lower for kw in _STORYTELLING_KEYWORDS)
 
 
 def detect_scope(query: str) -> str:
@@ -90,8 +107,11 @@ def _answer_has_no_data(answer_text: str) -> bool:
     """
     Kiểm tra câu trả lời LLM có dạng 'không có dữ liệu' không.
     Dùng để quyết định có hiện sources hay không.
+    Nếu câu trả lời dài (ví dụ > 250 ký tự), nhiều khả năng đó là câu trả lời có ích kèm disclaimer.
     """
-    lower = answer_text.lower()
+    lower = answer_text.lower().strip()
+    if len(lower) > 250:
+        return False
     return any(phrase in lower for phrase in _NO_DATA_PHRASES)
 
 
@@ -101,7 +121,8 @@ def _try_web_search(query: str, scope: str) -> tuple:
         from app.services.web_search import search_uit_web
         web_context, web_sources = search_uit_web(query, scope)
         if web_context.strip():
-            app_logger.info(f"Web RAG thành công: {len(web_sources)} nguồn")
+            urls = [s.get("url") for s in web_sources if isinstance(s, dict) and s.get("url")]
+            app_logger.info(f"Web RAG thành công: {len(web_sources)} nguồn. Links: {urls}")
             return web_context, web_sources
         else:
             app_logger.warning("Web RAG: Không lấy được nội dung từ web.")
@@ -156,17 +177,23 @@ def generate_answer(
     #    → Loại bỏ hoàn toàn Web RAG pass 2 (gọi LLM lần 2)
     # Fix: kích hoạt Web RAG khi không có chunk liên quan HOẶC context quá ngắn
     # Điều kiện kích hoạt Web RAG (sau fix đầy đủ):
-    is_realtime = _is_realtime_query(query)
+    is_realtime    = _is_realtime_query(query)
+    is_storytelling = _is_storytelling_query(query)
+    ctx_len        = len(context.strip())
+    # Storytelling: nâng ngưỡng context tối thiểu → ép enrich từ web cho dày chi tiết
+    min_chars_required = _STORYTELLING_MIN_CONTEXT_CHARS if is_storytelling else _MIN_CONTEXT_CHARS
 
     if settings.WEB_SEARCH_ENABLED and (
-        not found_relevant                           # Fix 1: không có chunk liên quan
-        or len(context.strip()) < _MIN_CONTEXT_CHARS # Gốc: context quá ngắn
-        or is_realtime                               # Fix mới: câu hỏi "hiện tại"
+        not found_relevant                  # không có chunk liên quan
+        or ctx_len < min_chars_required     # context ngắn so với ngưỡng (cao hơn nếu storytelling)
+        or is_realtime                      # câu hỏi "hiện tại"
+        or is_storytelling                  # luôn bổ sung web cho storytelling để giàu chi tiết
     ):
         reason = (
             "câu hỏi thời gian thực" if is_realtime
             else "không có chunk liên quan" if not found_relevant
-            else f"context ngắn ({len(context.strip())} chars)"
+            else f"storytelling (ctx={ctx_len} < {min_chars_required})" if is_storytelling
+            else f"context ngắn ({ctx_len} chars)"
         )
         app_logger.info(f"Kích hoạt Web RAG — lý do: {reason}")
         web_ctx, web_src = _try_web_search(query, scope)
@@ -177,6 +204,7 @@ def generate_answer(
             used_web = True
 
     # 5. Gọi LLM — CHỈ 1 LẦN DUY NHẤT (FIX v2.4)
+    # 5. Gọi LLM — Lần 1
     llm_result = generate_text(
         query=query,
         context=context,
@@ -188,6 +216,28 @@ def generate_answer(
     )
 
     answer_text = llm_result["answer"]
+
+    # 5b. Nếu LLM báo không có dữ liệu từ DB nội bộ và chưa chạy Web RAG -> Kích hoạt Web RAG dự phòng (Pass 2)
+    if _answer_has_no_data(answer_text) and not used_web and settings.WEB_SEARCH_ENABLED:
+        app_logger.info("LLM báo không có dữ liệu từ DB nội bộ → Kích hoạt Web RAG dự phòng (Pass 2)...")
+        web_ctx, web_src = _try_web_search(query, scope)
+        if web_ctx:
+            # Ghép context nội bộ với web context
+            context = (context.strip() + "\n\n---\n\n" + web_ctx) if context.strip() else web_ctx
+            sources = sources + web_src if sources else web_src
+            used_web = True
+
+            # Gọi LLM lần 2 với đầy đủ ngữ cảnh từ Web
+            llm_result = generate_text(
+                query=query,
+                context=context,
+                scope=scope,
+                is_first_message=is_first_message,
+                conversation_history=conversation_history,
+                used_web=used_web,
+                api_key=api_key,
+            )
+            answer_text = llm_result["answer"]
 
     # 6. Ẩn sources nếu LLM báo "không có dữ liệu"
     if _answer_has_no_data(answer_text):
@@ -202,8 +252,8 @@ def generate_answer(
         "used_web":    used_web,
     }
 
-    # 7. Lưu Cache (không cache khi dùng web RAG hoặc có conversation history)
-    if not has_history and not used_web:
+    # 7. Lưu Cache (không cache khi có conversation history)
+    if not has_history:
         set_cached_answer(query, scope, is_first_message, result)
 
     return result

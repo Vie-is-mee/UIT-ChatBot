@@ -26,9 +26,12 @@ def get_embedding(text: str, api_key: str = "") -> list:
     if not text:
         raise ValueError("Văn bản trống.")
 
+    # Nếu api_key là Groq key, đổi thành Server Google API Key cho Gemini embedding
+    gemini_key = api_key if (api_key and not api_key.startswith("gsk_")) else settings.GOOGLE_API_KEY
+
     # Thử lần 1: Dùng key truyền vào (User Key) hoặc Server Key
     try:
-        client = _get_client(api_key)
+        client = _get_client(gemini_key)
         response = client.models.embed_content(
             model=settings.EMBEDDING_MODEL,
             contents=text,
@@ -37,7 +40,7 @@ def get_embedding(text: str, api_key: str = "") -> list:
         return response.embeddings[0].values
     except Exception as e:
         # Nếu dùng User Key mà lỗi, thử lại lần 2 bằng Server Key (nếu khác nhau)
-        if api_key and api_key != settings.GOOGLE_API_KEY:
+        if gemini_key and gemini_key != settings.GOOGLE_API_KEY:
             app_logger.warning(f"User API Key lỗi ({e}), đang thử lại bằng Server Key...")
             try:
                 client = _get_client(settings.GOOGLE_API_KEY)

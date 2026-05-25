@@ -3,6 +3,18 @@ import sys
 import os
 from logging.handlers import RotatingFileHandler
 
+# Đảm bảo console ghi log bằng UTF-8 trên Windows để tránh UnicodeEncodeError
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 def setup_logger(name: str) -> logging.Logger:
     """
     Khởi tạo và cấu hình Logger chuẩn.

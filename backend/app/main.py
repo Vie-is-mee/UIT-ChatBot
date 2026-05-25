@@ -38,9 +38,11 @@ async def lifespan(app: FastAPI):
         f"{'kết nối thành công' if cache_ok else 'offline — chatbot vẫn hoạt động bình thường'}"
     )
 
-    api_ok = bool(settings.GOOGLE_API_KEY)
+    is_groq = not settings.LLM_MODEL.startswith("models/")
+    api_ok = bool(settings.GROQ_API_KEY) if is_groq else bool(settings.GOOGLE_API_KEY)
+    provider_name = "Groq" if is_groq else "Google"
     app_logger.info(
-        f"  {'' if api_ok else ''} Google API Key: "
+        f"  {'' if api_ok else ''} {provider_name} API Key: "
         f"{'đã cấu hình' if api_ok else 'CHƯA cấu hình — thêm vào .env'}"
     )
 
@@ -116,6 +118,8 @@ app = FastAPI(
 origins = [
     "http://localhost:3000",
     "http://localhost:5173",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5173",
     settings.FRONTEND_URL,
 ]
 origins = [o for o in origins if o]  # lọc chuỗi rỗng
@@ -146,7 +150,8 @@ def health_check():
 
     db_status = get_db_status()
     cache_ok = redis_client is not None
-    api_ok = bool(settings.GOOGLE_API_KEY)
+    is_groq = not settings.LLM_MODEL.startswith("models/")
+    api_ok = bool(settings.GROQ_API_KEY) if is_groq else bool(settings.GOOGLE_API_KEY)
     all_dbs_ok = all(info["loaded"] for info in db_status.values())
 
     return {
@@ -158,7 +163,8 @@ def health_check():
                 "connected": cache_ok,
                 "note": "Cache tuỳ chọn — chatbot vẫn hoạt động khi Redis offline",
             },
-            "google_api": {
+            "llm_api": {
+                "provider": "groq" if is_groq else "google",
                 "configured": api_ok,
             },
             "web_rag_fallback": {

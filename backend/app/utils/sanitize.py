@@ -79,6 +79,11 @@ def is_error_response(answer: str) -> bool:
         "hien tai minh khong co",
         "khong tim thay du lieu",
         "minh khong tim thay",
+        "chua liet ke cu the",
+        "khong co thong tin cu the",
+        "chua du cap nhat",
+        "minh xin loi",
+        "minh khong biet"
     ]
 
     return any(pattern in answer_clean for pattern in error_patterns)
